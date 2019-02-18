@@ -2,17 +2,13 @@ import requests
 from bs4 import BeautifulSoup
 
 # TODO: parameter to be stored in the database
-MS_SEARCH_URL = "http://www.morningstar.fr/fr/funds/SecuritySearchResults.aspx?search="
+QS_SEARCH_URL = "http://www.quantalys.com/search/listefonds.aspx?autobind=1&autoredirect=1&ISINorNom="
 
 
-# Search for an asset's Morningstar ID
-def findMsIdByIsin(id):
+# Search for an asset's Quantalys ID given its exact ISIN
+def find_qs_id_by_isin(id):
 
-    # if suspected Morningstar ID (only 10 chars instead of 12)
-    if len(id) == 10:
-        return id
-
-    target = MS_SEARCH_URL + id
+    target = QS_SEARCH_URL + id
 
     # fetch url
     pageresponse = requests.get(target, timeout=5)
@@ -25,9 +21,9 @@ def findMsIdByIsin(id):
         link = pagecontent.find("td", "searchLink")
         return link.children.__next__().get('href')[-10:]
     else:
-        print("Le code saisi ne correspond à aucun fonds référencé par Morningstar")
+        print("Le code saisi ne correspond à aucun fonds référencé par Quantalys")
         return -1
 
 
-msid = findMsIdByIsin("FR0011007251")
-print(msid)
+qsid = find_qs_id_by_isin("FR0011007251")
+print(qsid)
