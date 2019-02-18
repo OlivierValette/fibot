@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c12eb2ee-ef91-45e4-bb22-dfad6d75937a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/find_qs_id_by_isin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/find_qs_id_by_label.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample pages/listefonds.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample pages/view-source_www.quantalys.com_Fonds_131744.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findMsIdByIsin.py" beforeDir="false" afterPath="$PROJECT_DIR$/find_ms_id_by_isin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findMsIdByLabel.py" beforeDir="false" afterPath="$PROJECT_DIR$/find_ms_id_by_label.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample pages/listefonds.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/sample pages/Quantalys/listefonds.aspx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample pages/view-source_www.quantalys.com_Fonds_131744.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample pages/Quantalys/view-source_www.quantalys.com_Fonds_131744.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,42 +13,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/fibot$find_qs_id_by_label.coverage" NAME="find_qs_id_by_label Coverage Results" MODIFIED="1550497475441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fibot$fifindmsid.coverage" NAME="findMsIdByLabel Coverage Results" MODIFIED="1550159139920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fibot$fifouine.coverage" NAME="fifouine Coverage Results" MODIFIED="1549554625844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fibot$find_ms_id_by_label.coverage" NAME="find_qs_info Coverage Results" MODIFIED="1550491389176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fibot$find_qs_id_by_isin.coverage" NAME="find_qs_id_by_isin Coverage Results" MODIFIED="1550491533119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/find_qs_id_by_isin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="102" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/find_qs_id_by_label.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="18" column="48" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="89" column="8" lean-forward="true" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -84,14 +51,17 @@
         <option value="$PROJECT_DIR$/findQsIdByIsin.py" />
         <option value="$PROJECT_DIR$/find_ms_id_by_isin.py" />
         <option value="$PROJECT_DIR$/find_ms_id_by_label.py" />
-        <option value="$PROJECT_DIR$/find_qs_id_by_isin.py" />
         <option value="$PROJECT_DIR$/view-source_www.quantalys.com_Fonds_131744.html" />
-        <option value="$PROJECT_DIR$/find_qs_id_by_label.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/find_qs_info.py" />
+        <option value="$PROJECT_DIR$/find_qs_id_by_isin.py" />
+        <option value="$PROJECT_DIR$/get_qs_info.py" />
+        <option value="$PROJECT_DIR$/get_json_in_search_qs_id_by_label.py" />
+        <option value="$PROJECT_DIR$/find_qs_id_by_label.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-10" />
     <option name="width" value="1910" />
     <option name="height" value="1075" />
@@ -109,6 +79,11 @@
               <item name="fibot" type="b2602c69:ProjectViewProjectNode" />
               <item name="fibot" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="fibot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fibot" type="462c0819:PsiDirectoryNode" />
+              <item name="sample pages" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -118,13 +93,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/find_qs_id_by_label.py" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\php\patinoire\fibot\sample pages\Quantalys" />
       <recent name="C:\wamp64\www\php\patinoire\fibot\QS sample pages" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -143,8 +119,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="find_ms_id_by_label" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.find_qs_id_by_label">
+    <configuration name="find_qs_id_by_isin" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="fibot" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -157,7 +133,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\wamp64\www\php\patinoire\fibot\find_ms_id_by_label.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/find_qs_id_by_isin.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,6 +142,55 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="find_qs_id_by_label" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="fibot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\DEV\Python\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/find_qs_id_by_label.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_qs_info" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="fibot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\DEV\Python\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\wamp64\www\php\patinoire\fibot\get_qs_info.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.get_qs_info" />
+      <item itemvalue="Python.find_qs_id_by_isin" />
+      <item itemvalue="Python.find_qs_id_by_label" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="1" Folder0="G:\Mon Drive\DEV\DC\06a - Python" CustomDictionaries="1" CustomDictionary0="G:\Mon Drive\DEV\DC\06a - Python\fr.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
@@ -184,23 +209,22 @@
       <workItem from="1549880706655" duration="1350000" />
       <workItem from="1550147865785" duration="11034000" />
       <workItem from="1550216824492" duration="411000" />
-      <workItem from="1550477024601" duration="5483000" />
+      <workItem from="1550477024601" duration="19637000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21575000" />
+    <option name="totallyTimeSpent" value="35729000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1528" height="860" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="0" width="1528" height="860" extended-state="1" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27179837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36039886" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.42735043" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -227,16 +251,6 @@
         <state relative-caret-position="-1156" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fifouine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/muFunds/sources/morningstar.gs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -254,16 +268,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/find_ms_id_by_isin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/find_ms_id_by_label.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="806">
@@ -271,14 +275,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample pages/listefonds.aspx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-130">
-          <caret line="1737" column="57" selection-start-line="1737" selection-start-column="36" selection-end-line="1737" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample pages/view-source_www.quantalys.com_Fonds_131744.html">
+    <entry file="file://$PROJECT_DIR$/sample pages/Quantalys/view-source_www.quantalys.com_Fonds_131744.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="619">
           <caret line="2354" column="45" selection-start-line="2354" selection-start-column="45" selection-end-line="2354" selection-end-column="57" />
@@ -40987,10 +40984,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fifouine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/find_qs_id_by_isin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="102" />
+        <state relative-caret-position="676">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_qs_info.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_json_in_search_qs_id_by_label.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1300">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample pages/Quantalys/listefonds.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3302">
+          <caret line="1767" column="63" selection-start-line="1767" selection-start-column="52" selection-end-line="1767" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/find_ms_id_by_isin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="21" column="51" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="51" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -40999,15 +41050,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/find_qs_id_by_label.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="18" column="48" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="89" column="8" lean-forward="true" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+        <state relative-caret-position="-855">
+          <caret line="11" column="61" lean-forward="true" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
