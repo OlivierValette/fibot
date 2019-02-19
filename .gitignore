@@ -89,3 +89,4 @@ fabric.properties
 ### project specific ####
 muFunds/
 geckodriver.exe
+# search_results/

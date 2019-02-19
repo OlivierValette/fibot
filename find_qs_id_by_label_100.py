@@ -1,10 +1,12 @@
 import time
+from slugify import slugify
 from bs4 import BeautifulSoup
+import pandas
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+# from selenium.webdriver.common.by import By
+# from selenium.webdriver.support.ui import WebDriverWait
+# from selenium.webdriver.support import expected_conditions as EC
 
 # TODO: parameter to be stored in the database
 QS_SEARCH_URL = "http://www.quantalys.com/search/listefonds.aspx?autobind=1&autoredirect=1&ISINorNom="
@@ -56,6 +58,13 @@ def find_qs_id_by_label_100(label):
             'label': table_lines[i].a.text,
             'id': table_lines[i].a.get('href').split('/')[-1]
         })
+
+    df = pandas.read_html(str(table))
+
+    filename = slugify("QS_find_" + label, only_ascii=True) + ".json"
+    f = open("search_results\\" + filename, "w")
+    f.write(df[0].to_json(orient='records'))
+    f.close()
 
     return search_results
 
