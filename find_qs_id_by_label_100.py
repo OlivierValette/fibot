@@ -25,24 +25,22 @@ def find_qs_id_by_label_100(label):
     driver = webdriver.Firefox()
     driver.implicitly_wait(30)
     driver.get(target)
+    time.sleep(4)
 
     # first, close the cookie law box that shadows the targeted dropdown
     # get the input button by its id
     button = driver.find_element_by_id('btnFermer')
     # then click
     button.click()
+    time.sleep(4)
 
     # switch number of results lines from 25 to 100 in dropdown selector:
     # get the dropdown SELECT by its id
     dropdown = Select(driver.find_element_by_id('Contenu_Contenu_selectFunds_listeFonds_pager_ddlPageSize'))
     # select the OPTION with the value 100
     dropdown.select_by_value('100')
-    # then wait for the data to refresh
-    # try:
-    #     wait = WebDriverWait(driver, 5)
-    #     wait.until(EC.element_to_be_clickable((By.ID, "Contenu_Contenu_selectFunds_listeFonds_pager_btnFirst")))
-    # finally:
-    time.sleep(2)
+    time.sleep(4)
+
     # back to Beautiful Soup
     pagecontent = BeautifulSoup(driver.page_source, "html.parser")
     # quit webdriver
@@ -71,4 +69,4 @@ def find_qs_id_by_label_100(label):
 
 msid = find_qs_id_by_label_100("Comgest")
 for i in range(0, len(msid)):
-    print("i=", i, "-->", msid[i])
+    print("i=", i+1, "-->", msid[i])
