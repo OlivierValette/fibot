@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c12eb2ee-ef91-45e4-bb22-dfad6d75937a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/find_ms_id_by_isin.py" beforeDir="false" afterPath="$PROJECT_DIR$/find_ms_id_by_isin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testing/get_ms_data_from_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/get_ms_data_from_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/get_ms_infos.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/get_ms_infos.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,33 +17,21 @@
     <SUITE FILE_PATH="coverage/fibot$find_qs_id_by_label_v2.coverage" NAME="find_qs_id_by_label_100 Coverage Results" MODIFIED="1550588159695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fibot$find_qs_id_by_label.coverage" NAME="find_qs_id_by_label Coverage Results" MODIFIED="1550566504705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fibot$find_ms_id_by_isin.coverage" NAME="find_ms_id_by_isin Coverage Results" MODIFIED="1550585243352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/fibot$get_ms_infos.coverage" NAME="get_ms_data_from_api Coverage Results" MODIFIED="1553681419594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testing" />
+    <SUITE FILE_PATH="coverage/fibot$get_ms_infos.coverage" NAME="get_ms_data_from_api Coverage Results" MODIFIED="1553681750470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testing" />
     <SUITE FILE_PATH="coverage/fibot$fifindmsid.coverage" NAME="findMsIdByLabel Coverage Results" MODIFIED="1550159139920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fibot$fifouine.coverage" NAME="fifouine Coverage Results" MODIFIED="1549554625844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fibot$find_ms_id_by_label.coverage" NAME="find_qs_info Coverage Results" MODIFIED="1550491389176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fibot$find_qs_id_by_isin.coverage" NAME="find_qs_id_by_isin Coverage Results" MODIFIED="1550491533119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fibot$find_qs_id_by_label_100.coverage" NAME="find_qs_id_by_label_100 Coverage Results" MODIFIED="1550660421651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fibot$get_qs_info.coverage" NAME="get_ms_infos_fn Coverage Results" MODIFIED="1553695739294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testing" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testing/get_ms_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testing/pages/ms.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24674">
-              <caret line="949" selection-start-line="949" selection-end-line="962" selection-end-column="52" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#9;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="104">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -49,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testing/get_ms_infos.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+            <state relative-caret-position="1690">
+              <caret line="164" column="39" lean-forward="true" selection-start-line="164" selection-start-column="39" selection-end-line="164" selection-end-column="39" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -59,10 +49,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/testing/get_ms_infos_fn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="84" column="33" lean-forward="true" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testing/get_ms_data_from_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1107">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="370">
+              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
               <folding>
                 <element signature="e#48#59#0" expanded="true" />
               </folding>
@@ -73,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/find_ms_id_by_isin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="4" column="13" selection-start-line="4" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="338">
+              <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -113,7 +115,6 @@
         <option value="$PROJECT_DIR$/findMsIdByLabel.py" />
         <option value="$PROJECT_DIR$/findMsIdByIsin.py" />
         <option value="$PROJECT_DIR$/findQsIdByIsin.py" />
-        <option value="$PROJECT_DIR$/find_ms_id_by_isin.py" />
         <option value="$PROJECT_DIR$/find_ms_id_by_label.py" />
         <option value="$PROJECT_DIR$/view-source_www.quantalys.com_Fonds_131744.html" />
         <option value="$PROJECT_DIR$/find_qs_info.py" />
@@ -130,8 +131,10 @@
         <option value="$PROJECT_DIR$/testing/get_ms_info.py" />
         <option value="$PROJECT_DIR$/testing/pages/ms.html" />
         <option value="$PROJECT_DIR$/testing/get_ms_page.py" />
-        <option value="$PROJECT_DIR$/testing/get_ms_infos.py" />
         <option value="$PROJECT_DIR$/testing/get_ms_data_from_api.py" />
+        <option value="$PROJECT_DIR$/find_ms_id_by_isin.py" />
+        <option value="$PROJECT_DIR$/testing/get_ms_infos.py" />
+        <option value="$PROJECT_DIR$/testing/get_ms_infos_fn.py" />
       </list>
     </option>
   </component>
@@ -173,21 +176,21 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/testing/get_ms_data_from_api.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/testing/get_ms_infos_fn.py" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\php\patinoire\fibot\testing" />
+      <recent name="C:\wamp64\www\php\patinoire\fibot" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\php\patinoire\fibot\testing\pages" />
       <recent name="C:\wamp64\www\php\patinoire\fibot\Testing" />
       <recent name="C:\wamp64\www\php\patinoire\fibot\sample pages\Quantalys" />
       <recent name="C:\wamp64\www\php\patinoire\fibot\QS sample pages" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\php\patinoire\fibot\testing" />
-      <recent name="C:\wamp64\www\php\patinoire\fibot" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -202,7 +205,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.get_ms_data_from_api">
+  <component name="RunManager" selected="Python.get_ms_infos_fn">
     <configuration name="find_ms_id_by_isin" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="fibot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -291,7 +294,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="get_qs_info" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="get_ms_infos_fn" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="fibot" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -299,12 +302,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\DEV\Python\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testing" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\wamp64\www\php\patinoire\fibot\get_qs_info.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testing/get_ms_infos_fn.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -314,7 +317,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.get_qs_info" />
+      <item itemvalue="Python.get_ms_infos_fn" />
       <item itemvalue="Python.find_qs_id_by_isin" />
       <item itemvalue="Python.find_qs_id_by_label" />
       <item itemvalue="Python.get_ms_data_from_api" />
@@ -345,23 +348,22 @@
       <workItem from="1553522097069" duration="78000" />
       <workItem from="1553522247734" duration="1879000" />
       <workItem from="1553593164834" duration="17065000" />
-      <workItem from="1553671893799" duration="7091000" />
+      <workItem from="1553671893799" duration="19925000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84200000" />
+    <option name="totallyTimeSpent" value="97034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1540" height="840" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17094594" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31671554" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37683284" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398827" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1721,16 +1723,19 @@
     <entry file="file://$PROJECT_DIR$/testing/pages/ms1.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/testing/get_ms_page.py">
+    <entry file="file://$PROJECT_DIR$/find_ms_id_by_isin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="77" />
+        <state relative-caret-position="338">
+          <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testing/pages/ms.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24674">
+        <state relative-caret-position="26">
           <caret line="949" selection-start-line="949" selection-end-line="962" selection-end-column="52" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1739,20 +1744,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/find_ms_id_by_isin.py">
+    <entry file="file://$PROJECT_DIR$/testing/get_ms_page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="4" column="13" selection-start-line="4" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="104">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testing/get_ms_infos.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        <state relative-caret-position="1690">
+          <caret line="164" column="39" lean-forward="true" selection-start-line="164" selection-start-column="39" selection-end-line="164" selection-end-column="39" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
@@ -1761,10 +1763,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testing/get_ms_data_from_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1107">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="370">
+          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
           <folding>
             <element signature="e#48#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/get_ms_infos_fn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="84" column="33" lean-forward="true" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>

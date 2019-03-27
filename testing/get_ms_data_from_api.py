@@ -5,7 +5,7 @@ import requests
 from datetime import datetime
 
 
-def get_historical_values(id, cur, freq, d1, d2) :
+def get_historical_values(fid, cur, freq, d1, d2):
     api_token = ''
     API_URL_BASE = "http://tools.morningstar.fr/api/rest.svc/timeseries_price/ok91jeenoo?"
     P_ID = "id="
@@ -17,7 +17,7 @@ def get_historical_values(id, cur, freq, d1, d2) :
     P_TO = "&endDate="
     P_FORMAT= "&outputType=COMPACTJSON"
 
-    api_url = API_URL_BASE + P_ID + id + P_CUR + cur + P_TYPE + P_PRICE + P_FREQ + freq + P_FROM + d1 + P_TO + d2 + P_FORMAT
+    api_url = API_URL_BASE + P_ID + fid + P_CUR + cur + P_TYPE + P_PRICE + P_FREQ + freq + P_FROM + d1 + P_TO + d2 + P_FORMAT
     headers = {'Content-Type': 'application/json'}
 
     response = requests.get(api_url, headers=headers)
@@ -37,7 +37,7 @@ historical_values = get_historical_values(ms_id, cur_id, frequency, starts, ends
 
 if len(historical_values) > 0:
     print("Historical data for : " + ms_id)
-    for i in range(len(historical_values)-1):
+    for i in range(len(historical_values)):
         # timestamp given in milliseconds
         ts = historical_values[i][0]/1000
         print(datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d'), " -> ", historical_values[i][1], cur_id)

@@ -1,6 +1,27 @@
 from bs4 import BeautifulSoup
 import re
 
+
+# general function to find info in soup
+def get_ms(bs, t_tag, t_class, ix, attr, sfy):
+    p = len(t_tag)
+    print(p)
+    needle = bs
+    for i in range(0, 2):
+        # level i
+        needle = needle.find(t_tag[i], class_=t_class[i])
+        print("===============>", attr[i] if attr[i] else "null", ix[i])
+        if attr[i] != "":
+            needle = needle[attr[i]]
+        if ix[i] != "":
+            needle = needle[ix[i]]
+        print(needle)
+        if i == p - 1:
+            return needle.string if sfy else needle
+    print("Erreur de profondeur")
+    return
+
+
 # read the file back to retrieve saved page
 with open("pages/ms.html") as f:
     # use the html parser to parse the url content and store it in a variable
@@ -14,25 +35,11 @@ print(title)
 # NAME AND RATING
 # <div class="snapshotTitleBox">
 #    <h1>Comgest Monde C</h1><span class="rating_sprite stars4"></span>
-target_tag = "div"
-target_class = "snapshotTitleBox"
-index = ""
-sub_target_tag = "h1"
-sub_target_class = ""
-sub_index = ""
-output = "string"
-name = soup.find(target_tag, class_=target_class).find(sub_target_tag).string
+name = get_ms(soup, ["div", "h1"], ["snapshotTitleBox", ""], ["", ""], ["", ""], True)
+print("Nom : " + name)
 
-target_tag = "span"
-target_class = "rating_sprite"
-index = ""
-sub_target_tag = ""
-sub_target_class = ""
-sub_index = 1
-output = "class"
-rating = soup.find(target_tag, class_=target_class)[output][sub_index]
-print(name)
-print(rating)
+rating = get_ms(soup, ["span"], ["rating_sprite"], [1], ["class"], False)
+print("Rating : " + rating)
 
 # PERFORMANCES ANNUELLES DU FONDS
 # 1) Date de référence
@@ -40,15 +47,8 @@ print(rating)
 #     <tr>
 #        <td class="titleBarHeading">Performance du fonds</td>
 #        <td class="titleBarNote">28/02/2019</td>
-target_tag = "table"
-target_class = "overviewPerformanceTable"
-index = ""
-sub_target_tag = "td"
-sub_target_class = "titleBarNote"
-sub_index = ""
-output = "string"
-updated = soup.find(target_tag, class_=target_class).find(sub_target_tag, class_=sub_target_class).string
-print(updated)
+updated = get_ms(soup, ["table","td"], ["overviewPerformanceTable", "titleBarNote"], ["", ""], ["", ""], True)
+print("Updated on : " + updated)
 
 # 2) Valeurs annuelles
 # <div id="overviewCalenderYearReturnsDiv">
@@ -64,23 +64,12 @@ print(updated)
 #           <td class="col5 value number">19,4</td>   2017   A-2
 #           <td class="col6 value number">3,9</td>    2018   A-1
 #           <td class="col7 value number">8,2</td>    2019   A
-target_tag = "table"
-target_class = "overviewCalenderYearReturnsTable"
-index = ""
-sub_target_tag = "td"
-sub_index = ""
-output = "string"
 performance = []
-sub_target_class = "col7"
-performance.append(soup.find(target_tag, class_=target_class).find(sub_target_tag, class_=sub_target_class).string)
-sub_target_class = "col6"
-performance.append(soup.find(target_tag, class_=target_class).find(sub_target_tag, class_=sub_target_class).string)
-sub_target_class = "col5"
-performance.append(soup.find(target_tag, class_=target_class).find(sub_target_tag, class_=sub_target_class).string)
-sub_target_class = "col4"
-performance.append(soup.find(target_tag, class_=target_class).find(sub_target_tag, class_=sub_target_class).string)
-sub_target_class = "col3"
-performance.append(soup.find(target_tag, class_=target_class).find(sub_target_tag, class_=sub_target_class).string)
+performance.append(get_ms(soup, ["table", "td"], ["overviewCalenderYearReturnsTable", "col7"], ["", ""], ["", ""], True))
+performance.append(get_ms(soup, ["table", "td"], ["overviewCalenderYearReturnsTable", "col6"], ["", ""], ["", ""], True))
+performance.append(get_ms(soup, ["table", "td"], ["overviewCalenderYearReturnsTable", "col5"], ["", ""], ["", ""], True))
+performance.append(get_ms(soup, ["table", "td"], ["overviewCalenderYearReturnsTable", "col4"], ["", ""], ["", ""], True))
+performance.append(get_ms(soup, ["table", "td"], ["overviewCalenderYearReturnsTable", "col3"], ["", ""], ["", ""], True))
 print(performance)
 
 # BENCHMARK
@@ -88,24 +77,12 @@ print(performance)
 #               <span class="label">Benchmark:</span>
 #               <span class="value" title="MSCI World Growth NR USD">MSCI World Growth NR USD</span>
 #           </td>
-target_tag = "table"
-target_class = "overviewCalenderYearReturnsTable"
-index = ""
-sub_target_tag = "td"
-sub_target_class = "footer"
-sub_index = 0
-sub2_target_tag = "span"
-sub2_target_class = "value"
-sub2_index = 0
-output = "string"
-category = soup.find(target_tag, class_=target_class).find_all(
-    sub_target_tag, class_=sub_target_class)[sub_index].find(
-    sub2_target_tag, class_=sub2_target_class).string
-print("Catégorie : " + category)
-sub_index = 1
-benchmark = soup.find(target_tag, class_=target_class).find_all(
-    sub_target_tag, class_=sub_target_class)[sub_index].find(
-    sub2_target_tag, class_=sub2_target_class).string
+benchmark = get_ms(soup,
+                   ["table", "td", "span"],
+                   ["overviewCalenderYearReturnsTable", "footer", "value"],
+                   ["", 1, ""],
+                   ["", "", ""],
+                   True)
 print("Benchmark : " + benchmark)
 
 # VALEUR LIQUIDATIVE ET DATE
@@ -188,4 +165,6 @@ sub2_target_class = ""
 sub2_index = ""
 output = "string"
 ISIN = soup.find(target_tag, class_=target_class).find_all(sub_target_tag, class_=sub_target_class)[2].string
+print("Isin : " + ISIN)
+ISIN = get_ms(soup, 2, target_tag, target_class, index, sub_target_tag, sub_target_class, 2, "string")
 print("Isin : " + ISIN)
