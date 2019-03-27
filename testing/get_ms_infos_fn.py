@@ -8,14 +8,16 @@ def get_ms(bs, t_tag, t_class, ix, attr, sfy):
     print(p)
     needle = bs
     for i in range(0, 2):
-        # level i
-        needle = needle.find(t_tag[i], class_=t_class[i])
-        print("===============>", attr[i] if attr[i] else "null", ix[i])
-        if attr[i] != "":
-            needle = needle[attr[i]]
+        print("===============>", ix[i] if ix[i] else "null", attr[i] if attr[i] else "null")
         if ix[i] != "":
-            needle = needle[ix[i]]
-        print(needle)
+            if attr[i] == "":
+                needle = needle.find_all(t_tag[i], class_=t_class[i])[ix[i]]
+            else:
+                needle = needle.find(t_tag[i], class_=t_class[i])[attr[i]][ix[i]]
+        else:
+            needle = needle.find(t_tag[i], class_=t_class[i])
+            if attr[i] != "":
+                needle = needle[attr[i]]
         if i == p - 1:
             return needle.string if sfy else needle
     print("Erreur de profondeur")
@@ -47,7 +49,7 @@ print("Rating : " + rating)
 #     <tr>
 #        <td class="titleBarHeading">Performance du fonds</td>
 #        <td class="titleBarNote">28/02/2019</td>
-updated = get_ms(soup, ["table","td"], ["overviewPerformanceTable", "titleBarNote"], ["", ""], ["", ""], True)
+updated = get_ms(soup, ["table", "td"], ["overviewPerformanceTable", "titleBarNote"], ["", ""], ["", ""], True)
 print("Updated on : " + updated)
 
 # 2) Valeurs annuelles
@@ -73,7 +75,7 @@ performance.append(get_ms(soup, ["table", "td"], ["overviewCalenderYearReturnsTa
 print(performance)
 
 # BENCHMARK
-#           <td colspan="7" class="footer">
+#           <td colspan="7" class="footer"> --- second one!
 #               <span class="label">Benchmark:</span>
 #               <span class="value" title="MSCI World Growth NR USD">MSCI World Growth NR USD</span>
 #           </td>
