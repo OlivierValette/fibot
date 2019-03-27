@@ -2,6 +2,7 @@
 # monthly update
 import json
 import requests
+from datetime import datetime
 
 
 def get_historical_values(id, cur, freq, d1, d2) :
@@ -34,9 +35,11 @@ starts = "1991-12-31"
 ends = "2018-12-31"
 historical_values = get_historical_values(ms_id, cur_id, frequency, starts, ends)
 
-if historical_values is not None:
-    print("Here's your info: ")
-    for k, v in account_info['account'].items():
-        print('{0}:{1}'.format(k, v))
+if len(historical_values) > 0:
+    print("Historical data for : " + ms_id)
+    for i in range(len(historical_values)-1):
+        # timestamp given in milliseconds
+        ts = historical_values[i][0]/1000
+        print(datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d'), " -> ", historical_values[i][1], cur_id)
 else:
     print('[!] Request Failed')

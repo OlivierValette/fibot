@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c12eb2ee-ef91-45e4-bb22-dfad6d75937a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/find_qs_id_by_label_100.py" beforeDir="false" afterPath="$PROJECT_DIR$/find_qs_id_by_label_100.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search_results/qs_find_comgest.json" beforeDir="false" afterPath="$PROJECT_DIR$/search_results/qs_find_comgest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/get_ms_data_from_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/get_ms_data_from_api.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +15,7 @@
     <SUITE FILE_PATH="coverage/fibot$find_qs_id_by_label_v2.coverage" NAME="find_qs_id_by_label_100 Coverage Results" MODIFIED="1550588159695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fibot$find_qs_id_by_label.coverage" NAME="find_qs_id_by_label Coverage Results" MODIFIED="1550566504705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fibot$find_ms_id_by_isin.coverage" NAME="find_ms_id_by_isin Coverage Results" MODIFIED="1550585243352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/fibot$get_ms_infos.coverage" NAME="get_ms_infos Coverage Results" MODIFIED="1553678273378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testing" />
+    <SUITE FILE_PATH="coverage/fibot$get_ms_infos.coverage" NAME="get_ms_data_from_api Coverage Results" MODIFIED="1553681419594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testing" />
     <SUITE FILE_PATH="coverage/fibot$fifindmsid.coverage" NAME="findMsIdByLabel Coverage Results" MODIFIED="1550159139920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fibot$fifouine.coverage" NAME="fifouine Coverage Results" MODIFIED="1549554625844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fibot$find_ms_id_by_label.coverage" NAME="find_qs_info Coverage Results" MODIFIED="1550491389176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -64,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testing/get_ms_data_from_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="41" column="31" lean-forward="true" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+            <state relative-caret-position="1107">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="e#48#59#0" expanded="true" />
               </folding>
@@ -176,7 +173,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/testing/get_ms_infos.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/testing/get_ms_data_from_api.py" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -205,7 +202,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.get_ms_infos">
+  <component name="RunManager" selected="Python.get_ms_data_from_api">
     <configuration name="find_ms_id_by_isin" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="fibot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -272,7 +269,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="get_ms_infos" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="get_ms_data_from_api" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="fibot" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -285,7 +282,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testing/get_ms_infos.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testing/get_ms_data_from_api.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -320,7 +317,7 @@
       <item itemvalue="Python.get_qs_info" />
       <item itemvalue="Python.find_qs_id_by_isin" />
       <item itemvalue="Python.find_qs_id_by_label" />
-      <item itemvalue="Python.get_ms_infos" />
+      <item itemvalue="Python.get_ms_data_from_api" />
       <item itemvalue="Python.find_ms_id_by_isin" />
     </list>
   </component>
@@ -348,12 +345,12 @@
       <workItem from="1553522097069" duration="78000" />
       <workItem from="1553522247734" duration="1879000" />
       <workItem from="1553593164834" duration="17065000" />
-      <workItem from="1553671893799" duration="6133000" />
+      <workItem from="1553671893799" duration="7091000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83242000" />
+    <option name="totallyTimeSpent" value="84200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1540" height="840" extended-state="0" />
@@ -1764,8 +1761,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testing/get_ms_data_from_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="41" column="31" lean-forward="true" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+        <state relative-caret-position="1107">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="e#48#59#0" expanded="true" />
           </folding>
