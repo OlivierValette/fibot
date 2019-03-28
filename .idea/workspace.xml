@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c12eb2ee-ef91-45e4-bb22-dfad6d75937a" name="Default Changelist" comment="" />
+    <list default="true" id="c12eb2ee-ef91-45e4-bb22-dfad6d75937a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/get_ms_infos.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/get_ms_infos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/get_ms_infos_fn.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/get_ms_infos_fn.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,19 +28,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testing/get_ms_page.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testing/get_ms_infos.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="164" column="39" selection-start-line="164" selection-start-column="39" selection-end-line="164" selection-end-column="39" />
+            <state relative-caret-position="917">
+              <caret line="156" column="21" lean-forward="true" selection-start-line="156" selection-start-column="21" selection-end-line="156" selection-end-column="21" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -47,34 +42,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testing/get_ms_infos_fn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="85" column="32" lean-forward="true" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+            <state relative-caret-position="744">
+              <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testing/get_ms_data_from_api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-              <folding>
-                <element signature="e#48#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/find_ms_id_by_isin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,7 +106,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-10" />
     <option name="width" value="1925" />
     <option name="height" value="1050" />
@@ -174,7 +145,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/testing/get_ms_infos_fn.py" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -351,21 +322,24 @@
       <workItem from="1553593164834" duration="17065000" />
       <workItem from="1553671893799" duration="20726000" />
       <workItem from="1553696674842" duration="2398000" />
+      <workItem from="1553758372897" duration="1981000" />
+      <workItem from="1553760481058" duration="1124000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100233000" />
+    <option name="totallyTimeSpent" value="103338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1540" height="840" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1734143" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17746289" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3762811" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3762811" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398827" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -374,8 +348,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.329429" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -387,7 +361,7 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/fibot$get_ms_infos_fn.coverage" NAME="get_ms_infos_fn Coverage Results" MODIFIED="1553698432806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testing" />
+    <SUITE FILE_PATH="coverage/fibot$get_ms_infos_fn.coverage" NAME="get_ms_infos_fn Coverage Results" MODIFIED="1553761591462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testing" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/muFunds/main.gs">
@@ -1748,7 +1722,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testing/get_ms_data_from_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
+        <state relative-caret-position="317">
           <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
           <folding>
             <element signature="e#48#59#0" expanded="true" />
@@ -1758,7 +1732,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/find_ms_id_by_isin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
+        <state relative-caret-position="317">
           <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -1768,8 +1742,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testing/get_ms_infos.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="164" column="39" selection-start-line="164" selection-start-column="39" selection-end-line="164" selection-end-column="39" />
+        <state relative-caret-position="917">
+          <caret line="156" column="21" lean-forward="true" selection-start-line="156" selection-start-column="21" selection-end-line="156" selection-end-column="21" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
@@ -1778,8 +1752,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testing/get_ms_infos_fn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="85" column="32" lean-forward="true" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+        <state relative-caret-position="744">
+          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>

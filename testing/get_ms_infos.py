@@ -153,10 +153,8 @@ target_class = "overviewKeyStatsTable"
 index = ""
 sub_target_tag = "td"
 sub_target_class = "line value text"
-sub_index = 0
 sub2_target_tag = "a"
 sub2_target_class = ""
-sub2_index = 1
 output = "string"
 category = soup.find(target_tag, class_=target_class).find(
     sub_target_tag, class_=sub_target_class).find(

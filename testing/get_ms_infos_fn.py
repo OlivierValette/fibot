@@ -2,24 +2,41 @@ from bs4 import BeautifulSoup
 import re
 
 
-# general function to find info in soup
 def get_ms(bs, t_tag, t_class, ix, attr, sfy):
+    """general function to find MS info in soup
+
+    :param bs: soup
+    Search parameters in arrays (one to three values according to depth)
+    :param t_tag: target tag
+    :param t_class: target class
+    :param ix: target index
+    :param attr: target attribute or content
+    :param sfy: stringify (boolean)
+    :return: seeked value
+    """
+
     p = len(t_tag)
-    print(p)
     needle = bs
-    for i in range(0, 2):
-        print("===============>", ix[i] if ix[i] else "null", attr[i] if attr[i] else "null")
+
+    for i in range(0, 3):
         if ix[i] != "":
             if attr[i] == "":
                 needle = needle.find_all(t_tag[i], class_=t_class[i])[ix[i]]
             else:
-                needle = needle.find(t_tag[i], class_=t_class[i])[attr[i]][ix[i]]
+                if attr[i] == "contents":
+                    needle = needle.find(t_tag[i], class_=t_class[i]).contents[ix[i]]
+                else:
+                    needle = needle.find(t_tag[i], class_=t_class[i])[attr[i]][ix[i]]
         else:
             needle = needle.find(t_tag[i], class_=t_class[i])
             if attr[i] != "":
-                needle = needle[attr[i]]
+                if attr[i] == "contents":
+                    needle = needle.contents
+                else:
+                    needle = needle[attr[i]]
         if i == p - 1:
             return needle.string if sfy else needle
+
     print("Erreur de profondeur")
     return
 
@@ -49,7 +66,12 @@ print("Rating : " + rating)
 #     <tr>
 #        <td class="titleBarHeading">Performance du fonds</td>
 #        <td class="titleBarNote">28/02/2019</td>
-updated = get_ms(soup, ["table", "td"], ["overviewPerformanceTable", "titleBarNote"], ["", ""], ["", ""], True)
+updated = get_ms(soup,
+                 ["table", "td"],
+                 ["overviewPerformanceTable", "titleBarNote"],
+                 ["", ""],
+                 ["", ""],
+                 True)
 print("Updated on : " + updated)
 
 # 2) Valeurs annuelles
@@ -95,26 +117,21 @@ print("Benchmark : " + benchmark)
 #              <tr><td class="line heading">VL<span class="heading"><br/>25/03/2019</span></td>
 #                  <td class="line"> </td>
 #                  <td class="line text">EUR 2023,71</td>
-target_tag = "table"
-target_class = "overviewKeyStatsTable"
-index = ""
-sub_target_tag = "td"
-sub_target_class = "line heading"
-sub_index = 0
-sub2_target_tag = "span"
-sub2_target_class = "heading"
-sub2_index = 1
 output = "contents"
-updated = soup.find(target_tag, class_=target_class).find(
-    sub_target_tag, class_=sub_target_class).find(
-    sub2_target_tag, class_=sub2_target_class).contents[sub2_index]
+updated = get_ms(soup,
+                 ["table", "td", "span"],
+                 ["overviewKeyStatsTable", "line heading", "heading"],
+                 ["", 0, 1],
+                 ["", "", "contents"],
+                 False)
 print("Date : " + updated)
 
-sub_target_class = "line text"
-sub2_target_tag = ""
-sub2_target_class = ""
-output = "string"
-value = soup.find(target_tag, class_=target_class).find(sub_target_tag, class_=sub_target_class).string
+value = get_ms(soup,
+               ["table", "td"],
+               ["overviewKeyStatsTable", "line text"],
+               ["", ""],
+               ["", ""],
+               True)
 lvalue = value[value.find(u'\xa0')+1:]
 cvalue = value[:value.find(u'\xa0')-1]
 print("Valeur liq. : " + lvalue)
@@ -127,27 +144,24 @@ print("Devise : " + cvalue)
 #                      <a href="/fr/fundquickrank/default.aspx?category=EUCA000556" style="width:100%!important;">
 #                           Actions Internationales Gdes Cap. Croissance</a>
 #                  </td></tr>
-target_tag = "table"
-target_class = "overviewKeyStatsTable"
-index = ""
-sub_target_tag = "td"
-sub_target_class = "line value text"
-sub_index = 0
-sub2_target_tag = "a"
-sub2_target_class = ""
-sub2_index = 1
-output = "string"
-category = soup.find(target_tag, class_=target_class).find(
-    sub_target_tag, class_=sub_target_class).find(
-    sub2_target_tag).string.strip()
+category = get_ms(soup,
+                  ["table", "td", "a"],
+                  ["overviewKeyStatsTable", "line value text", ""],
+                  ["", "", ""],
+                  ["", "", ""],
+                  True)
+category = category.strip()
 # Special use of regex to clean special characters
 category = re.sub('\W+', ' ', category)
 print("Catégorie : " + category)
 
 output = "href"
-catcode = soup.find(target_tag, class_=target_class).find(
-    sub_target_tag, class_=sub_target_class).find(
-    sub2_target_tag)[output]
+catcode = get_ms(soup,
+                 ["table", "td", "a"],
+                 ["overviewKeyStatsTable", "line value text", ""],
+                 ["", 0, 1],
+                 ["", "", "href"],
+                 False)
 catcode = catcode[catcode.find("=")+1:]
 print("Code catégorie MS : " + catcode)
 
@@ -156,17 +170,10 @@ print("Code catégorie MS : " + catcode)
 #                      <td class="line"> </td>
 #                      <td class="line text">FR0000284689</td>
 #                  </tr>
-target_tag = "table"
-target_class = "overviewKeyStatsTable"
-index = ""
-sub_target_tag = "td"
-sub_target_class = "line text"
-sub_index = 2
-sub2_target_tag = ""
-sub2_target_class = ""
-sub2_index = ""
-output = "string"
-ISIN = soup.find(target_tag, class_=target_class).find_all(sub_target_tag, class_=sub_target_class)[2].string
-print("Isin : " + ISIN)
-ISIN = get_ms(soup, 2, target_tag, target_class, index, sub_target_tag, sub_target_class, 2, "string")
+ISIN = get_ms(soup,
+              ["table", "td"],
+              ["overviewKeyStatsTable", "line text"],
+              ["", 2],
+              ["", ""],
+              True)
 print("Isin : " + ISIN)
