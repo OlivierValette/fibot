@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import re
 
 
-def get_ms(bs, t_tag, t_class, ix, attr, sfy):
+def lookup(bs, t_tag, t_class, ix, attr, sfy):
     """general function to find MS info in soup
 
     :param bs: soup
@@ -21,7 +21,10 @@ def get_ms(bs, t_tag, t_class, ix, attr, sfy):
     for i in range(0, 3):
         if ix[i] != "":
             if attr[i] == "":
-                needle = needle.find_all(t_tag[i], class_=t_class[i])[ix[i]]
+                if t_class[i] == "":
+                    needle = needle.find_all(t_tag[i])[ix[i]]
+                else:
+                    needle = needle.find_all(t_tag[i], class_=t_class[i])[ix[i]]
             else:
                 if attr[i] == "contents":
                     needle = needle.find(t_tag[i], class_=t_class[i]).contents[ix[i]]
@@ -54,10 +57,10 @@ print(title)
 # NAME AND RATING
 # <div class="snapshotTitleBox">
 #    <h1>Comgest Monde C</h1><span class="rating_sprite stars4"></span>
-name = get_ms(soup, ["div", "h1"], ["snapshotTitleBox", ""], ["", ""], ["", ""], True)
+name = lookup(soup, ["div", "h1"], ["snapshotTitleBox", ""], ["", ""], ["", ""], True)
 print("Nom : " + name)
 
-rating = get_ms(soup, ["span"], ["rating_sprite"], [1], ["class"], False)
+rating = lookup(soup, ["span"], ["rating_sprite"], [1], ["class"], False)
 print("Rating : " + rating)
 
 # PERFORMANCES ANNUELLES DU FONDS
@@ -66,7 +69,7 @@ print("Rating : " + rating)
 #     <tr>
 #        <td class="titleBarHeading">Performance du fonds</td>
 #        <td class="titleBarNote">28/02/2019</td>
-updated = get_ms(soup,
+updated = lookup(soup,
                  ["table", "td"],
                  ["overviewPerformanceTable", "titleBarNote"],
                  ["", ""],
@@ -89,11 +92,11 @@ print("Updated on : " + updated)
 #           <td class="col6 value number">3,9</td>    2018   A-1
 #           <td class="col7 value number">8,2</td>    2019   A
 performance = []
-performance.append(get_ms(soup, ["table", "td"], ["overviewCalenderYearReturnsTable", "col7"], ["", ""], ["", ""], True))
-performance.append(get_ms(soup, ["table", "td"], ["overviewCalenderYearReturnsTable", "col6"], ["", ""], ["", ""], True))
-performance.append(get_ms(soup, ["table", "td"], ["overviewCalenderYearReturnsTable", "col5"], ["", ""], ["", ""], True))
-performance.append(get_ms(soup, ["table", "td"], ["overviewCalenderYearReturnsTable", "col4"], ["", ""], ["", ""], True))
-performance.append(get_ms(soup, ["table", "td"], ["overviewCalenderYearReturnsTable", "col3"], ["", ""], ["", ""], True))
+performance.append(lookup(soup, ["table", "td"], ["overviewCalenderYearReturnsTable", "col7"], ["", ""], ["", ""], True))
+performance.append(lookup(soup, ["table", "td"], ["overviewCalenderYearReturnsTable", "col6"], ["", ""], ["", ""], True))
+performance.append(lookup(soup, ["table", "td"], ["overviewCalenderYearReturnsTable", "col5"], ["", ""], ["", ""], True))
+performance.append(lookup(soup, ["table", "td"], ["overviewCalenderYearReturnsTable", "col4"], ["", ""], ["", ""], True))
+performance.append(lookup(soup, ["table", "td"], ["overviewCalenderYearReturnsTable", "col3"], ["", ""], ["", ""], True))
 print(performance)
 
 # BENCHMARK
@@ -101,7 +104,7 @@ print(performance)
 #               <span class="label">Benchmark:</span>
 #               <span class="value" title="MSCI World Growth NR USD">MSCI World Growth NR USD</span>
 #           </td>
-benchmark = get_ms(soup,
+benchmark = lookup(soup,
                    ["table", "td", "span"],
                    ["overviewCalenderYearReturnsTable", "footer", "value"],
                    ["", 1, ""],
@@ -118,7 +121,7 @@ print("Benchmark : " + benchmark)
 #                  <td class="line"> </td>
 #                  <td class="line text">EUR 2023,71</td>
 output = "contents"
-updated = get_ms(soup,
+updated = lookup(soup,
                  ["table", "td", "span"],
                  ["overviewKeyStatsTable", "line heading", "heading"],
                  ["", 0, 1],
@@ -126,7 +129,7 @@ updated = get_ms(soup,
                  False)
 print("Date : " + updated)
 
-value = get_ms(soup,
+value = lookup(soup,
                ["table", "td"],
                ["overviewKeyStatsTable", "line text"],
                ["", ""],
@@ -144,7 +147,7 @@ print("Devise : " + cvalue)
 #                      <a href="/fr/fundquickrank/default.aspx?category=EUCA000556" style="width:100%!important;">
 #                           Actions Internationales Gdes Cap. Croissance</a>
 #                  </td></tr>
-category = get_ms(soup,
+category = lookup(soup,
                   ["table", "td", "a"],
                   ["overviewKeyStatsTable", "line value text", ""],
                   ["", "", ""],
@@ -156,7 +159,7 @@ category = re.sub('\W+', ' ', category)
 print("Catégorie : " + category)
 
 output = "href"
-catcode = get_ms(soup,
+catcode = lookup(soup,
                  ["table", "td", "a"],
                  ["overviewKeyStatsTable", "line value text", ""],
                  ["", 0, 1],
@@ -170,7 +173,7 @@ print("Code catégorie MS : " + catcode)
 #                      <td class="line"> </td>
 #                      <td class="line text">FR0000284689</td>
 #                  </tr>
-ISIN = get_ms(soup,
+ISIN = lookup(soup,
               ["table", "td"],
               ["overviewKeyStatsTable", "line text"],
               ["", 2],
