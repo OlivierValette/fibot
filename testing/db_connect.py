@@ -13,17 +13,20 @@ config = {
 cnx = mysql.connector.connect(**config)
 cursor = cnx.cursor()
 
-query = "SELECT name, url FROM source"
+query = "SELECT name, search_url, fund_url FROM source"
 cursor.execute(query)
-target = {}
-for (name, url) in cursor:
-    target[name] = url
-print(target)
+s_url = {}
+f_url = {}
+for (name, search_url, fund_url) in cursor:
+    s_url[name] = search_url
+    f_url[name] = fund_url
+print(s_url)
+print(f_url)
 cursor.close()
 cnx.close()
 
 # test url to scrape from
-MS_FUND_URL = 'http://www.morningstar.fr/fr/funds/snapshot/snapshot.aspx?id='
+MS_FUND_URL = f_url["morningstar"]
 ms_id = 'F0GBR04QCM'
 ms_tab = '1'
 target = MS_FUND_URL + ms_id
