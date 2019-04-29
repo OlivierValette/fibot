@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c12eb2ee-ef91-45e4-bb22-dfad6d75937a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fifouine.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/fifouine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/find_ms_id_by_isin.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/find_ms_id_by_isin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/find_ms_id_by_label.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/find_ms_id_by_label.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/find_qs_id_by_isin.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/find_qs_id_by_isin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/find_qs_id_by_label.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/find_qs_id_by_label.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/find_qs_id_by_label_100.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/find_qs_id_by_label_100.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/testing/geckodriver.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_qs_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/get_qs_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rotating.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/rotating.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rotating1.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/rotating1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/db_connect.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/db_connect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/pages/ms1.html" beforeDir="false" afterPath="$PROJECT_DIR$/testing/pages/ms1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ufibot.py" beforeDir="false" afterPath="$PROJECT_DIR$/ufibot.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,8 +91,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ufibot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+            <state relative-caret-position="292">
+              <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -491,12 +479,12 @@
       <workItem from="1554101426635" duration="9753000" />
       <workItem from="1556519439733" duration="2607000" />
       <workItem from="1556525161932" duration="17506000" />
-      <workItem from="1556549796947" duration="9974000" />
+      <workItem from="1556549796947" duration="10544000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146096000" />
+    <option name="totallyTimeSpent" value="146666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1925" height="1050" extended-state="0" />
@@ -508,7 +496,7 @@
       <window_info anchor="bottom" id="Database Console" weight="0.32996634" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22671156" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22671156" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398827" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -2017,10 +2005,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://74ef0fa4-de9b-4494-9da9-398ca130da88/schema/fundlog/table/source">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ufibot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+        <state relative-caret-position="292">
+          <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>

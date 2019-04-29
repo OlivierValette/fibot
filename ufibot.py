@@ -21,27 +21,28 @@ def main():
     proxy_index = random_proxy(len(proxies))
     proxy = proxies[proxy_index]
 
+    # Get list of funds to update
     fund_list = get_fund_list()
     print(fund_list)
 
-    # create new funds in fi_info
+    # Create new funds in fi_info
     cnx = mysql.connector.connect(**db_config)
     cursor = cnx.cursor(buffered=True)
     insert_new_funds = (
-        "INSERT INTO fin_info (fund_id, source_id, isin, code) "
-        "VALUES (%s, %s, %s, %s)")
+        "INSERT INTO fin_info (fund_id, source_id, isin) "
+        "VALUES (%s, %s, %s)")
 
     # Iterate through the result of curA
-    for (emp_no, salary, from_date, to_date) in curA:
-        # Update the old and insert the new salary
-        new_salary = int(round(salary * Decimal('1.15')))
-        curB.execute(update_old_salary, (tomorrow, emp_no, from_date))
-        curB.execute(insert_new_salary,
-                     (emp_no, tomorrow, date(9999, 1, 1, ), new_salary))
-
+    for (fid, isin) in fund_list:
+        # insert new funds
+        cursor.execute(insert_new_funds, (fid, 1, isin))
+        cursor.execute(insert_new_funds, (fid, 2, isin))
         # Commit the changes
         cnx.commit()
 
+    # Get updated list of funds to update
+    fund_list = get_fund_list()
+    print(fund_list)
 
     # Retrieve new funds source codes
 
