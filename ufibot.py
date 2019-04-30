@@ -25,18 +25,25 @@ def main():
     fund_list = get_fund_list()
     print(fund_list)
 
+    # Get list of sources
+    source_list = get_source_list()
+    print(source_list)
+
     # Create new funds in fi_info
     cnx = mysql.connector.connect(**db_config)
-    cursor = cnx.cursor(buffered=True)
+    cur_ffo = cnx.cursor(buffered=True)
     insert_new_funds = (
-        "INSERT INTO fin_info (fund_id, source_id, isin) "
-        "VALUES (%s, %s, %s)")
+        "INSERT INTO fin_info (fund_id, source_id, isin, code) "
+        "VALUES (%s, %s, %s, %s)")
 
-    # Iterate through the result of curA
-    for (fid, isin) in fund_list:
-        # insert new funds
-        cursor.execute(insert_new_funds, (fid, 1, isin))
-        cursor.execute(insert_new_funds, (fid, 2, isin))
+    # Iterate through the funds to update list
+    for fund in fund_list:
+        # insert new funds for all sources
+        for source in source_list:
+            # select funds without ffo.id
+            if not fund[2]:
+                cur_ffo.execute(insert_new_funds, (fund[0], source[0], fund[1], 'UNSET'))
+
         # Commit the changes
         cnx.commit()
 
@@ -91,6 +98,20 @@ def get_fund_list():
     cursor.close()
     cnx.close()
     return fund_list
+
+
+# Retrieve list of sources
+def get_source_list():
+    cnx = mysql.connector.connect(**db_config)
+    cur_src = cnx.cursor()
+    query_src = "SELECT * FROM source"
+    cur_src.execute(query_src)
+    source_list = []
+    for row in cur_src:
+        source_list.append(row)
+    cur_src.close()
+    cnx.close()
+    return source_list
 
 
 # Scrap finance site by ISIN
