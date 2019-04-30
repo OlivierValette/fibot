@@ -8,6 +8,8 @@ from fake_useragent import UserAgent
 import random
 from typing import Dict, List, Any
 
+from sfibot import get_info
+
 # generate a random user agent
 ua = UserAgent()
 
@@ -23,13 +25,13 @@ def main():
 
     # Get list of funds to update
     fund_list = get_fund_list()
-    print(fund_list)
+    print(fund_list)                # TODO: remove
 
     # Get list of sources
     source_list = get_source_list()
-    print(source_list)
+    print(source_list)              # TODO: remove
 
-    # Create new funds in fi_info
+    # Add new funds to fin_info
     cnx = mysql.connector.connect(**db_config)
     cur_ffo = cnx.cursor(buffered=True)
     insert_new_funds = (
@@ -40,20 +42,55 @@ def main():
     for fund in fund_list:
         # get missing source codes
         source_code = find_id_by_isin(fund[1])
-        print(source_code)
         # insert new funds for all sources
         for source in source_list:
             # select funds without ffo.id
             if not fund[2]:
-                cur_ffo.execute(insert_new_funds, (fund[0], source[0], fund[1], 'UNSET'))
+                # get source internal code
+                s_code = source_code[source_list[source[0]-1][1]]
+                print("updating", s_code)           # TODO: remove
+                cur_ffo.execute(insert_new_funds, (fund[0], source[0], fund[1], s_code))
         # Commit the changes
         cnx.commit()
 
     # Get updated list of funds to update
     fund_list = get_fund_list()
-    print(fund_list)
+    print(fund_list)                # TODO: remove
 
-    # Retrieve new funds source codes
+    # Retrieve full info for funds with source codes
+    cur_ffo = cnx.cursor(buffered=True)         # TODO: is cursor change necessary?
+    update_ffo = (
+        " UPDATE fin_info AS ffo"
+        " SET name = %s, rating = %s, benchmark = %s, lvdate =%s, lvalue = %s, currency = %s,"
+        "     date_ytd = %s, perf_a = %s, perf_am1 = %s, perf_am2 = %s, perf_am3 = %s"
+        " WHERE ffo.fund_id = %s AND ffo.source_id = %s")
+    cur_fnd = cnx.cursor(buffered=True)         # TODO: is cursor change necessary?
+    update_fnd = (
+        " UPDATE fund AS fnd"
+        " SET last_lvalue = %s"
+        " WHERE fnd.id = %s")
+
+    # Iterate through the funds to update list
+    for fund in fund_list:
+        for source in source_list:
+            if fund[3] != 'UNSET':
+                # scrap info for funds with source codes
+                # calling get_info(source.id, source.fund.url, fin_info.code)
+                info = get_info(source[0], source[3], fund[3])
+
+                # update fund info in fin_info and fund tables
+                if not fund[2]:
+                    # get source internal code
+                    print("updating", info[0])           # TODO: remove
+                    # cur_ffo.execute(update_ffo, (info[5], info[6], info[7], info[8], info[9],
+                    print(update_ffo, (info[1], info[2], info[3], info[4], info[5], info[6],
+                                       info[7], info[8], info[9], info[10], info[11],
+                                       fund[0], source[0]))
+                    print(update_fnd, (info[5], fund[0]))
+                    # cur_fnd.execute(update_fnd, (info[9], info[1]))
+
+                # Commit the changes
+                cnx.commit()
 
 
 # Get a list of proxies
@@ -84,6 +121,7 @@ def random_proxy(n):
 
 
 # Retrieve list of funds to be updated
+# Array of tuples: (fund ID, fund ISIN, fin ID, fin CODE)
 def get_fund_list():
     cnx = mysql.connector.connect(**db_config)
     # Get two buffered cursors
@@ -91,7 +129,7 @@ def get_fund_list():
     query = (
         "SELECT fnd.id, fnd.isin, ffo.id, ffo.code "
         "FROM fund AS fnd "
-        "LEFT JOIN fin_info AS ffo USING (id) "
+        "LEFT JOIN fin_info AS ffo ON (ffo.fund_id = fnd.id) "
         "ORDER BY fnd.id")
     cursor.execute(query)
     fund_list = []
@@ -103,6 +141,7 @@ def get_fund_list():
 
 
 # Retrieve list of sources
+# Array of tuples: (ID, NAME, SEARCH_URL, FUND_URL)
 def get_source_list():
     cnx = mysql.connector.connect(**db_config)
     cur_src = cnx.cursor()
@@ -116,7 +155,7 @@ def get_source_list():
     return source_list
 
 
-# Scrap finance site by ISIN
+# Get finance soup by ISIN
 def page_search_by_isin(url):
     try:
         page_response = requests.get(url, timeout=7)
