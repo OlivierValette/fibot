@@ -38,12 +38,14 @@ def main():
 
     # Iterate through the funds to update list
     for fund in fund_list:
+        # get missing source codes
+        source_code = find_id_by_isin(fund[1])
+        print(source_code)
         # insert new funds for all sources
         for source in source_list:
             # select funds without ffo.id
             if not fund[2]:
                 cur_ffo.execute(insert_new_funds, (fund[0], source[0], fund[1], 'UNSET'))
-
         # Commit the changes
         cnx.commit()
 
@@ -116,7 +118,12 @@ def get_source_list():
 
 # Scrap finance site by ISIN
 def page_search_by_isin(url):
-    page_response = requests.get(url, timeout=5)
+    try:
+        page_response = requests.get(url, timeout=7)
+        page_response.raise_for_status()  # added to catch HTTP errors
+    except requests.exceptions.RequestException as e:
+        print(e)
+        return False
     if page_response.status_code == 200:
         return BeautifulSoup(page_response.content, "html.parser")
     else:
@@ -134,11 +141,15 @@ def find_id_by_isin(isin):
     for (name, search_url, fund_url) in cursor:
         target = search_url + isin
         page_content = page_search_by_isin(target)
+        # default value if an error occurred while requesting page
+        code[name] = 'UNSET'
         if page_content:
             if name == "morningstar":
-                code[name] = page_content.find("td", "searchLink").children.__next__().get('href')[-10:]
+                if page_content.find("td", "searchLink"):
+                    code[name] = page_content.find("td", "searchLink").children.__next__().get('href')[-10:]
             else:
-                code[name] = page_content.find('input', id='id-produit')['value']
+                if page_content.find('input', id='id-produit'):
+                    code[name] = page_content.find('input', id='id-produit')['value']
     cursor.close()
     cnx.close()
     return code
