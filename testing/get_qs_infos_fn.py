@@ -92,7 +92,7 @@ benchmark = lookup(
     soup,
     ["dl", "dd"],
     ["dl-fichier-identite", ""],
-    ["", 5],
+    ["", 4],
     ["", ""],
     True
 )
@@ -103,7 +103,7 @@ category = lookup(
     soup,
     ["dl", "dd", "a"],
     ["dl-fichier-identite", "", ""],
-    ["", 4, 0],
+    ["", 5, 0],
     ["", "", "contents"],
     False
 )

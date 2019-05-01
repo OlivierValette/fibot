@@ -2,7 +2,7 @@ import requests
 
 # test url to scrape from
 QS_FUND_URL = "http://www.quantalys.com/Fonds/"
-qs_id = '15111'
+qs_id = '26195'
 target = QS_FUND_URL
 # qs_tab = 'Performances'
 qs_tab = ''
@@ -12,7 +12,7 @@ else:
     target += qs_id
 print(target)
 # fetch the content from the url, using the requests library
-page = requests.get(target, timeout=5)
+page = requests.get(target, timeout=15)
 # save the content of the page for testing purpose
 if page.status_code == 200:
     filename = 'pages/qs' + qs_tab + '.html'
