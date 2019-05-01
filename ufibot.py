@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import mysql.connector
 from config import db_config
 from scraping import get_soup
@@ -62,16 +64,15 @@ def main():
             s_url = source_list[fund[3] - 1][3]
             print("calling get_info(", fund[3], ",", s_url, ",", fund[4], ")")
             info = get_info(fund[3], s_url, fund[4])
+            print(info)
             # update fund info in fin_info and fund tables
-            if not fund[2]:
-                # get source internal code
-                print("updating", info[0])           # TODO: remove
-                # cur_ffo.execute(update_ffo, (info[5], info[6], info[7], info[8], info[9],
-                print(update_ffo, (info[1], info[2], info[3], info[4], info[5], info[6],
-                                   info[7], info[8], info[9], info[10], info[11],
-                                   fund[0], source))
-                print(update_fnd, (info[5], fund[0]))
-                # cur_fnd.execute(update_fnd, (info[9], info[1]))
+            print("updating", info['code'])           # TODO: remove
+            # cur_ffo.execute(update_ffo, (info[5], info[6], info[7], info[8], info[9],
+            print(update_ffo, (info['name'], info['rating'], info['benchmark'], info['lvdate'], info['lvalue'], info['currency'],
+                               info['date_ytd'], info['perf_a'], info['perf_am1'], info['perf_am2'], info['perf_am3'],
+                               fund[0], fund[3]))
+            print(update_fnd, (info['lvalue'], fund[0]))
+            # cur_fnd.execute(update_fnd, (info[9], info[1]))
             # Commit the changes
             cnx.commit()
 
@@ -121,7 +122,8 @@ def find_id_by_isin(isin):
     code = {}
     for (name, search_url, fund_url) in cursor:
         target = search_url + isin
-        soup = get_soup(target)
+        timeout = 10
+        soup = get_soup(target, timeout)
         # default value if an error occurred while requesting page
         code[name] = 'UNSET'
         if soup:

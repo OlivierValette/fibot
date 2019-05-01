@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import requests
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
@@ -45,9 +47,13 @@ def random_proxy(n):
 
 
 # Get soup
-def get_soup(url):
+def get_soup(url, delay):
+    """
+    Return soup of page at url
+    :rtype:  BeautifulSoup
+    """
     try:
-        page_response = requests.get(url, timeout=3)
+        page_response = requests.get(url, timeout=delay)
         page_response.raise_for_status()  # added to catch HTTP errors
     except requests.exceptions.RequestException as e:
         print(e)
@@ -55,4 +61,5 @@ def get_soup(url):
     if page_response.status_code == 200:
         return BeautifulSoup(page_response.content, "html.parser")
     else:
+        print('Erreur:', page_response.status_code)
         return False
