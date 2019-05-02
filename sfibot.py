@@ -61,41 +61,42 @@ def get_info(s_id, s_fund_url, s_code):
     # put results in "info" dictionary
     info = {"code": s_code}
     # retrieve page soup
-    soup = get_soup(s_fund_url + s_code, 5)
+    soup = get_soup(s_fund_url + s_code, 10)
     if not soup:
-        print('???:', soup)
+        print("Problème d'accès au site", s_fund_url)
     else:
         # retrieve scraping parameters from table "scraping"
         cnx = mysql.connector.connect(**db_config)
-        cursor = cnx.cursor(buffered=True)
+        cursor = cnx.cursor(buffered=True, dictionary=True)
         query = "SELECT * FROM scraping WHERE source_id = %s"
         cursor.execute(query, (s_id,))
         for row in cursor:
-            item = row[2]
+            item = row['item']
             # retrieving parameters according to depth of search in soup
-            if row[5]:
-                p_tag = [row[3], row[4], row[5]]
-                p_class = [row[6] or '', row[7] or '', row[8] or '']
-                p_index = ['' if row[9] is None else row[9], '' if row[10] is None else row[10], '' if row[11] is None else row[11]]
-                p_attr = [row[12] or '', row[13] or '', row[14] or '']
-            elif row[4]:
-                p_tag = [row[3], row[4]]
-                p_class = [row[6] or '', row[7] or '']
-                p_index = ['' if row[9] is None else row[9], '' if row[10] is None else row[10]]
-                p_attr = [row[12] or '', row[13] or '']
+            if row['tag2']:
+                p_tag = [row['tag0'], row['tag1'], row['tag2']]
+                p_class = [row['class0'] or '', row['class1'] or '', row['class2'] or '']
+                p_index = ['' if row['index0'] is None else row['index0'], '' if row['index1'] is None else row['index1'], '' if row['index2'] is None else row['index2']]
+                p_attr = [row['attr0'] or '', row['attr1'] or '', row['attr2'] or '']
+            elif row['tag1']:
+                p_tag = [row['tag0'], row['tag1']]
+                p_class = [row['class0'] or '', row['class1'] or '']
+                p_index = ['' if row['index0'] is None else row['index0'], '' if row['index1'] is None else row['index1']]
+                p_attr = [row['attr0'] or '', row['attr1'] or '']
             else:
-                p_tag = [row[3]]
-                p_class = [row[6] or '']
-                p_index = ['' if row[9] is None else row[9]]
-                p_attr = [row[12] or '']
-            p_sfy = row[15]
+                p_tag = [row['tag0']]
+                p_class = [row['class0'] or '']
+                p_index = ['' if row['index0'] is None else row['index0']]
+                p_attr = [row['attr0'] or '']
+            p_sfy = row['stringify']
             print('item:', item)
             print('calling lookup:', p_tag, p_class, p_index, p_attr, p_sfy)
             result = lookup(soup, p_tag, p_class, p_index, p_attr, p_sfy)
             print('result:', result)
-            if row[16]:
-                print(row[16])
-                texte = row[16].replace('x', 'result')
+            # string additional manipulations
+            if row['moreover']:
+                print(row['moreover'])
+                texte = row['moreover'].replace('x', 'result').split()
                 print(texte)
                 result = eval(texte)
             print('result:', result)

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c12eb2ee-ef91-45e4-bb22-dfad6d75937a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraping.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraping.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sfibot.py" beforeDir="false" afterPath="$PROJECT_DIR$/sfibot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ufibot.py" beforeDir="false" afterPath="$PROJECT_DIR$/ufibot.py" afterDir="false" />
     </list>
@@ -86,23 +85,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ufibot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="75" column="32" lean-forward="true" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
+            <state relative-caret-position="347">
+              <caret line="93" column="25" lean-forward="true" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
               <folding>
-                <element signature="e#0#22#0" expanded="true" />
+                <element signature="e#25#47#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sfibot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="752">
-              <caret line="67" column="60" lean-forward="true" selection-start-line="67" selection-start-column="60" selection-end-line="67" selection-end-column="60" />
+            <state relative-caret-position="141">
+              <caret line="64" column="16" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
               <folding>
                 <element signature="e#25#47#0" expanded="true" />
               </folding>
@@ -113,11 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scraping.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="-1261">
               <caret column="23" selection-start-column="23" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -125,7 +121,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testing/get_qs_infos_fn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state relative-caret-position="2808">
               <caret line="117" column="27" selection-start-line="117" selection-start-column="21" selection-end-line="117" selection-end-column="27" />
             </state>
           </provider>
@@ -205,17 +201,17 @@
         <option value="$PROJECT_DIR$/scraping.py" />
         <option value="$PROJECT_DIR$/testing/get_qs_page.py" />
         <option value="$PROJECT_DIR$/testing/get_qs_infos_fn.py" />
-        <option value="$PROJECT_DIR$/sfibot.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/ufibot.py" />
+        <option value="$PROJECT_DIR$/sfibot.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-14" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
     <option name="y" value="2" />
-    <option name="width" value="1925" />
-    <option name="height" value="1073" />
+    <option name="width" value="1927" />
+    <option name="height" value="1045" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -553,22 +549,24 @@
       <workItem from="1556608715165" duration="19825000" />
       <workItem from="1556641209740" duration="10132000" />
       <workItem from="1556712725144" duration="970000" />
-      <workItem from="1556716559061" duration="18224000" />
+      <workItem from="1556716559061" duration="18939000" />
+      <workItem from="1556778260436" duration="6793000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196014000" />
+    <option name="totallyTimeSpent" value="203522000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-14" y="2" width="1925" height="1073" extended-state="0" />
+    <frame x="-6" y="2" width="1541" height="836" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15924934" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16115981" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32932165" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39934355" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39911634" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398827" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -578,13 +576,13 @@
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32932165" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.329429" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.329429" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32842416" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.16943699" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.16925152" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,13 +590,37 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/fibot$get_qs_infos_fn.coverage" NAME="get_qs_infos_fn Coverage Results" MODIFIED="1556733028387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testing" />
-    <SUITE FILE_PATH="coverage/fibot$ufibot.coverage" NAME="ufibot Coverage Results" MODIFIED="1556739993384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fibot$ufibot.coverage" NAME="ufibot Coverage Results" MODIFIED="1556785263789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fibot$get_ms_infos_fn.coverage" NAME="get_qs_infos_fn Coverage Results" MODIFIED="1554109726203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testing" />
     <SUITE FILE_PATH="coverage/fibot$get_qs_page.coverage" NAME="get_qs_page Coverage Results" MODIFIED="1556732882110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testing" />
     <SUITE FILE_PATH="coverage/fibot$rotating.coverage" NAME="rotating Coverage Results" MODIFIED="1556645405424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fibot$db_connect.coverage" NAME="db_connect Coverage Results" MODIFIED="1556553917929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testing" />
     <SUITE FILE_PATH="coverage/fibot$rotating1.coverage" NAME="rotating1 Coverage Results" MODIFIED="1556653585442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fibot$find_ms_id_by_isin.coverage" NAME="find_ms_id_by_isin Coverage Results" MODIFIED="1556696218447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointLogExpression">
+      <expression>
+        <expression-string>cnx = mysql.connector.connect(**db_config)
+    cur_ffo = cnx.cursor(buffered=True)
+    insert_new_funds = (
+        &quot;INSERT INTO fin_info (fund_id, source_id, isin, code) &quot;
+        &quot;VALUES (%s, %s, %s, %s)&quot;)
+    # Iterate through the funds
+    for fund in fund_list:
+        # select funds no fin_info.id found
+        if not fund['fin_id']:
+            # scanning all sources
+            for source in source_list:
+                # get source internal code
+                source_code = find_code_by_isin(fund['isin'], source['name'], source['search_url'])
+                cur_ffo.execute(insert_new_funds, (fund['id'], source['id'], fund['isin'], source_code))
+            # Commit the changes
+            cnx.commit()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/muFunds/main.gs" />
@@ -2024,15 +2046,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://74ef0fa4-de9b-4494-9da9-398ca130da88/schema/fundlog/table/fin_info">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testing/get_qs_page.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -2072,28 +2085,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testing/get_qs_infos_fn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="2808">
           <caret line="117" column="27" selection-start-line="117" selection-start-column="21" selection-end-line="117" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scraping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sfibot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="67" column="60" lean-forward="true" selection-start-line="67" selection-start-column="60" selection-end-line="67" selection-end-column="60" />
-          <folding>
-            <element signature="e#25#47#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2106,12 +2099,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://74ef0fa4-de9b-4494-9da9-398ca130da88/schema/fundlog/table/fin_info">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1261">
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ufibot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="75" column="32" lean-forward="true" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
+        <state relative-caret-position="347">
+          <caret line="93" column="25" lean-forward="true" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#25#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sfibot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="64" column="16" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+          <folding>
+            <element signature="e#25#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
