@@ -96,7 +96,7 @@ def get_info(s_id, s_fund_url, s_code):
             # string additional manipulations
             if row['moreover']:
                 print(row['moreover'])
-                texte = row['moreover'].replace('x', 'result').split()
+                texte = row['moreover'].replace('x', 'result').strip()
                 print(texte)
                 result = eval(texte)
             print('result:', result)

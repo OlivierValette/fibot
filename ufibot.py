@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import datetime
 
 import mysql.connector
 from config import db_config
@@ -70,8 +71,8 @@ def main():
     cur_ffo = cnx.cursor(buffered=True)         # TODO: is cursor change necessary?
     update_ffo = (
         " UPDATE fin_info AS ffo"
-        " SET name = %s, rating = %s, benchmark = %s, lvdate =%s, lvalue = %s, currency = %s,"
-        "     date_ytd = %s, perf_a = %s, perf_am1 = %s, perf_am2 = %s, perf_am3 = %s"
+        " SET name = %s, rating = %s, benchmark = %s, lvdate = DATE(%s), lvalue = %s, currency = %s,"
+        "     date_ytd = DATE(%s), perf_a = %s, perf_am1 = %s, perf_am2 = %s, perf_am3 = %s"
         " WHERE ffo.fund_id = %s AND ffo.source_id = %s")
     cur_fnd = cnx.cursor(buffered=True)
     update_fnd = (
@@ -89,14 +90,25 @@ def main():
             info = get_info(fund['source_id'], source['fund_url'], fund['code'])
             print(info)
             if len(info) > 1:
+                # converting date formats from DD/MM/YYYY to YYYYY-MM-DD
+                info['lvdate'] = datetime.datetime.strptime(info['lvdate'], "%d/%m/%Y").strftime("%Y-%m-%d")
+                info['date_ytd'] = datetime.datetime.strptime(info['date_ytd'], "%d/%m/%Y").strftime("%Y-%m-%d")
+                # converting float formats from , to .
+                info['lvalue'] = str(info['lvalue']).replace(',', '.')
+                info['perf_a'] = str(info['perf_a']).replace(',', '.')
+                info['perf_am1'] = str(info['perf_am1']).replace(',', '.')
+                info['perf_am2'] = str(info['perf_am2']).replace(',', '.')
+                info['perf_am3'] = str(info['perf_am3']).replace(',', '.')
                 # update fund info in fin_info and fund tables
                 print("updating", info['code'])           # TODO: remove
-                # cur_ffo.execute(update_ffo, (info[5], info[6], info[7], info[8], info[9],
-                print(update_ffo, (info['name'], info['rating'], info['benchmark'], info['lvdate'], info['lvalue'], info['currency'],
-                                   info['date_ytd'], info['perf_a'], info['perf_am1'], info['perf_am2'], info['perf_am3'],
-                                   fund[0], fund[3]))
-                print(update_fnd, (info['lvalue'], fund[0]))
-                # cur_fnd.execute(update_fnd, (info[9], info[1]))
+                print(update_ffo, (info['name'], info['rating'], info['benchmark'], info['lvdate'], info['lvalue'],
+                                   info['currency'], info['date_ytd'], info['perf_a'], info['perf_am1'],
+                                   info['perf_am2'], info['perf_am3'], fund['id'], fund['source_id']))
+                cur_ffo.execute(update_ffo, (info['name'], info['rating'], info['benchmark'], info['lvdate'], info['lvalue'],
+                                info['currency'], info['date_ytd'], info['perf_a'], info['perf_am1'],
+                                info['perf_am2'], info['perf_am3'], fund['id'], fund['source_id']))
+                print(update_fnd, (info['lvalue'], fund['id']))
+                cur_fnd.execute(update_fnd, (info['lvalue'], fund['id']))
                 # Commit the changes
                 cnx.commit()
 
