@@ -61,7 +61,7 @@ def get_info(s_id, s_fund_url, s_code):
     # put results in "info" dictionary
     info = {"code": s_code}
     # retrieve page soup
-    soup = get_soup(s_fund_url + s_code, 10)
+    soup = get_soup(s_fund_url + s_code, 15)
     if not soup:
         print("Problème d'accès au site", s_fund_url)
     else:
