@@ -94,11 +94,11 @@ def main():
                 info['lvdate'] = datetime.datetime.strptime(info['lvdate'], "%d/%m/%Y").strftime("%Y-%m-%d")
                 info['date_ytd'] = datetime.datetime.strptime(info['date_ytd'], "%d/%m/%Y").strftime("%Y-%m-%d")
                 # converting float formats from , to .
-                info['lvalue'] = float(str(info['lvalue']).replace(',', '.'))
-                info['perf_a'] = float(str(info['perf_a']).replace(',', '.'))
-                info['perf_am1'] = float(str(info['perf_am1']).replace(',', '.'))
-                info['perf_am2'] = float(str(info['perf_am2']).replace(',', '.'))
-                info['perf_am3'] = float(str(info['perf_am3']).replace(',', '.'))
+                info['lvalue'] = float(str(info['lvalue']).replace(',', '.').replace(' ', ''))
+                info['perf_a'] = float(str(info['perf_a']).replace(',', '.').replace(' ', ''))
+                info['perf_am1'] = float(str(info['perf_am1']).replace(',', '.').replace(' ', ''))
+                info['perf_am2'] = float(str(info['perf_am2']).replace(',', '.').replace(' ', ''))
+                info['perf_am3'] = float(str(info['perf_am3']).replace(',', '.').replace(' ', ''))
                 # retrieving currency id and value
                 currency_list = get_currency_list()
                 print(currency_list)
