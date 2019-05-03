@@ -91,16 +91,17 @@ def get_info(s_id, s_fund_url, s_code):
             p_sfy = row['stringify']
             print('item:', item)
             print('calling lookup:', p_tag, p_class, p_index, p_attr, p_sfy)
-            result = lookup(soup, p_tag, p_class, p_index, p_attr, p_sfy)
-            print('result:', result)
+            x = lookup(soup, p_tag, p_class, p_index, p_attr, p_sfy)
+            print('result:', x)
             # string additional manipulations
+            # result var must be 'x' as in moreover column
             if row['moreover']:
                 print(row['moreover'])
-                texte = row['moreover'].replace('x', 'result').strip()
+                texte = row['moreover'].strip()
                 print(texte)
-                result = eval(texte)
-            print('result:', result)
-            info[item] = result
+                x = eval(texte)
+            print('result:', x)
+            info[item] = x
         cursor.close()
         cnx.close()
     return info
