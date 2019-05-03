@@ -71,7 +71,7 @@ def main():
     cur_ffo = cnx.cursor(buffered=True)         # TODO: is cursor change necessary?
     update_ffo = (
         " UPDATE fin_info AS ffo"
-        " SET name = %s, rating = %s, benchmark = %s, lvdate = DATE(%s), lvalue = %s, currency = %s,"
+        " SET name = %s, rating = %s, benchmark = %s, lvdate = DATE(%s), lvalue = %s, currency_id = %s,"
         "     date_ytd = DATE(%s), perf_a = %s, perf_am1 = %s, perf_am2 = %s, perf_am3 = %s"
         " WHERE ffo.fund_id = %s AND ffo.source_id = %s")
     cur_fnd = cnx.cursor(buffered=True)
@@ -99,13 +99,21 @@ def main():
                 info['perf_am1'] = str(info['perf_am1']).replace(',', '.')
                 info['perf_am2'] = str(info['perf_am2']).replace(',', '.')
                 info['perf_am3'] = str(info['perf_am3']).replace(',', '.')
+                # retrieving currency id
+                currency_list = get_currency_list()
+                currency_id = False
+                for currency in currency_list:
+                    if currency['code'] == currency:
+                        currency_id = currency['id']
+                if not currency_id:
+                    currency_id = 1     # TODO: default set to EUR, improve
                 # update fund info in fin_info and fund tables
                 print("updating", info['code'])           # TODO: remove
                 print(update_ffo, (info['name'], info['rating'], info['benchmark'], info['lvdate'], info['lvalue'],
-                                   info['currency'], info['date_ytd'], info['perf_a'], info['perf_am1'],
+                                   currency_id, info['date_ytd'], info['perf_a'], info['perf_am1'],
                                    info['perf_am2'], info['perf_am3'], fund['id'], fund['source_id']))
                 cur_ffo.execute(update_ffo, (info['name'], info['rating'], info['benchmark'], info['lvdate'], info['lvalue'],
-                                info['currency'], info['date_ytd'], info['perf_a'], info['perf_am1'],
+                                currency_id, info['date_ytd'], info['perf_a'], info['perf_am1'],
                                 info['perf_am2'], info['perf_am3'], fund['id'], fund['source_id']))
                 print(update_fnd, (info['lvalue'], fund['id']))
                 cur_fnd.execute(update_fnd, (info['lvalue'], fund['id']))
@@ -146,6 +154,21 @@ def get_source_list():
     cur_src.close()
     cnx.close()
     return source_list
+
+
+# Retrieve list of currencies
+# Array of dictionary: (id, name, search_url, fund_url)
+def get_currency_list():
+    cnx = mysql.connector.connect(**db_config)
+    cur_cur = cnx.cursor(buffered=True, dictionary=True)
+    query_cur = "SELECT * FROM currency"
+    cur_cur.execute(query_cur)
+    currency_list = []
+    for row in cur_cur:
+        currency_list.append(row)
+    cur_cur.close()
+    cnx.close()
+    return currency_list
 
 
 # Retrieve fund source code by ISIN
