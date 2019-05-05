@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-import datetime
-
+from datetime import datetime
 import mysql.connector
 from config import db_config
 from scraping import get_soup
 from sfibot import get_info
+from afibot import get_historical_values
 
 
 # Main function
@@ -111,6 +111,7 @@ def main():
                 print('selected currency:', currency_id, currency_value)
                 if not currency_id:
                     currency_id = 1     # if not in currency, default set to EUR, TODO: improve
+
                 # update fund info in fin_info
                 print("updating", info['code'])           # TODO: remove
                 print(update_ffo, (info['name'], info['rating'], info['benchmark'], info['lvdate'], info['lvalue'],
@@ -119,12 +120,37 @@ def main():
                 cur_ffo.execute(update_ffo, (info['name'], info['rating'], info['benchmark'], info['lvdate'], info['lvalue'],
                                 currency_id, info['date_ytd'], info['perf_a'], info['perf_am1'],
                                 info['perf_am2'], info['perf_am3'], fund['id'], fund['source_id']))
+
                 # update fund table with last-lvalue (converted in euros)
                 lvalue = info['lvalue'] / currency_value
                 print(update_fnd, (lvalue, fund['id']))
                 cur_fnd.execute(update_fnd, (lvalue, fund['id']))
+
                 # Commit the changes
                 cnx.commit()
+
+                # Update financial info in table "fund_hist"
+                # TODO: get info from Morningstar specific API and update database with new known values
+                cnx = mysql.connector.connect(**db_config)
+                cur_ffo = cnx.cursor(buffered=True)
+                insert_hist_values = (
+                    "INSERT INTO fund_hist (fund_id, lvdate, lvalue) "
+                    "VALUES (%s, %s, %s)")
+                if source['name'] == 'morningstar':
+                    starts = "1991-12-31"
+                    today = datetime.date.today()
+                    ends = (today.replace(day=1) - datetime.timedelta(days=1)).strftime("%Y-%m-%j")
+                    ms_code = info['code']
+                    historical_values = get_historical_values(ms_code, "EUR", "monthly", starts, ends)
+                    if len(historical_values) > 0:
+                        for i in range(len(historical_values)):
+                            ts = historical_values[i][0]/1000         # timestamp given in milliseconds
+                            lvdate = datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d')
+                            lvalue = historical_values[i][1]
+                            print(insert_hist_values, (fund['id'], lvdate, lvalue))
+                            cur_fnd.execute(insert_hist_values, (fund['id'], lvdate, lvalue))
+                            # Commit the changes
+                            cnx.commit()
 
 
 # Retrieve list of funds to be updated
