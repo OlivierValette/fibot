@@ -2,7 +2,6 @@
 # monthly update
 import json
 import requests
-from datetime import datetime
 
 
 def get_historical_values(fid, cur, freq, d1, d2):
@@ -18,6 +17,18 @@ def get_historical_values(fid, cur, freq, d1, d2):
     P_FORMAT= "&outputType=COMPACTJSON"
 
     api_url = API_URL_BASE + P_ID + fid + P_CUR + cur + P_TYPE + P_PRICE + P_FREQ + freq + P_FROM + d1 + P_TO + d2 + P_FORMAT
+    headers = {'Content-Type': 'application/json'}
+
+    response = requests.get(api_url, headers=headers)
+
+    if response.status_code == 200:
+        return json.loads(response.content.decode('utf-8'))
+    else:
+        return None
+
+
+def get_currencies():
+    api_url = 'http://api.openrates.io/latest'
     headers = {'Content-Type': 'application/json'}
 
     response = requests.get(api_url, headers=headers)
