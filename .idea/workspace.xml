@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c12eb2ee-ef91-45e4-bb22-dfad6d75937a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/afibot.py" beforeDir="false" afterPath="$PROJECT_DIR$/fibot_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfibot.py" beforeDir="false" afterPath="$PROJECT_DIR$/fibot_search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tfibot.py" beforeDir="false" afterPath="$PROJECT_DIR$/fibot_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ufibot.py" beforeDir="false" afterPath="$PROJECT_DIR$/fibot_update.py" afterDir="false" />
-    </list>
+    <list default="true" id="c12eb2ee-ef91-45e4-bb22-dfad6d75937a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +81,27 @@
         <item name="fundlog@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="fundlog: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="portfolio: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="fundlog@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="fundlog: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="portfolio_hist: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="fundlog@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="fundlog: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="portfolio_line_hist: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="fundlog@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="fundlog: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="scraping: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
@@ -104,22 +119,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fibot_hist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="14" selection-start-line="14" selection-end-line="20" />
+            <state relative-caret-position="48">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
-                <element signature="e#25#65#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fibot_api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="e#48#59#0" expanded="true" />
+                <element signature="e#25#47#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -201,7 +204,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
+    <option name="x" value="-8" />
     <option name="width" value="1930" />
     <option name="height" value="1045" />
   </component>
@@ -237,7 +240,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="database.data.extractors.current.id" value="Comma-separated (CSV)_id" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fundlog/database" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -572,18 +576,18 @@
       <workItem from="1557048976303" duration="7855000" />
       <workItem from="1557124649436" duration="607000" />
       <workItem from="1557161856487" duration="638000" />
-      <workItem from="1557211182107" duration="2136000" />
+      <workItem from="1557211182107" duration="4679000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237202000" />
+    <option name="totallyTimeSpent" value="239745000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1544" height="836" extended-state="0" />
+    <frame x="-6" y="0" width="1544" height="836" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17496635" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18304172" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -604,7 +608,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.12516823" />
+      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.12516823" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17496635" />
@@ -671,8 +675,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/muFunds/main.gs" />
-    <entry file="file://$PROJECT_DIR$/muFunds/sources/morningstar-country.gs" />
     <entry file="file://$PROJECT_DIR$/recherche_fonds_en_euro.aspx" />
     <entry file="file://$PROJECT_DIR$/testing/find_ms_id_by_label.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -2135,15 +2137,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://74ef0fa4-de9b-4494-9da9-398ca130da88/schema/fundlog/table/fund_hist">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fibot_tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -2160,16 +2153,6 @@
           <caret line="65" selection-start-line="65" selection-end-line="65" />
           <folding>
             <element signature="e#25#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fibot_search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#25#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2223,7 +2206,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fibot_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
+        <state relative-caret-position="-486">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="e#48#59#0" expanded="true" />
@@ -2231,12 +2214,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fibot_hist.py">
+    <entry file="file://$PROJECT_DIR$/fibot_search.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="14" selection-start-line="14" selection-end-line="20" />
+          <caret line="68" selection-start-line="68" selection-end-line="69" />
           <folding>
-            <element signature="e#25#65#0" expanded="true" />
+            <element signature="e#25#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://74ef0fa4-de9b-4494-9da9-398ca130da88/schema/fundlog/table/portfolio">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://74ef0fa4-de9b-4494-9da9-398ca130da88/schema/fundlog/table/fund_hist">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://74ef0fa4-de9b-4494-9da9-398ca130da88/schema/fundlog/table/portfolio_hist">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fibot_hist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#25#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
