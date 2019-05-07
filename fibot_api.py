@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # MS API for historical values
 # monthly update
 import json

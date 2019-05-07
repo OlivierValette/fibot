@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 
 from scraping import get_soup
-from sfibot import get_info
-from ufibot import get_fund_list, get_source_list, find_code_by_isin, get_currency_list
+from fibot_search import get_info
+from fibot_update import get_fund_list, get_source_list, find_code_by_isin, get_currency_list
 
 
 # Main function
-# tfibot: test fibot components
+# fibot_tests: test fibot components
 def main():
 
     # Test morningstar connection

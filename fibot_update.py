@@ -3,8 +3,8 @@ from datetime import datetime, timedelta
 import mysql.connector
 from config import db_config
 from scraping import get_soup
-from sfibot import get_info
-from afibot import get_historical_values
+from fibot_search import get_info
+from fibot_api import get_historical_values
 
 
 # Main function
@@ -130,7 +130,7 @@ def main():
                 cnx.commit()
 
                 # Update financial info in table "fund_hist"
-                # TODO: get info from Morningstar specific API and update database with new known values
+                # Get info from Morningstar specific API and update database with new known values
                 cur_fdh = cnx.cursor(buffered=True, dictionary=True)
                 query_hist_values = (
                     " SELECT MAX(lvdate) AS ldate"
