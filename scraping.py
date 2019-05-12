@@ -47,7 +47,7 @@ def random_proxy(n):
 
 
 # Get soup
-def get_soup(url, delay):
+def get_soup(url, sid, delay):
     """
     Return soup of page at url
     :rtype:  BeautifulSoup
@@ -55,12 +55,16 @@ def get_soup(url, delay):
     ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
     headers = {'User-Agent': ua}
     try:
-        page_response = requests.get(url, timeout=delay, headers=headers)
+        page_response = requests.get(url + sid, timeout=delay, headers=headers)
         page_response.raise_for_status()  # added to catch HTTP errors
     except requests.exceptions.RequestException as e:
         print(e)
         return False
     if page_response.status_code == 200:
+        filename = './log/' + sid + '.html'
+        with open(filename, 'wb') as f:
+            f.write(page_response.content)
+            f.close()
         return BeautifulSoup(page_response.content, "html.parser")
     else:
         print('Erreur:', page_response.status_code)
