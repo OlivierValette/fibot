@@ -48,7 +48,7 @@ def lookup(bs, t_tag, t_class, ix, attr, sfy):
         if i == p - 1:
             if sfy:
                 needle = needle.string
-            print(type(needle))
+            # print(type(needle))
             needle = str(needle).strip()
             return needle
 
@@ -57,13 +57,16 @@ def lookup(bs, t_tag, t_class, ix, attr, sfy):
 
 
 # Collect info on assets with Morningstar/Quantalys given internal id
-def get_info(s_id, s_fund_url, s_code):
+def get_info(s_id, s_fund_url, s_code, logfile):
+    # open log file
+    log = open(logfile, "a+")
+    log.write('\n>>>>> ')
     # put results in "info" dictionary
     info = {"code": s_code}
     # retrieve page soup
     soup = get_soup(s_fund_url + s_code, 15)
     if not soup:
-        print("Problème d'accès au site", s_fund_url)
+        log.write('\n>>>>>Error accessing url: ' + s_fund_url)
     else:
         # retrieve scraping parameters from table "scraping"
         cnx = mysql.connector.connect(**db_config)
@@ -89,19 +92,20 @@ def get_info(s_id, s_fund_url, s_code):
                 p_index = ['' if row['index0'] is None else row['index0']]
                 p_attr = [row['attr0'] or '']
             p_sfy = row['stringify']
-            print('item:', item)
-            print('calling lookup:', p_tag, p_class, p_index, p_attr, p_sfy)
+            log.write('\n\n>>>>>item: ' + item)
+            log.write('\n>>>>>calling lookup: (' + ', '.join(map(str, p_tag)) + '), (' + ', '.join(map(str, p_class)) +
+                      '), (' + ', '.join(map(str, p_index)) + '), (' + ', '.join(map(str, p_attr)) + '), ' + str(p_sfy))
             x = lookup(soup, p_tag, p_class, p_index, p_attr, p_sfy)
-            print('result:', x)
+            log.write('\n>>>>>result: ' + x)
             # string additional manipulations
             # result var must be 'x' as in moreover column
             if row['moreover']:
-                print(row['moreover'])
                 texte = row['moreover'].strip()
-                print(texte)
+                log.write('\n>>>>>moreover: ' + texte)
                 x = eval(texte)
-            print('result:', x)
+            log.write('\n>>>>>result: ' + x)
             info[item] = x
         cursor.close()
         cnx.close()
-    return info
+        log.close()
+        return info

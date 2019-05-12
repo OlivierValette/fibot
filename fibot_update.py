@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 from datetime import datetime, timedelta
 import mysql.connector
 from config import db_config
@@ -11,12 +12,19 @@ from fibot_api import get_historical_values
 # fibot: update financial data in "fin_info" by scraping sites in "source"
 def main():
 
+    # Open log file
+    when = datetime.now()
+    logname = './log/fibot_u_' + when.strftime("%Y%m%d.%H%M%S") + '.log'
+    log = open(logname, "w+")
+    log.write('\nfibot (update) on ' + when.strftime("%Y-%m-%d %H:%M:%S"))
     # Get list of funds to update (only active funds in "funds")
     fund_list = get_fund_list()
-    print("funds list:", fund_list)                # TODO: remove
+    log.write('\nfund list:\n')
+    log.write('\n'.join(map(str, fund_list)))
     # Get list of sources
     source_list = get_source_list()
-    print("sources list:", source_list)              # TODO: remove
+    log.write('\nsource list:\n')
+    log.write('\n'.join(map(str, source_list)))
 
     # PART I - Add new funds to table "fin_info"
     # ------------------------------------------
@@ -39,7 +47,8 @@ def main():
 
     # Get updated list of funds to update
     fund_list = get_fund_list()
-    print("updated funds list:", fund_list)                # TODO: remove
+    log.write('\nupdated funds list:\n')
+    log.write('\n'.join(map(str, fund_list)))
 
     # PART II - Update source code when still "UNSET"
     # -----------------------------------------------
@@ -56,7 +65,7 @@ def main():
             # new attempt to get source internal code
             source = source_list[fund['source_id']-1]
             source_code = find_code_by_isin(fund['isin'], source['name'], source['search_url'])
-            print(fund['isin'], source_code)               # TODO: remove
+            log.write("\nsource code for ISIN: " + fund['isin'] + source_code)
             if source_code != 'UNSET':
                 cur_ffo.execute(update_ffo, (source_code, fund['id'], fund['source_id']))
             # Commit the changes
@@ -64,7 +73,8 @@ def main():
 
     # Get updated list of funds to update
     fund_list = get_fund_list()
-    print("updated funds list:", fund_list)                # TODO: remove
+    log.write('\nupdated funds list:\n')
+    log.write('\n'.join(map(str, fund_list)))
 
     # PART III - Update financial info in tables "fin_info" and "fund"
     # ----------------------------------------------------------------
@@ -81,14 +91,17 @@ def main():
             " UPDATE fund AS fnd"
             " SET last_lvalue = %s"
             " WHERE fnd.id = %s")
-        print('fund:', fund)
+        print('fund: ' + str(fund))
+        log.write('\n----------\n----------fund: ' + str(fund))
         if fund['code'] != 'UNSET':
             # Retrieve full info for fund with specified source code (i.e. not 'UNSET')
             # calling get_info(source.id, source.fund.url, fin_info.code)
             source = source_list[fund['source_id'] - 1]
-            print("calling get_info(", fund['source_id'], ",", source['fund_url'], ",", fund['code'], ")")
-            info = get_info(fund['source_id'], source['fund_url'], fund['code'])
-            print(info)
+            log.write('\ncalling get_info(' + str(fund['source_id']) + ", " + source['fund_url'] + ", " + fund['code'] + ")")
+            log.close()
+            info = get_info(fund['source_id'], source['fund_url'], fund['code'], logname)
+            log = open(logname, "a+")
+            log.write('\n\n----------output:' + str(info))
             if len(info) > 1:
                 # converting date formats from DD/MM/YYYY to YYYYY-MM-DD
                 info['lvdate'] = datetime.strptime(info['lvdate'], "%d/%m/%Y").strftime("%Y-%m-%d")
@@ -101,29 +114,33 @@ def main():
                 info['perf_am3'] = float(str(info['perf_am3']).replace(',', '.').replace(' ', ''))
                 # retrieving currency id and value
                 currency_list = get_currency_list()
-                print(currency_list)
+                log.write('\ncurrency list:\n')
+                log.write(', '.join(map(str, currency_list)))
                 currency_id = False
                 currency_value = 1.
                 for currency in currency_list:
                     if currency['code'] == info['currency']:
                         currency_id = currency['id']
                         currency_value = currency['value']
-                print('selected currency:', currency_id, currency_value)
+                log.write('\nselected currency: ' + str(currency_id) + ' (' + info['currency'] +
+                          ') - Taux: {:.2}'.format(currency_value))
                 if not currency_id:
                     currency_id = 1     # if not in currency, default set to EUR, TODO: improve
 
                 # update fund info in fin_info
-                print("updating", info['code'])           # TODO: remove
-                print(update_ffo, (info['name'], info['rating'], info['benchmark'], info['lvdate'], info['lvalue'],
-                                   currency_id, info['date_ytd'], info['perf_a'], info['perf_am1'],
-                                   info['perf_am2'], info['perf_am3'], fund['id'], fund['source_id']))
+                log.write('\nupdating ' + info['code'])
+                log.write(update_ffo + ' (' + info['name'] + ', ' + info['rating'] + ', ' + info['benchmark'] + ', ' +
+                          info['lvdate'] + ', ' + '{:.2}'.format(info['lvalue']) + ', ' + str(currency_id) + ', ' +
+                          info['date_ytd'] + ', ' + '{:.2}'.format(info['perf_a']) + ', ' +
+                          '{:.2}'.format(info['perf_am1']) + ', ' + '{:.2}'.format(info['perf_am2']) + ', ' +
+                          '{:.2}'.format(info['perf_am3']) + ', ' + str(fund['id']) + ', ' + str(fund['source_id']) + ')')
                 cur_ffo.execute(update_ffo, (info['name'], info['rating'], info['benchmark'], info['lvdate'], info['lvalue'],
                                 currency_id, info['date_ytd'], info['perf_a'], info['perf_am1'],
                                 info['perf_am2'], info['perf_am3'], fund['id'], fund['source_id']))
 
                 # update fund table with last-lvalue (converted in euros)
                 lvalue = info['lvalue'] / currency_value
-                print(update_fnd, (lvalue, fund['id']))
+                log.write('\n' + update_fnd + ' (' + '{:.2}'.format(lvalue) + ', ' + str(fund['id']) + ')')
                 cur_fnd.execute(update_fnd, (lvalue, fund['id']))
 
                 # Commit the changes
@@ -146,14 +163,14 @@ def main():
                     for row in cur_fdh:
                         ldate = row['ldate']
                     cur_fdh.close()
-                    print('Last date retrieved:', ldate)
+                    log.write('\nLast date retrieved: ' + ldate.strftime("%Y-%m-%d"))
                     if ldate.month == 12:
                         starts = ldate.replace(year=ldate.year + 1, month=1, day=1).strftime("%Y-%m-%d")
                     else:
                         starts = ldate.replace(month=ldate.month + 1, day=1).strftime("%Y-%m-%d")
                     today = datetime.today()
                     ends = (today.replace(day=1) - timedelta(days=1)).strftime("%Y-%m-%d")
-                    print('starts:', starts, 'ends:', ends)
+                    log.write('\nstarts:' + starts + 'ends:' + ends)
                     if starts < ends:
                         historical_values = get_historical_values(ms_code, "EUR", "monthly", starts, ends)
                         if len(historical_values) > 0:
@@ -162,10 +179,13 @@ def main():
                                 ts = historical_values[i][0]/1000         # timestamp given in milliseconds
                                 lvdate = datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d')
                                 lvalue = historical_values[i][1]
-                                print(insert_hist_values, (fund['id'], lvalue, lvdate))
+                                log.write('\n' + insert_hist_values + ', (' + str(fund['id']) + ', ' +
+                                          '{:.2}'.format(lvalue) + ', ' + lvdate + ')')
                                 cur_fdh.execute(insert_hist_values, (fund['id'], lvalue, lvdate))
                                 # Commit the changes
                                 cnx.commit()
+    # closing log file
+    log.close()
 
 
 # Retrieve list of funds to be updated

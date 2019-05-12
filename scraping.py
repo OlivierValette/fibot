@@ -52,8 +52,10 @@ def get_soup(url, delay):
     Return soup of page at url
     :rtype:  BeautifulSoup
     """
+    ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    headers = {'User-Agent': ua}
     try:
-        page_response = requests.get(url, timeout=delay)
+        page_response = requests.get(url, timeout=delay, headers=headers)
         page_response.raise_for_status()  # added to catch HTTP errors
     except requests.exceptions.RequestException as e:
         print(e)
