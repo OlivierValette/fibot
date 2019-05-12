@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c12eb2ee-ef91-45e4-bb22-dfad6d75937a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fibot_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/fibot_search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fibot_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/fibot_update.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/fibot_u_20190512.153453.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraping.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/15111.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/15111.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/15112.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/15112.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/26195.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/26195.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/27160.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/27160.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/9362.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/9362.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/F0GBR04ASN.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/F0GBR04ASN.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/F0GBR04D20.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/F0GBR04D20.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/F0GBR04F90.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/F0GBR04F90.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/F0GBR04QCJ.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/F0GBR04QCJ.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/F0GBR04QCM.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/F0GBR04QCM.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/fibot_u_20190512.161021.log" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,11 +128,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fibot_update.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1121">
-              <caret line="186" column="44" lean-forward="true" selection-start-line="186" selection-start-column="44" selection-end-line="186" selection-end-column="44" />
+            <state relative-caret-position="1481">
+              <caret line="186" column="44" selection-start-line="186" selection-start-column="44" selection-end-line="186" selection-end-column="44" />
               <folding>
                 <element signature="e#24#64#0" expanded="true" />
               </folding>
@@ -134,10 +140,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log/fibot_u_20190512.161021.log">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/log/fibot_u_20190512.220401.log">
           <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="-19152" />
+            <state relative-caret-position="-26790" />
           </provider>
         </entry>
       </file>
@@ -181,6 +187,7 @@
       <find>HAUSS</find>
       <find>titleBarNote</find>
       <find>classToFind</find>
+      <find>{:</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -262,16 +269,6 @@
             <path>
               <item name="fibot" type="b2602c69:ProjectViewProjectNode" />
               <item name="fibot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fibot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fibot" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fibot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fibot" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -627,16 +624,15 @@
       <workItem from="1557470016711" duration="8299000" />
       <workItem from="1557513962003" duration="1328000" />
       <workItem from="1557653041849" duration="701000" />
-      <workItem from="1557654092780" duration="11873000" />
+      <workItem from="1557654092780" duration="12620000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267074000" />
+    <option name="totallyTimeSpent" value="267821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1930" height="1045" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1973262" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -696,7 +692,7 @@
     <SUITE FILE_PATH="coverage/fibot$ufibot.coverage" NAME="ufibot Coverage Results" MODIFIED="1557082752850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fibot$get_ms_infos_fn.coverage" NAME="get_qs_infos_fn Coverage Results" MODIFIED="1554109726203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testing" />
     <SUITE FILE_PATH="coverage/fibot$get_qs_page.coverage" NAME="get_qs_page Coverage Results" MODIFIED="1556732882110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testing" />
-    <SUITE FILE_PATH="coverage/fibot$fibot_update.coverage" NAME="fibot_update Coverage Results" MODIFIED="1557670221238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fibot$fibot_update.coverage" NAME="fibot_update Coverage Results" MODIFIED="1557691440187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fibot$rotating.coverage" NAME="rotating Coverage Results" MODIFIED="1556645405424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fibot$db_connect.coverage" NAME="db_connect Coverage Results" MODIFIED="1556553917929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testing" />
     <SUITE FILE_PATH="coverage/fibot$rotating1.coverage" NAME="rotating1 Coverage Results" MODIFIED="1556653585442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -727,7 +723,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/muFunds/sources/morningstar.gs" />
     <entry file="file://$PROJECT_DIR$/testing/pages/ms1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1512" />
@@ -1092,12 +1087,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fibot_update.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
-          <caret line="186" column="44" lean-forward="true" selection-start-line="186" selection-start-column="44" selection-end-line="186" selection-end-column="44" />
+        <state relative-caret-position="1481">
+          <caret line="186" column="44" selection-start-line="186" selection-start-column="44" selection-end-line="186" selection-end-column="44" />
           <folding>
             <element signature="e#24#64#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/fibot_u_20190512.220401.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-26790" />
       </provider>
     </entry>
   </component>
