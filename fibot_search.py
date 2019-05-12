@@ -64,7 +64,7 @@ def get_info(s_id, s_fund_url, s_code, logfile):
     # put results in "info" dictionary
     info = {"code": s_code}
     # retrieve page soup
-    soup = get_soup(s_fund_url + s_code, 15)
+    soup = get_soup(s_fund_url, s_code, 15)
     if not soup:
         log.write('\n>>>>>Error accessing url: ' + s_fund_url)
     else:

@@ -61,11 +61,11 @@ def main():
     # Iterate through the funds
     for fund in fund_list:
         # select funds with source code 'UNSET'
-        if fund['code'] == 'SKIP':   # temporary skipping this part  SKIP->UNSET
+        if fund['code'] == 'UNSET':   # to temporary skips this part  SKIP<->UNSET
             # new attempt to get source internal code
             source = source_list[fund['source_id']-1]
             source_code = find_code_by_isin(fund['isin'], source['name'], source['search_url'])
-            log.write("\nsource code for ISIN: " + fund['isin'] + source_code)
+            log.write("\nsource code for ISIN: " + fund['isin'] + ' ID:' + source_code)
             if source_code != 'UNSET':
                 cur_ffo.execute(update_ffo, (source_code, fund['id'], fund['source_id']))
             # Commit the changes
@@ -123,24 +123,24 @@ def main():
                         currency_id = currency['id']
                         currency_value = currency['value']
                 log.write('\nselected currency: ' + str(currency_id) + ' (' + info['currency'] +
-                          ') - Taux: {:.2}'.format(currency_value))
+                          ') - Taux: {:.2f}'.format(currency_value))
                 if not currency_id:
                     currency_id = 1     # if not in currency, default set to EUR, TODO: improve
 
                 # update fund info in fin_info
                 log.write('\nupdating ' + info['code'])
                 log.write(update_ffo + ' (' + info['name'] + ', ' + info['rating'] + ', ' + info['benchmark'] + ', ' +
-                          info['lvdate'] + ', ' + '{:.2}'.format(info['lvalue']) + ', ' + str(currency_id) + ', ' +
-                          info['date_ytd'] + ', ' + '{:.2}'.format(info['perf_a']) + ', ' +
-                          '{:.2}'.format(info['perf_am1']) + ', ' + '{:.2}'.format(info['perf_am2']) + ', ' +
-                          '{:.2}'.format(info['perf_am3']) + ', ' + str(fund['id']) + ', ' + str(fund['source_id']) + ')')
+                          info['lvdate'] + ', ' + '{:.2f}'.format(info['lvalue']) + ', ' + str(currency_id) + ', ' +
+                          info['date_ytd'] + ', ' + '{:.2f}'.format(info['perf_a']) + ', ' +
+                          '{:.2f}'.format(info['perf_am1']) + ', ' + '{:.2f}'.format(info['perf_am2']) + ', ' +
+                          '{:.2f}'.format(info['perf_am3']) + ', ' + str(fund['id']) + ', ' + str(fund['source_id']) + ')')
                 cur_ffo.execute(update_ffo, (info['name'], info['rating'], info['benchmark'], info['lvdate'], info['lvalue'],
                                 currency_id, info['date_ytd'], info['perf_a'], info['perf_am1'],
                                 info['perf_am2'], info['perf_am3'], fund['id'], fund['source_id']))
 
                 # update fund table with last-lvalue (converted in euros)
                 lvalue = info['lvalue'] / currency_value
-                log.write('\n' + update_fnd + ' (' + '{:.2}'.format(lvalue) + ', ' + str(fund['id']) + ')')
+                log.write('\n' + update_fnd + ' (' + '{:.2f}'.format(lvalue) + ', ' + str(fund['id']) + ')')
                 cur_fnd.execute(update_fnd, (lvalue, fund['id']))
 
                 # Commit the changes
@@ -162,6 +162,7 @@ def main():
                     cur_fdh.execute(query_hist_values, (fund['id'],))
                     for row in cur_fdh:
                         ldate = row['ldate']
+                    if not ldate: ldate = datetime(1991, 1, 1)
                     cur_fdh.close()
                     log.write('\nLast date retrieved: ' + ldate.strftime("%Y-%m-%d"))
                     if ldate.month == 12:
@@ -170,17 +171,17 @@ def main():
                         starts = ldate.replace(month=ldate.month + 1, day=1).strftime("%Y-%m-%d")
                     today = datetime.today()
                     ends = (today.replace(day=1) - timedelta(days=1)).strftime("%Y-%m-%d")
-                    log.write('\nstarts:' + starts + 'ends:' + ends)
+                    log.write('\nstarts:' + starts + ' - ends:' + ends)
                     if starts < ends:
                         historical_values = get_historical_values(ms_code, "EUR", "monthly", starts, ends)
                         if len(historical_values) > 0:
                             cur_fdh = cnx.cursor(buffered=True)
+                            log.write('\ninsert: ')
                             for i in range(len(historical_values)):
                                 ts = historical_values[i][0]/1000         # timestamp given in milliseconds
                                 lvdate = datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d')
                                 lvalue = historical_values[i][1]
-                                log.write('\n' + insert_hist_values + ', (' + str(fund['id']) + ', ' +
-                                          '{:.2}'.format(lvalue) + ', ' + lvdate + ')')
+                                log.write('(' + str(fund['id']) + ', ' + '{:.2f}'.format(lvalue) + ', ' + lvdate + ')')
                                 cur_fdh.execute(insert_hist_values, (fund['id'], lvalue, lvdate))
                                 # Commit the changes
                                 cnx.commit()
@@ -249,9 +250,8 @@ def find_code_by_isin(isin, name, search_url):
     """
     # default value if an error occurred while requesting page
     code = 'UNSET'
-    target = search_url + isin
     timeout = 10
-    soup = get_soup(target, timeout)
+    soup = get_soup(search_url, isin, timeout)
     if soup:
         if name == "morningstar":
             if soup.find("td", "searchLink"):
