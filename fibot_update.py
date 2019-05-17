@@ -250,7 +250,7 @@ def find_code_by_isin(isin, name, search_url):
     """
     # default value if an error occurred while requesting page
     code = 'UNSET'
-    timeout = 10
+    timeout = 15
     soup = get_soup(search_url, isin, timeout)
     if soup:
         if name == "morningstar":

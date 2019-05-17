@@ -1,0 +1,1146 @@
+
+fibot (update) on 2019-05-17 10:02:59
+fund list:
+{'id': 1, 'isin': 'FR0000284689', 'fin_id': 7, 'source_id': 1, 'code': 'F0GBR04QCM'}
+{'id': 1, 'isin': 'FR0000284689', 'fin_id': 8, 'source_id': 2, 'code': '15111'}
+{'id': 2, 'isin': 'LU0099574567', 'fin_id': 9, 'source_id': 1, 'code': 'F0GBR04D20'}
+{'id': 2, 'isin': 'LU0099574567', 'fin_id': 10, 'source_id': 2, 'code': '26195'}
+{'id': 3, 'isin': 'FR0010135103', 'fin_id': 11, 'source_id': 1, 'code': 'F0GBR04F90'}
+{'id': 3, 'isin': 'FR0010135103', 'fin_id': 12, 'source_id': 2, 'code': '9362'}
+{'id': 4, 'isin': 'LU0106959298', 'fin_id': 15, 'source_id': 1, 'code': 'F0GBR04ASN'}
+{'id': 4, 'isin': 'LU0106959298', 'fin_id': 16, 'source_id': 2, 'code': '27160'}
+{'id': 5, 'isin': 'FR0000292278', 'fin_id': 17, 'source_id': 1, 'code': 'F0GBR04QCJ'}
+{'id': 5, 'isin': 'FR0000292278', 'fin_id': 18, 'source_id': 2, 'code': '15112'}
+{'id': 7, 'isin': 'FR0010902726', 'fin_id': 19, 'source_id': 1, 'code': 'F00000LHJS'}
+{'id': 7, 'isin': 'FR0010902726', 'fin_id': 20, 'source_id': 2, 'code': '131744'}
+{'id': 8, 'isin': 'FR0010588343', 'fin_id': 21, 'source_id': 1, 'code': 'F0GBR04R60'}
+{'id': 8, 'isin': 'FR0010588343', 'fin_id': 22, 'source_id': 2, 'code': '13105'}
+{'id': 9, 'isin': 'FR0011435197', 'fin_id': None, 'source_id': None, 'code': None}
+source list:
+{'id': 1, 'name': 'morningstar', 'search_url': 'http://www.morningstar.fr/fr/funds/SecuritySearchResults.aspx?search=', 'fund_url': 'http://www.morningstar.fr/fr/funds/snapshot/snapshot.aspx?id='}
+{'id': 2, 'name': 'quantalys', 'search_url': 'http://www.quantalys.com/search/listefonds.aspx?autobind=1&autoredirect=1&ISINorNom=', 'fund_url': 'http://www.quantalys.com/Fonds/'}
+updated funds list:
+{'id': 1, 'isin': 'FR0000284689', 'fin_id': 7, 'source_id': 1, 'code': 'F0GBR04QCM'}
+{'id': 1, 'isin': 'FR0000284689', 'fin_id': 8, 'source_id': 2, 'code': '15111'}
+{'id': 2, 'isin': 'LU0099574567', 'fin_id': 9, 'source_id': 1, 'code': 'F0GBR04D20'}
+{'id': 2, 'isin': 'LU0099574567', 'fin_id': 10, 'source_id': 2, 'code': '26195'}
+{'id': 3, 'isin': 'FR0010135103', 'fin_id': 11, 'source_id': 1, 'code': 'F0GBR04F90'}
+{'id': 3, 'isin': 'FR0010135103', 'fin_id': 12, 'source_id': 2, 'code': '9362'}
+{'id': 4, 'isin': 'LU0106959298', 'fin_id': 15, 'source_id': 1, 'code': 'F0GBR04ASN'}
+{'id': 4, 'isin': 'LU0106959298', 'fin_id': 16, 'source_id': 2, 'code': '27160'}
+{'id': 5, 'isin': 'FR0000292278', 'fin_id': 17, 'source_id': 1, 'code': 'F0GBR04QCJ'}
+{'id': 5, 'isin': 'FR0000292278', 'fin_id': 18, 'source_id': 2, 'code': '15112'}
+{'id': 7, 'isin': 'FR0010902726', 'fin_id': 19, 'source_id': 1, 'code': 'F00000LHJS'}
+{'id': 7, 'isin': 'FR0010902726', 'fin_id': 20, 'source_id': 2, 'code': '131744'}
+{'id': 8, 'isin': 'FR0010588343', 'fin_id': 21, 'source_id': 1, 'code': 'F0GBR04R60'}
+{'id': 8, 'isin': 'FR0010588343', 'fin_id': 22, 'source_id': 2, 'code': '13105'}
+{'id': 9, 'isin': 'FR0011435197', 'fin_id': 23, 'source_id': 1, 'code': 'UNSET'}
+{'id': 9, 'isin': 'FR0011435197', 'fin_id': 24, 'source_id': 2, 'code': 'UNSET'}
+source code for ISIN: FR0011435197 ID:UNSET
+source code for ISIN: FR0011435197 ID:UNSET
+updated funds list:
+{'id': 1, 'isin': 'FR0000284689', 'fin_id': 7, 'source_id': 1, 'code': 'F0GBR04QCM'}
+{'id': 1, 'isin': 'FR0000284689', 'fin_id': 8, 'source_id': 2, 'code': '15111'}
+{'id': 2, 'isin': 'LU0099574567', 'fin_id': 9, 'source_id': 1, 'code': 'F0GBR04D20'}
+{'id': 2, 'isin': 'LU0099574567', 'fin_id': 10, 'source_id': 2, 'code': '26195'}
+{'id': 3, 'isin': 'FR0010135103', 'fin_id': 11, 'source_id': 1, 'code': 'F0GBR04F90'}
+{'id': 3, 'isin': 'FR0010135103', 'fin_id': 12, 'source_id': 2, 'code': '9362'}
+{'id': 4, 'isin': 'LU0106959298', 'fin_id': 15, 'source_id': 1, 'code': 'F0GBR04ASN'}
+{'id': 4, 'isin': 'LU0106959298', 'fin_id': 16, 'source_id': 2, 'code': '27160'}
+{'id': 5, 'isin': 'FR0000292278', 'fin_id': 17, 'source_id': 1, 'code': 'F0GBR04QCJ'}
+{'id': 5, 'isin': 'FR0000292278', 'fin_id': 18, 'source_id': 2, 'code': '15112'}
+{'id': 7, 'isin': 'FR0010902726', 'fin_id': 19, 'source_id': 1, 'code': 'F00000LHJS'}
+{'id': 7, 'isin': 'FR0010902726', 'fin_id': 20, 'source_id': 2, 'code': '131744'}
+{'id': 8, 'isin': 'FR0010588343', 'fin_id': 21, 'source_id': 1, 'code': 'F0GBR04R60'}
+{'id': 8, 'isin': 'FR0010588343', 'fin_id': 22, 'source_id': 2, 'code': '13105'}
+{'id': 9, 'isin': 'FR0011435197', 'fin_id': 23, 'source_id': 1, 'code': 'UNSET'}
+{'id': 9, 'isin': 'FR0011435197', 'fin_id': 24, 'source_id': 2, 'code': 'UNSET'}
+----------
+----------fund: {'id': 1, 'isin': 'FR0000284689', 'fin_id': 7, 'source_id': 1, 'code': 'F0GBR04QCM'}
+calling get_info(1, http://www.morningstar.fr/fr/funds/snapshot/snapshot.aspx?id=, F0GBR04QCM)
+>>>>> 
+
+>>>>>item: name
+>>>>>calling lookup: (div, h1), (snapshotTitleBox, ), (, ), (, ), 1
+>>>>>result: Comgest Monde C
+>>>>>result: Comgest Monde C
+
+>>>>>item: rating
+>>>>>calling lookup: (span), (rating_sprite), (1), (class), 0
+>>>>>result: stars4
+>>>>>moreover: x[len(x)-1:len(x)]
+>>>>>result: 4
+
+>>>>>item: lvdate
+>>>>>calling lookup: (table, td), (overviewPerformanceTable, titleBarNote), (, ), (, ), 1
+>>>>>result: 30/04/2019
+>>>>>result: 30/04/2019
+
+>>>>>item: perf_a
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col7), (, ), (, ), 1
+>>>>>result: 14,8
+>>>>>result: 14,8
+
+>>>>>item: perf_am1
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col6), (, ), (, ), 1
+>>>>>result: 3,9
+>>>>>result: 3,9
+
+>>>>>item: perf_am2
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col5), (, ), (, ), 1
+>>>>>result: 19,4
+>>>>>result: 19,4
+
+>>>>>item: perf_am3
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col4), (, ), (, ), 1
+>>>>>result: 3,1
+>>>>>result: 3,1
+
+>>>>>item: benchmark
+>>>>>calling lookup: (table, td, span), (overviewCalenderYearReturnsTable, footer, value), (, 1, ), (, , ), 1
+>>>>>result: MSCI ACWI Growth NR USD
+>>>>>result: MSCI ACWI Growth NR USD
+
+>>>>>item: lvalue
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, ), (, ), 1
+>>>>>result: EUR 2062,23
+>>>>>moreover: x[x.find(u'\xa0')+1:]
+>>>>>result: 2062,23
+
+>>>>>item: currency
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, ), (, ), 1
+>>>>>result: EUR 2062,23
+>>>>>moreover: x[:x.find(u'\xa0')]
+>>>>>result: EUR
+
+>>>>>item: isin
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, 2), (, ), 1
+>>>>>result: FR0000284689
+>>>>>result: FR0000284689
+
+>>>>>item: date_ytd
+>>>>>calling lookup: (table, td), (overviewPerformanceTable, titleBarNote), (, ), (, ), 1
+>>>>>result: 30/04/2019
+>>>>>result: 30/04/2019
+
+----------output:{'code': 'F0GBR04QCM', 'name': 'Comgest Monde C', 'rating': '4', 'lvdate': '30/04/2019', 'perf_a': '14,8', 'perf_am1': '3,9', 'perf_am2': '19,4', 'perf_am3': '3,1', 'benchmark': 'MSCI ACWI Growth NR USD', 'lvalue': '2062,23', 'currency': 'EUR', 'isin': 'FR0000284689', 'date_ytd': '30/04/2019'}
+currency list:
+{'id': 1, 'code': 'EUR', 'value': 1.0}, {'id': 2, 'code': 'USD', 'value': 1.1203}, {'id': 129, 'code': 'BGN', 'value': 1.9558}, {'id': 130, 'code': 'NZD', 'value': 1.7063}, {'id': 131, 'code': 'ILS', 'value': 3.997}, {'id': 132, 'code': 'RUB', 'value': 72.2886}, {'id': 133, 'code': 'CAD', 'value': 1.5039}, {'id': 134, 'code': 'PHP', 'value': 58.797}, {'id': 135, 'code': 'CHF', 'value': 1.1306}, {'id': 136, 'code': 'ZAR', 'value': 15.8555}, {'id': 137, 'code': 'AUD', 'value': 1.6213}, {'id': 138, 'code': 'JPY', 'value': 122.81}, {'id': 139, 'code': 'TRY', 'value': 6.7483}, {'id': 140, 'code': 'HKD', 'value': 8.7934}, {'id': 141, 'code': 'MYR', 'value': 4.6655}, {'id': 142, 'code': 'THB', 'value': 35.396}, {'id': 143, 'code': 'HRK', 'value': 7.4245}, {'id': 144, 'code': 'NOK', 'value': 9.7513}, {'id': 145, 'code': 'IDR', 'value': 16188.34}, {'id': 146, 'code': 'DKK', 'value': 7.4678}, {'id': 147, 'code': 'CZK', 'value': 25.696}, {'id': 148, 'code': 'HUF', 'value': 324.28}, {'id': 149, 'code': 'GBP', 'value': 0.87463}, {'id': 150, 'code': 'MXN', 'value': 21.3161}, {'id': 151, 'code': 'KRW', 'value': 1332.17}, {'id': 152, 'code': 'ISK', 'value': 137.0}, {'id': 153, 'code': 'SGD', 'value': 1.534}, {'id': 154, 'code': 'BRL', 'value': 4.4784}, {'id': 155, 'code': 'PLN', 'value': 4.2962}, {'id': 156, 'code': 'INR', 'value': 78.469}, {'id': 157, 'code': 'RON', 'value': 4.762}, {'id': 158, 'code': 'CNY', 'value': 7.7067}, {'id': 159, 'code': 'SEK', 'value': 10.759}
+selected currency: 1 (EUR) - Taux: 1.00
+updating F0GBR04QCM UPDATE fin_info AS ffo SET name = %s, rating = %s, benchmark = %s, lvdate = DATE(%s), lvalue = %s, currency_id = %s,     date_ytd = DATE(%s), perf_a = %s, perf_am1 = %s, perf_am2 = %s, perf_am3 = %s WHERE ffo.fund_id = %s AND ffo.source_id = %s (Comgest Monde C, 4, MSCI ACWI Growth NR USD, 2019-04-30, 2062.23, 1, 2019-04-30, 14.80, 3.90, 19.40, 3.10, 1, 1)
+ UPDATE fund AS fnd SET last_lvalue = %s WHERE fnd.id = %s (2062.23, 1)
+Last date retrieved: 2019-04-30
+starts:2019-05-01 - ends:2019-04-30
+----------
+----------fund: {'id': 1, 'isin': 'FR0000284689', 'fin_id': 8, 'source_id': 2, 'code': '15111'}
+calling get_info(2, http://www.quantalys.com/Fonds/, 15111)
+>>>>> 
+
+>>>>>item: name
+>>>>>calling lookup: (div, h1, strong), (panel-heading, , ), (, , ), (, , ), 1
+>>>>>result: COMGEST MONDE C
+>>>>>result: COMGEST MONDE C
+
+>>>>>item: isin
+>>>>>calling lookup: (div, h1, small), (panel-heading, , ), (, , ), (, , ), 1
+>>>>>result: FR0000284689
+>>>>>result: FR0000284689
+
+>>>>>item: rating
+>>>>>calling lookup: (div, div), (panel-heading, spritefonds), (, 1), (, class), 0
+>>>>>result: sprite-5g
+>>>>>moreover: x[len(x)-2:len(x)-1]
+>>>>>result: 5
+
+>>>>>item: lvalue
+>>>>>calling lookup: (span), (vl-box-value), (), (), 1
+>>>>>result: 2 062,23  EUR
+>>>>>moreover: x[:x.rfind(' ')]
+>>>>>result: 2 062,23 
+
+>>>>>item: lvdate
+>>>>>calling lookup: (span), (vl-box-date), (), (), 1
+>>>>>result: 15/05/2019
+>>>>>result: 15/05/2019
+
+>>>>>item: currency
+>>>>>calling lookup: (span), (vl-box-value), (), (), 1
+>>>>>result: 2 062,23  EUR
+>>>>>moreover: x[x.rfind(' ')+1:]
+>>>>>result: EUR
+
+>>>>>item: benchmark
+>>>>>calling lookup: (dl, dd), (dl-fichier-identite, ), (, 4), (, ), 1
+>>>>>result: None
+>>>>>result: None
+
+>>>>>item: date_ytd
+>>>>>calling lookup: (table, td, strong), (, , ), (0, 0, ), (, , ), 1
+>>>>>result: Perf. 15/05/2019
+>>>>>moreover: x[x.find(' ')+1:]
+>>>>>result: 15/05/2019
+
+>>>>>item: perf_a
+>>>>>calling lookup: (table, td), (, ), (0, 10), (, ), 1
+>>>>>result: 11,81 %
+>>>>>moreover: x[:-2]
+>>>>>result: 11,81
+
+>>>>>item: perf_am1
+>>>>>calling lookup: (table, td), (, ), (0, 29), (, ), 1
+>>>>>result: 3,88 %
+>>>>>moreover: x[:-2]
+>>>>>result: 3,88
+
+>>>>>item: perf_am2
+>>>>>calling lookup: (table, td), (, ), (0, 32), (, ), 1
+>>>>>result: 19,36 %
+>>>>>moreover: x[:-2]
+>>>>>result: 19,36
+
+>>>>>item: perf_am3
+>>>>>calling lookup: (table, td), (, ), (0, 35), (, ), 1
+>>>>>result: 3,13 %
+>>>>>moreover: x[:-2]
+>>>>>result: 3,13
+
+----------output:{'code': '15111', 'name': 'COMGEST MONDE C', 'isin': 'FR0000284689', 'rating': '5', 'lvalue': '2 062,23 ', 'lvdate': '15/05/2019', 'currency': 'EUR', 'benchmark': 'None', 'date_ytd': '15/05/2019', 'perf_a': '11,81', 'perf_am1': '3,88', 'perf_am2': '19,36', 'perf_am3': '3,13'}
+currency list:
+{'id': 1, 'code': 'EUR', 'value': 1.0}, {'id': 2, 'code': 'USD', 'value': 1.1203}, {'id': 129, 'code': 'BGN', 'value': 1.9558}, {'id': 130, 'code': 'NZD', 'value': 1.7063}, {'id': 131, 'code': 'ILS', 'value': 3.997}, {'id': 132, 'code': 'RUB', 'value': 72.2886}, {'id': 133, 'code': 'CAD', 'value': 1.5039}, {'id': 134, 'code': 'PHP', 'value': 58.797}, {'id': 135, 'code': 'CHF', 'value': 1.1306}, {'id': 136, 'code': 'ZAR', 'value': 15.8555}, {'id': 137, 'code': 'AUD', 'value': 1.6213}, {'id': 138, 'code': 'JPY', 'value': 122.81}, {'id': 139, 'code': 'TRY', 'value': 6.7483}, {'id': 140, 'code': 'HKD', 'value': 8.7934}, {'id': 141, 'code': 'MYR', 'value': 4.6655}, {'id': 142, 'code': 'THB', 'value': 35.396}, {'id': 143, 'code': 'HRK', 'value': 7.4245}, {'id': 144, 'code': 'NOK', 'value': 9.7513}, {'id': 145, 'code': 'IDR', 'value': 16188.34}, {'id': 146, 'code': 'DKK', 'value': 7.4678}, {'id': 147, 'code': 'CZK', 'value': 25.696}, {'id': 148, 'code': 'HUF', 'value': 324.28}, {'id': 149, 'code': 'GBP', 'value': 0.87463}, {'id': 150, 'code': 'MXN', 'value': 21.3161}, {'id': 151, 'code': 'KRW', 'value': 1332.17}, {'id': 152, 'code': 'ISK', 'value': 137.0}, {'id': 153, 'code': 'SGD', 'value': 1.534}, {'id': 154, 'code': 'BRL', 'value': 4.4784}, {'id': 155, 'code': 'PLN', 'value': 4.2962}, {'id': 156, 'code': 'INR', 'value': 78.469}, {'id': 157, 'code': 'RON', 'value': 4.762}, {'id': 158, 'code': 'CNY', 'value': 7.7067}, {'id': 159, 'code': 'SEK', 'value': 10.759}
+selected currency: 1 (EUR) - Taux: 1.00
+updating 15111 UPDATE fin_info AS ffo SET name = %s, rating = %s, benchmark = %s, lvdate = DATE(%s), lvalue = %s, currency_id = %s,     date_ytd = DATE(%s), perf_a = %s, perf_am1 = %s, perf_am2 = %s, perf_am3 = %s WHERE ffo.fund_id = %s AND ffo.source_id = %s (COMGEST MONDE C, 5, None, 2019-05-15, 2062.23, 1, 2019-05-15, 11.81, 3.88, 19.36, 3.13, 1, 2)
+ UPDATE fund AS fnd SET last_lvalue = %s WHERE fnd.id = %s (2062.23, 1)
+----------
+----------fund: {'id': 2, 'isin': 'LU0099574567', 'fin_id': 9, 'source_id': 1, 'code': 'F0GBR04D20'}
+calling get_info(1, http://www.morningstar.fr/fr/funds/snapshot/snapshot.aspx?id=, F0GBR04D20)
+>>>>> 
+
+>>>>>item: name
+>>>>>calling lookup: (div, h1), (snapshotTitleBox, ), (, ), (, ), 1
+>>>>>result: Fidelity Funds - Global Technology Fund A-DIST-EUR
+>>>>>result: Fidelity Funds - Global Technology Fund A-DIST-EUR
+
+>>>>>item: rating
+>>>>>calling lookup: (span), (rating_sprite), (1), (class), 0
+>>>>>result: stars5
+>>>>>moreover: x[len(x)-1:len(x)]
+>>>>>result: 5
+
+>>>>>item: lvdate
+>>>>>calling lookup: (table, td), (overviewPerformanceTable, titleBarNote), (, ), (, ), 1
+>>>>>result: 30/04/2019
+>>>>>result: 30/04/2019
+
+>>>>>item: perf_a
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col7), (, ), (, ), 1
+>>>>>result: 29,0
+>>>>>result: 29,0
+
+>>>>>item: perf_am1
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col6), (, ), (, ), 1
+>>>>>result: 0,5
+>>>>>result: 0,5
+
+>>>>>item: perf_am2
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col5), (, ), (, ), 1
+>>>>>result: 19,4
+>>>>>result: 19,4
+
+>>>>>item: perf_am3
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col4), (, ), (, ), 1
+>>>>>result: 19,8
+>>>>>result: 19,8
+
+>>>>>item: benchmark
+>>>>>calling lookup: (table, td, span), (overviewCalenderYearReturnsTable, footer, value), (, 1, ), (, , ), 1
+>>>>>result: MSCI World/Information Tech...
+>>>>>result: MSCI World/Information Tech...
+
+>>>>>item: lvalue
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, ), (, ), 1
+>>>>>result: EUR 25,29
+>>>>>moreover: x[x.find(u'\xa0')+1:]
+>>>>>result: 25,29
+
+>>>>>item: currency
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, ), (, ), 1
+>>>>>result: EUR 25,29
+>>>>>moreover: x[:x.find(u'\xa0')]
+>>>>>result: EUR
+
+>>>>>item: isin
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, 2), (, ), 1
+>>>>>result: LU0099574567
+>>>>>result: LU0099574567
+
+>>>>>item: date_ytd
+>>>>>calling lookup: (table, td), (overviewPerformanceTable, titleBarNote), (, ), (, ), 1
+>>>>>result: 30/04/2019
+>>>>>result: 30/04/2019
+
+----------output:{'code': 'F0GBR04D20', 'name': 'Fidelity Funds - Global Technology Fund A-DIST-EUR', 'rating': '5', 'lvdate': '30/04/2019', 'perf_a': '29,0', 'perf_am1': '0,5', 'perf_am2': '19,4', 'perf_am3': '19,8', 'benchmark': 'MSCI World/Information Tech...', 'lvalue': '25,29', 'currency': 'EUR', 'isin': 'LU0099574567', 'date_ytd': '30/04/2019'}
+currency list:
+{'id': 1, 'code': 'EUR', 'value': 1.0}, {'id': 2, 'code': 'USD', 'value': 1.1203}, {'id': 129, 'code': 'BGN', 'value': 1.9558}, {'id': 130, 'code': 'NZD', 'value': 1.7063}, {'id': 131, 'code': 'ILS', 'value': 3.997}, {'id': 132, 'code': 'RUB', 'value': 72.2886}, {'id': 133, 'code': 'CAD', 'value': 1.5039}, {'id': 134, 'code': 'PHP', 'value': 58.797}, {'id': 135, 'code': 'CHF', 'value': 1.1306}, {'id': 136, 'code': 'ZAR', 'value': 15.8555}, {'id': 137, 'code': 'AUD', 'value': 1.6213}, {'id': 138, 'code': 'JPY', 'value': 122.81}, {'id': 139, 'code': 'TRY', 'value': 6.7483}, {'id': 140, 'code': 'HKD', 'value': 8.7934}, {'id': 141, 'code': 'MYR', 'value': 4.6655}, {'id': 142, 'code': 'THB', 'value': 35.396}, {'id': 143, 'code': 'HRK', 'value': 7.4245}, {'id': 144, 'code': 'NOK', 'value': 9.7513}, {'id': 145, 'code': 'IDR', 'value': 16188.34}, {'id': 146, 'code': 'DKK', 'value': 7.4678}, {'id': 147, 'code': 'CZK', 'value': 25.696}, {'id': 148, 'code': 'HUF', 'value': 324.28}, {'id': 149, 'code': 'GBP', 'value': 0.87463}, {'id': 150, 'code': 'MXN', 'value': 21.3161}, {'id': 151, 'code': 'KRW', 'value': 1332.17}, {'id': 152, 'code': 'ISK', 'value': 137.0}, {'id': 153, 'code': 'SGD', 'value': 1.534}, {'id': 154, 'code': 'BRL', 'value': 4.4784}, {'id': 155, 'code': 'PLN', 'value': 4.2962}, {'id': 156, 'code': 'INR', 'value': 78.469}, {'id': 157, 'code': 'RON', 'value': 4.762}, {'id': 158, 'code': 'CNY', 'value': 7.7067}, {'id': 159, 'code': 'SEK', 'value': 10.759}
+selected currency: 1 (EUR) - Taux: 1.00
+updating F0GBR04D20 UPDATE fin_info AS ffo SET name = %s, rating = %s, benchmark = %s, lvdate = DATE(%s), lvalue = %s, currency_id = %s,     date_ytd = DATE(%s), perf_a = %s, perf_am1 = %s, perf_am2 = %s, perf_am3 = %s WHERE ffo.fund_id = %s AND ffo.source_id = %s (Fidelity Funds - Global Technology Fund A-DIST-EUR, 5, MSCI World/Information Tech..., 2019-04-30, 25.29, 1, 2019-04-30, 29.00, 0.50, 19.40, 19.80, 2, 1)
+ UPDATE fund AS fnd SET last_lvalue = %s WHERE fnd.id = %s (25.29, 2)
+Last date retrieved: 2019-04-30
+starts:2019-05-01 - ends:2019-04-30
+----------
+----------fund: {'id': 2, 'isin': 'LU0099574567', 'fin_id': 10, 'source_id': 2, 'code': '26195'}
+calling get_info(2, http://www.quantalys.com/Fonds/, 26195)
+>>>>> 
+
+>>>>>item: name
+>>>>>calling lookup: (div, h1, strong), (panel-heading, , ), (, , ), (, , ), 1
+>>>>>result: FF GLOBAL TECHNOLOGY FUND A EUR DIS
+>>>>>result: FF GLOBAL TECHNOLOGY FUND A EUR DIS
+
+>>>>>item: isin
+>>>>>calling lookup: (div, h1, small), (panel-heading, , ), (, , ), (, , ), 1
+>>>>>result: LU0099574567
+>>>>>result: LU0099574567
+
+>>>>>item: rating
+>>>>>calling lookup: (div, div), (panel-heading, spritefonds), (, 1), (, class), 0
+>>>>>result: sprite-5g
+>>>>>moreover: x[len(x)-2:len(x)-1]
+>>>>>result: 5
+
+>>>>>item: lvalue
+>>>>>calling lookup: (span), (vl-box-value), (), (), 1
+>>>>>result: 25,29  EUR
+>>>>>moreover: x[:x.rfind(' ')]
+>>>>>result: 25,29 
+
+>>>>>item: lvdate
+>>>>>calling lookup: (span), (vl-box-date), (), (), 1
+>>>>>result: 16/05/2019
+>>>>>result: 16/05/2019
+
+>>>>>item: currency
+>>>>>calling lookup: (span), (vl-box-value), (), (), 1
+>>>>>result: 25,29  EUR
+>>>>>moreover: x[x.rfind(' ')+1:]
+>>>>>result: EUR
+
+>>>>>item: benchmark
+>>>>>calling lookup: (dl, dd), (dl-fichier-identite, ), (, 4), (, ), 1
+>>>>>result: MSCI AC World Technology (N)
+>>>>>result: MSCI AC World Technology (N)
+
+>>>>>item: date_ytd
+>>>>>calling lookup: (table, td, strong), (, , ), (0, 0, ), (, , ), 1
+>>>>>result: Perf. 16/05/2019
+>>>>>moreover: x[x.find(' ')+1:]
+>>>>>result: 16/05/2019
+
+>>>>>item: perf_a
+>>>>>calling lookup: (table, td), (, ), (0, 10), (, ), 1
+>>>>>result: 23,97 %
+>>>>>moreover: x[:-2]
+>>>>>result: 23,97
+
+>>>>>item: perf_am1
+>>>>>calling lookup: (table, td), (, ), (0, 29), (, ), 1
+>>>>>result: 0,49 %
+>>>>>moreover: x[:-2]
+>>>>>result: 0,49
+
+>>>>>item: perf_am2
+>>>>>calling lookup: (table, td), (, ), (0, 32), (, ), 1
+>>>>>result: 19,41 %
+>>>>>moreover: x[:-2]
+>>>>>result: 19,41
+
+>>>>>item: perf_am3
+>>>>>calling lookup: (table, td), (, ), (0, 35), (, ), 1
+>>>>>result: 19,80 %
+>>>>>moreover: x[:-2]
+>>>>>result: 19,80
+
+----------output:{'code': '26195', 'name': 'FF GLOBAL TECHNOLOGY FUND A EUR DIS', 'isin': 'LU0099574567', 'rating': '5', 'lvalue': '25,29 ', 'lvdate': '16/05/2019', 'currency': 'EUR', 'benchmark': 'MSCI AC World Technology (N)', 'date_ytd': '16/05/2019', 'perf_a': '23,97', 'perf_am1': '0,49', 'perf_am2': '19,41', 'perf_am3': '19,80'}
+currency list:
+{'id': 1, 'code': 'EUR', 'value': 1.0}, {'id': 2, 'code': 'USD', 'value': 1.1203}, {'id': 129, 'code': 'BGN', 'value': 1.9558}, {'id': 130, 'code': 'NZD', 'value': 1.7063}, {'id': 131, 'code': 'ILS', 'value': 3.997}, {'id': 132, 'code': 'RUB', 'value': 72.2886}, {'id': 133, 'code': 'CAD', 'value': 1.5039}, {'id': 134, 'code': 'PHP', 'value': 58.797}, {'id': 135, 'code': 'CHF', 'value': 1.1306}, {'id': 136, 'code': 'ZAR', 'value': 15.8555}, {'id': 137, 'code': 'AUD', 'value': 1.6213}, {'id': 138, 'code': 'JPY', 'value': 122.81}, {'id': 139, 'code': 'TRY', 'value': 6.7483}, {'id': 140, 'code': 'HKD', 'value': 8.7934}, {'id': 141, 'code': 'MYR', 'value': 4.6655}, {'id': 142, 'code': 'THB', 'value': 35.396}, {'id': 143, 'code': 'HRK', 'value': 7.4245}, {'id': 144, 'code': 'NOK', 'value': 9.7513}, {'id': 145, 'code': 'IDR', 'value': 16188.34}, {'id': 146, 'code': 'DKK', 'value': 7.4678}, {'id': 147, 'code': 'CZK', 'value': 25.696}, {'id': 148, 'code': 'HUF', 'value': 324.28}, {'id': 149, 'code': 'GBP', 'value': 0.87463}, {'id': 150, 'code': 'MXN', 'value': 21.3161}, {'id': 151, 'code': 'KRW', 'value': 1332.17}, {'id': 152, 'code': 'ISK', 'value': 137.0}, {'id': 153, 'code': 'SGD', 'value': 1.534}, {'id': 154, 'code': 'BRL', 'value': 4.4784}, {'id': 155, 'code': 'PLN', 'value': 4.2962}, {'id': 156, 'code': 'INR', 'value': 78.469}, {'id': 157, 'code': 'RON', 'value': 4.762}, {'id': 158, 'code': 'CNY', 'value': 7.7067}, {'id': 159, 'code': 'SEK', 'value': 10.759}
+selected currency: 1 (EUR) - Taux: 1.00
+updating 26195 UPDATE fin_info AS ffo SET name = %s, rating = %s, benchmark = %s, lvdate = DATE(%s), lvalue = %s, currency_id = %s,     date_ytd = DATE(%s), perf_a = %s, perf_am1 = %s, perf_am2 = %s, perf_am3 = %s WHERE ffo.fund_id = %s AND ffo.source_id = %s (FF GLOBAL TECHNOLOGY FUND A EUR DIS, 5, MSCI AC World Technology (N), 2019-05-16, 25.29, 1, 2019-05-16, 23.97, 0.49, 19.41, 19.80, 2, 2)
+ UPDATE fund AS fnd SET last_lvalue = %s WHERE fnd.id = %s (25.29, 2)
+----------
+----------fund: {'id': 3, 'isin': 'FR0010135103', 'fin_id': 11, 'source_id': 1, 'code': 'F0GBR04F90'}
+calling get_info(1, http://www.morningstar.fr/fr/funds/snapshot/snapshot.aspx?id=, F0GBR04F90)
+>>>>> 
+
+>>>>>item: name
+>>>>>calling lookup: (div, h1), (snapshotTitleBox, ), (, ), (, ), 1
+>>>>>result: Carmignac Patrimoine A EUR Acc
+>>>>>result: Carmignac Patrimoine A EUR Acc
+
+>>>>>item: rating
+>>>>>calling lookup: (span), (rating_sprite), (1), (class), 0
+>>>>>result: stars2
+>>>>>moreover: x[len(x)-1:len(x)]
+>>>>>result: 2
+
+>>>>>item: lvdate
+>>>>>calling lookup: (table, td), (overviewPerformanceTable, titleBarNote), (, ), (, ), 1
+>>>>>result: 30/04/2019
+>>>>>result: 30/04/2019
+
+>>>>>item: perf_a
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col7), (, ), (, ), 1
+>>>>>result: 5,4
+>>>>>result: 5,4
+
+>>>>>item: perf_am1
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col6), (, ), (, ), 1
+>>>>>result: -11,3
+>>>>>result: -11,3
+
+>>>>>item: perf_am2
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col5), (, ), (, ), 1
+>>>>>result: 0,1
+>>>>>result: 0,1
+
+>>>>>item: perf_am3
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col4), (, ), (, ), 1
+>>>>>result: 3,9
+>>>>>result: 3,9
+
+>>>>>item: benchmark
+>>>>>calling lookup: (table, td, span), (overviewCalenderYearReturnsTable, footer, value), (, 1, ), (, , ), 1
+>>>>>result: Cat 50%Barclays EurAgg TR&5...
+>>>>>result: Cat 50%Barclays EurAgg TR&5...
+
+>>>>>item: lvalue
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, ), (, ), 1
+>>>>>result: EUR 600,40
+>>>>>moreover: x[x.find(u'\xa0')+1:]
+>>>>>result: 600,40
+
+>>>>>item: currency
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, ), (, ), 1
+>>>>>result: EUR 600,40
+>>>>>moreover: x[:x.find(u'\xa0')]
+>>>>>result: EUR
+
+>>>>>item: isin
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, 2), (, ), 1
+>>>>>result: FR0010135103
+>>>>>result: FR0010135103
+
+>>>>>item: date_ytd
+>>>>>calling lookup: (table, td), (overviewPerformanceTable, titleBarNote), (, ), (, ), 1
+>>>>>result: 30/04/2019
+>>>>>result: 30/04/2019
+
+----------output:{'code': 'F0GBR04F90', 'name': 'Carmignac Patrimoine A EUR Acc', 'rating': '2', 'lvdate': '30/04/2019', 'perf_a': '5,4', 'perf_am1': '-11,3', 'perf_am2': '0,1', 'perf_am3': '3,9', 'benchmark': 'Cat 50%Barclays EurAgg TR&5...', 'lvalue': '600,40', 'currency': 'EUR', 'isin': 'FR0010135103', 'date_ytd': '30/04/2019'}
+currency list:
+{'id': 1, 'code': 'EUR', 'value': 1.0}, {'id': 2, 'code': 'USD', 'value': 1.1203}, {'id': 129, 'code': 'BGN', 'value': 1.9558}, {'id': 130, 'code': 'NZD', 'value': 1.7063}, {'id': 131, 'code': 'ILS', 'value': 3.997}, {'id': 132, 'code': 'RUB', 'value': 72.2886}, {'id': 133, 'code': 'CAD', 'value': 1.5039}, {'id': 134, 'code': 'PHP', 'value': 58.797}, {'id': 135, 'code': 'CHF', 'value': 1.1306}, {'id': 136, 'code': 'ZAR', 'value': 15.8555}, {'id': 137, 'code': 'AUD', 'value': 1.6213}, {'id': 138, 'code': 'JPY', 'value': 122.81}, {'id': 139, 'code': 'TRY', 'value': 6.7483}, {'id': 140, 'code': 'HKD', 'value': 8.7934}, {'id': 141, 'code': 'MYR', 'value': 4.6655}, {'id': 142, 'code': 'THB', 'value': 35.396}, {'id': 143, 'code': 'HRK', 'value': 7.4245}, {'id': 144, 'code': 'NOK', 'value': 9.7513}, {'id': 145, 'code': 'IDR', 'value': 16188.34}, {'id': 146, 'code': 'DKK', 'value': 7.4678}, {'id': 147, 'code': 'CZK', 'value': 25.696}, {'id': 148, 'code': 'HUF', 'value': 324.28}, {'id': 149, 'code': 'GBP', 'value': 0.87463}, {'id': 150, 'code': 'MXN', 'value': 21.3161}, {'id': 151, 'code': 'KRW', 'value': 1332.17}, {'id': 152, 'code': 'ISK', 'value': 137.0}, {'id': 153, 'code': 'SGD', 'value': 1.534}, {'id': 154, 'code': 'BRL', 'value': 4.4784}, {'id': 155, 'code': 'PLN', 'value': 4.2962}, {'id': 156, 'code': 'INR', 'value': 78.469}, {'id': 157, 'code': 'RON', 'value': 4.762}, {'id': 158, 'code': 'CNY', 'value': 7.7067}, {'id': 159, 'code': 'SEK', 'value': 10.759}
+selected currency: 1 (EUR) - Taux: 1.00
+updating F0GBR04F90 UPDATE fin_info AS ffo SET name = %s, rating = %s, benchmark = %s, lvdate = DATE(%s), lvalue = %s, currency_id = %s,     date_ytd = DATE(%s), perf_a = %s, perf_am1 = %s, perf_am2 = %s, perf_am3 = %s WHERE ffo.fund_id = %s AND ffo.source_id = %s (Carmignac Patrimoine A EUR Acc, 2, Cat 50%Barclays EurAgg TR&5..., 2019-04-30, 600.40, 1, 2019-04-30, 5.40, -11.30, 0.10, 3.90, 3, 1)
+ UPDATE fund AS fnd SET last_lvalue = %s WHERE fnd.id = %s (600.40, 3)
+Last date retrieved: 2019-04-30
+starts:2019-05-01 - ends:2019-04-30
+----------
+----------fund: {'id': 3, 'isin': 'FR0010135103', 'fin_id': 12, 'source_id': 2, 'code': '9362'}
+calling get_info(2, http://www.quantalys.com/Fonds/, 9362)
+>>>>> 
+
+>>>>>item: name
+>>>>>calling lookup: (div, h1, strong), (panel-heading, , ), (, , ), (, , ), 1
+>>>>>result: CARMIGNAC PATRIMOINE A EUR ACC
+>>>>>result: CARMIGNAC PATRIMOINE A EUR ACC
+
+>>>>>item: isin
+>>>>>calling lookup: (div, h1, small), (panel-heading, , ), (, , ), (, , ), 1
+>>>>>result: FR0010135103
+>>>>>result: FR0010135103
+
+>>>>>item: rating
+>>>>>calling lookup: (div, div), (panel-heading, spritefonds), (, 1), (, class), 0
+>>>>>result: sprite-1g
+>>>>>moreover: x[len(x)-2:len(x)-1]
+>>>>>result: 1
+
+>>>>>item: lvalue
+>>>>>calling lookup: (span), (vl-box-value), (), (), 1
+>>>>>result: 600,40  EUR
+>>>>>moreover: x[:x.rfind(' ')]
+>>>>>result: 600,40 
+
+>>>>>item: lvdate
+>>>>>calling lookup: (span), (vl-box-date), (), (), 1
+>>>>>result: 15/05/2019
+>>>>>result: 15/05/2019
+
+>>>>>item: currency
+>>>>>calling lookup: (span), (vl-box-value), (), (), 1
+>>>>>result: 600,40  EUR
+>>>>>moreover: x[x.rfind(' ')+1:]
+>>>>>result: EUR
+
+>>>>>item: benchmark
+>>>>>calling lookup: (dl, dd), (dl-fichier-identite, ), (, 4), (, ), 1
+>>>>>result: 50% MSCI AC WORLD NR (USD), 50% Citigroup WGBI All Maturities Eur
+>>>>>result: 50% MSCI AC WORLD NR (USD), 50% Citigroup WGBI All Maturities Eur
+
+>>>>>item: date_ytd
+>>>>>calling lookup: (table, td, strong), (, , ), (0, 0, ), (, , ), 1
+>>>>>result: Perf. 15/05/2019
+>>>>>moreover: x[x.find(' ')+1:]
+>>>>>result: 15/05/2019
+
+>>>>>item: perf_a
+>>>>>calling lookup: (table, td), (, ), (0, 10), (, ), 1
+>>>>>result: 4,16 %
+>>>>>moreover: x[:-2]
+>>>>>result: 4,16
+
+>>>>>item: perf_am1
+>>>>>calling lookup: (table, td), (, ), (0, 29), (, ), 1
+>>>>>result: -11,29 %
+>>>>>moreover: x[:-2]
+>>>>>result: -11,29
+
+>>>>>item: perf_am2
+>>>>>calling lookup: (table, td), (, ), (0, 32), (, ), 1
+>>>>>result: 0,09 %
+>>>>>moreover: x[:-2]
+>>>>>result: 0,09
+
+>>>>>item: perf_am3
+>>>>>calling lookup: (table, td), (, ), (0, 35), (, ), 1
+>>>>>result: 3,88 %
+>>>>>moreover: x[:-2]
+>>>>>result: 3,88
+
+----------output:{'code': '9362', 'name': 'CARMIGNAC PATRIMOINE A EUR ACC', 'isin': 'FR0010135103', 'rating': '1', 'lvalue': '600,40 ', 'lvdate': '15/05/2019', 'currency': 'EUR', 'benchmark': '50% MSCI AC WORLD NR\xa0(USD), 50% Citigroup WGBI All Maturities Eur', 'date_ytd': '15/05/2019', 'perf_a': '4,16', 'perf_am1': '-11,29', 'perf_am2': '0,09', 'perf_am3': '3,88'}
+currency list:
+{'id': 1, 'code': 'EUR', 'value': 1.0}, {'id': 2, 'code': 'USD', 'value': 1.1203}, {'id': 129, 'code': 'BGN', 'value': 1.9558}, {'id': 130, 'code': 'NZD', 'value': 1.7063}, {'id': 131, 'code': 'ILS', 'value': 3.997}, {'id': 132, 'code': 'RUB', 'value': 72.2886}, {'id': 133, 'code': 'CAD', 'value': 1.5039}, {'id': 134, 'code': 'PHP', 'value': 58.797}, {'id': 135, 'code': 'CHF', 'value': 1.1306}, {'id': 136, 'code': 'ZAR', 'value': 15.8555}, {'id': 137, 'code': 'AUD', 'value': 1.6213}, {'id': 138, 'code': 'JPY', 'value': 122.81}, {'id': 139, 'code': 'TRY', 'value': 6.7483}, {'id': 140, 'code': 'HKD', 'value': 8.7934}, {'id': 141, 'code': 'MYR', 'value': 4.6655}, {'id': 142, 'code': 'THB', 'value': 35.396}, {'id': 143, 'code': 'HRK', 'value': 7.4245}, {'id': 144, 'code': 'NOK', 'value': 9.7513}, {'id': 145, 'code': 'IDR', 'value': 16188.34}, {'id': 146, 'code': 'DKK', 'value': 7.4678}, {'id': 147, 'code': 'CZK', 'value': 25.696}, {'id': 148, 'code': 'HUF', 'value': 324.28}, {'id': 149, 'code': 'GBP', 'value': 0.87463}, {'id': 150, 'code': 'MXN', 'value': 21.3161}, {'id': 151, 'code': 'KRW', 'value': 1332.17}, {'id': 152, 'code': 'ISK', 'value': 137.0}, {'id': 153, 'code': 'SGD', 'value': 1.534}, {'id': 154, 'code': 'BRL', 'value': 4.4784}, {'id': 155, 'code': 'PLN', 'value': 4.2962}, {'id': 156, 'code': 'INR', 'value': 78.469}, {'id': 157, 'code': 'RON', 'value': 4.762}, {'id': 158, 'code': 'CNY', 'value': 7.7067}, {'id': 159, 'code': 'SEK', 'value': 10.759}
+selected currency: 1 (EUR) - Taux: 1.00
+updating 9362 UPDATE fin_info AS ffo SET name = %s, rating = %s, benchmark = %s, lvdate = DATE(%s), lvalue = %s, currency_id = %s,     date_ytd = DATE(%s), perf_a = %s, perf_am1 = %s, perf_am2 = %s, perf_am3 = %s WHERE ffo.fund_id = %s AND ffo.source_id = %s (CARMIGNAC PATRIMOINE A EUR ACC, 1, 50% MSCI AC WORLD NR (USD), 50% Citigroup WGBI All Maturities Eur, 2019-05-15, 600.40, 1, 2019-05-15, 4.16, -11.29, 0.09, 3.88, 3, 2)
+ UPDATE fund AS fnd SET last_lvalue = %s WHERE fnd.id = %s (600.40, 3)
+----------
+----------fund: {'id': 4, 'isin': 'LU0106959298', 'fin_id': 15, 'source_id': 1, 'code': 'F0GBR04ASN'}
+calling get_info(1, http://www.morningstar.fr/fr/funds/snapshot/snapshot.aspx?id=, F0GBR04ASN)
+>>>>> 
+
+>>>>>item: name
+>>>>>calling lookup: (div, h1), (snapshotTitleBox, ), (, ), (, ), 1
+>>>>>result: UBS (Lux) Equity Fund - Asian Consumption (USD) P-acc
+>>>>>result: UBS (Lux) Equity Fund - Asian Consumption (USD) P-acc
+
+>>>>>item: rating
+>>>>>calling lookup: (span), (rating_sprite), (1), (class), 0
+>>>>>result: stars3
+>>>>>moreover: x[len(x)-1:len(x)]
+>>>>>result: 3
+
+>>>>>item: lvdate
+>>>>>calling lookup: (table, td), (overviewPerformanceTable, titleBarNote), (, ), (, ), 1
+>>>>>result: 30/04/2019
+>>>>>result: 30/04/2019
+
+>>>>>item: perf_a
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col7), (, ), (, ), 1
+>>>>>result: 20,8
+>>>>>result: 20,8
+
+>>>>>item: perf_am1
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col6), (, ), (, ), 1
+>>>>>result: -11,6
+>>>>>result: -11,6
+
+>>>>>item: perf_am2
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col5), (, ), (, ), 1
+>>>>>result: 31,3
+>>>>>result: 31,3
+
+>>>>>item: perf_am3
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col4), (, ), (, ), 1
+>>>>>result: 1,2
+>>>>>result: 1,2
+
+>>>>>item: benchmark
+>>>>>calling lookup: (table, td, span), (overviewCalenderYearReturnsTable, footer, value), (, 1, ), (, , ), 1
+>>>>>result: Cat 50%MSCI Wld/CD NR&50%MS...
+>>>>>result: Cat 50%MSCI Wld/CD NR&50%MS...
+
+>>>>>item: lvalue
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, ), (, ), 1
+>>>>>result: USD 137,01
+>>>>>moreover: x[x.find(u'\xa0')+1:]
+>>>>>result: 137,01
+
+>>>>>item: currency
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, ), (, ), 1
+>>>>>result: USD 137,01
+>>>>>moreover: x[:x.find(u'\xa0')]
+>>>>>result: USD
+
+>>>>>item: isin
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, 2), (, ), 1
+>>>>>result: LU0106959298
+>>>>>result: LU0106959298
+
+>>>>>item: date_ytd
+>>>>>calling lookup: (table, td), (overviewPerformanceTable, titleBarNote), (, ), (, ), 1
+>>>>>result: 30/04/2019
+>>>>>result: 30/04/2019
+
+----------output:{'code': 'F0GBR04ASN', 'name': 'UBS (Lux) Equity Fund - Asian Consumption (USD) P-acc', 'rating': '3', 'lvdate': '30/04/2019', 'perf_a': '20,8', 'perf_am1': '-11,6', 'perf_am2': '31,3', 'perf_am3': '1,2', 'benchmark': 'Cat 50%MSCI Wld/CD NR&50%MS...', 'lvalue': '137,01', 'currency': 'USD', 'isin': 'LU0106959298', 'date_ytd': '30/04/2019'}
+currency list:
+{'id': 1, 'code': 'EUR', 'value': 1.0}, {'id': 2, 'code': 'USD', 'value': 1.1203}, {'id': 129, 'code': 'BGN', 'value': 1.9558}, {'id': 130, 'code': 'NZD', 'value': 1.7063}, {'id': 131, 'code': 'ILS', 'value': 3.997}, {'id': 132, 'code': 'RUB', 'value': 72.2886}, {'id': 133, 'code': 'CAD', 'value': 1.5039}, {'id': 134, 'code': 'PHP', 'value': 58.797}, {'id': 135, 'code': 'CHF', 'value': 1.1306}, {'id': 136, 'code': 'ZAR', 'value': 15.8555}, {'id': 137, 'code': 'AUD', 'value': 1.6213}, {'id': 138, 'code': 'JPY', 'value': 122.81}, {'id': 139, 'code': 'TRY', 'value': 6.7483}, {'id': 140, 'code': 'HKD', 'value': 8.7934}, {'id': 141, 'code': 'MYR', 'value': 4.6655}, {'id': 142, 'code': 'THB', 'value': 35.396}, {'id': 143, 'code': 'HRK', 'value': 7.4245}, {'id': 144, 'code': 'NOK', 'value': 9.7513}, {'id': 145, 'code': 'IDR', 'value': 16188.34}, {'id': 146, 'code': 'DKK', 'value': 7.4678}, {'id': 147, 'code': 'CZK', 'value': 25.696}, {'id': 148, 'code': 'HUF', 'value': 324.28}, {'id': 149, 'code': 'GBP', 'value': 0.87463}, {'id': 150, 'code': 'MXN', 'value': 21.3161}, {'id': 151, 'code': 'KRW', 'value': 1332.17}, {'id': 152, 'code': 'ISK', 'value': 137.0}, {'id': 153, 'code': 'SGD', 'value': 1.534}, {'id': 154, 'code': 'BRL', 'value': 4.4784}, {'id': 155, 'code': 'PLN', 'value': 4.2962}, {'id': 156, 'code': 'INR', 'value': 78.469}, {'id': 157, 'code': 'RON', 'value': 4.762}, {'id': 158, 'code': 'CNY', 'value': 7.7067}, {'id': 159, 'code': 'SEK', 'value': 10.759}
+selected currency: 2 (USD) - Taux: 1.12
+updating F0GBR04ASN UPDATE fin_info AS ffo SET name = %s, rating = %s, benchmark = %s, lvdate = DATE(%s), lvalue = %s, currency_id = %s,     date_ytd = DATE(%s), perf_a = %s, perf_am1 = %s, perf_am2 = %s, perf_am3 = %s WHERE ffo.fund_id = %s AND ffo.source_id = %s (UBS (Lux) Equity Fund - Asian Consumption (USD) P-acc, 3, Cat 50%MSCI Wld/CD NR&50%MS..., 2019-04-30, 137.01, 2, 2019-04-30, 20.80, -11.60, 31.30, 1.20, 4, 1)
+ UPDATE fund AS fnd SET last_lvalue = %s WHERE fnd.id = %s (122.30, 4)
+Last date retrieved: 2019-04-30
+starts:2019-05-01 - ends:2019-04-30
+----------
+----------fund: {'id': 4, 'isin': 'LU0106959298', 'fin_id': 16, 'source_id': 2, 'code': '27160'}
+calling get_info(2, http://www.quantalys.com/Fonds/, 27160)
+>>>>> 
+
+>>>>>item: name
+>>>>>calling lookup: (div, h1, strong), (panel-heading, , ), (, , ), (, , ), 1
+>>>>>result: UBS EQ FD ASIAN CONSUMPTION P USD
+>>>>>result: UBS EQ FD ASIAN CONSUMPTION P USD
+
+>>>>>item: isin
+>>>>>calling lookup: (div, h1, small), (panel-heading, , ), (, , ), (, , ), 1
+>>>>>result: LU0106959298
+>>>>>result: LU0106959298
+
+>>>>>item: rating
+>>>>>calling lookup: (div, div), (panel-heading, spritefonds), (, 1), (, class), 0
+>>>>>result: sprite-5g
+>>>>>moreover: x[len(x)-2:len(x)-1]
+>>>>>result: 5
+
+>>>>>item: lvalue
+>>>>>calling lookup: (span), (vl-box-value), (), (), 1
+>>>>>result: 135,78  USD
+>>>>>moreover: x[:x.rfind(' ')]
+>>>>>result: 135,78 
+
+>>>>>item: lvdate
+>>>>>calling lookup: (span), (vl-box-date), (), (), 1
+>>>>>result: 15/05/2019
+>>>>>result: 15/05/2019
+
+>>>>>item: currency
+>>>>>calling lookup: (span), (vl-box-value), (), (), 1
+>>>>>result: 135,78  USD
+>>>>>moreover: x[x.rfind(' ')+1:]
+>>>>>result: USD
+
+>>>>>item: benchmark
+>>>>>calling lookup: (dl, dd), (dl-fichier-identite, ), (, 4), (, ), 1
+>>>>>result: MSCI All Country Asia ex Japan
+>>>>>result: MSCI All Country Asia ex Japan
+
+>>>>>item: date_ytd
+>>>>>calling lookup: (table, td, strong), (, , ), (0, 0, ), (, , ), 1
+>>>>>result: Perf. 15/05/2019
+>>>>>moreover: x[x.find(' ')+1:]
+>>>>>result: 15/05/2019
+
+>>>>>item: perf_a
+>>>>>calling lookup: (table, td), (, ), (0, 10), (, ), 1
+>>>>>result: 15,00 %
+>>>>>moreover: x[:-2]
+>>>>>result: 15,00
+
+>>>>>item: perf_am1
+>>>>>calling lookup: (table, td), (, ), (0, 29), (, ), 1
+>>>>>result: -11,80 %
+>>>>>moreover: x[:-2]
+>>>>>result: -11,80
+
+>>>>>item: perf_am2
+>>>>>calling lookup: (table, td), (, ), (0, 32), (, ), 1
+>>>>>result: 31,35 %
+>>>>>moreover: x[:-2]
+>>>>>result: 31,35
+
+>>>>>item: perf_am3
+>>>>>calling lookup: (table, td), (, ), (0, 35), (, ), 1
+>>>>>result: 1,45 %
+>>>>>moreover: x[:-2]
+>>>>>result: 1,45
+
+----------output:{'code': '27160', 'name': 'UBS EQ FD ASIAN CONSUMPTION P USD', 'isin': 'LU0106959298', 'rating': '5', 'lvalue': '135,78 ', 'lvdate': '15/05/2019', 'currency': 'USD', 'benchmark': 'MSCI All Country Asia ex Japan', 'date_ytd': '15/05/2019', 'perf_a': '15,00', 'perf_am1': '-11,80', 'perf_am2': '31,35', 'perf_am3': '1,45'}
+currency list:
+{'id': 1, 'code': 'EUR', 'value': 1.0}, {'id': 2, 'code': 'USD', 'value': 1.1203}, {'id': 129, 'code': 'BGN', 'value': 1.9558}, {'id': 130, 'code': 'NZD', 'value': 1.7063}, {'id': 131, 'code': 'ILS', 'value': 3.997}, {'id': 132, 'code': 'RUB', 'value': 72.2886}, {'id': 133, 'code': 'CAD', 'value': 1.5039}, {'id': 134, 'code': 'PHP', 'value': 58.797}, {'id': 135, 'code': 'CHF', 'value': 1.1306}, {'id': 136, 'code': 'ZAR', 'value': 15.8555}, {'id': 137, 'code': 'AUD', 'value': 1.6213}, {'id': 138, 'code': 'JPY', 'value': 122.81}, {'id': 139, 'code': 'TRY', 'value': 6.7483}, {'id': 140, 'code': 'HKD', 'value': 8.7934}, {'id': 141, 'code': 'MYR', 'value': 4.6655}, {'id': 142, 'code': 'THB', 'value': 35.396}, {'id': 143, 'code': 'HRK', 'value': 7.4245}, {'id': 144, 'code': 'NOK', 'value': 9.7513}, {'id': 145, 'code': 'IDR', 'value': 16188.34}, {'id': 146, 'code': 'DKK', 'value': 7.4678}, {'id': 147, 'code': 'CZK', 'value': 25.696}, {'id': 148, 'code': 'HUF', 'value': 324.28}, {'id': 149, 'code': 'GBP', 'value': 0.87463}, {'id': 150, 'code': 'MXN', 'value': 21.3161}, {'id': 151, 'code': 'KRW', 'value': 1332.17}, {'id': 152, 'code': 'ISK', 'value': 137.0}, {'id': 153, 'code': 'SGD', 'value': 1.534}, {'id': 154, 'code': 'BRL', 'value': 4.4784}, {'id': 155, 'code': 'PLN', 'value': 4.2962}, {'id': 156, 'code': 'INR', 'value': 78.469}, {'id': 157, 'code': 'RON', 'value': 4.762}, {'id': 158, 'code': 'CNY', 'value': 7.7067}, {'id': 159, 'code': 'SEK', 'value': 10.759}
+selected currency: 2 (USD) - Taux: 1.12
+updating 27160 UPDATE fin_info AS ffo SET name = %s, rating = %s, benchmark = %s, lvdate = DATE(%s), lvalue = %s, currency_id = %s,     date_ytd = DATE(%s), perf_a = %s, perf_am1 = %s, perf_am2 = %s, perf_am3 = %s WHERE ffo.fund_id = %s AND ffo.source_id = %s (UBS EQ FD ASIAN CONSUMPTION P USD, 5, MSCI All Country Asia ex Japan, 2019-05-15, 135.78, 2, 2019-05-15, 15.00, -11.80, 31.35, 1.45, 4, 2)
+ UPDATE fund AS fnd SET last_lvalue = %s WHERE fnd.id = %s (121.20, 4)
+----------
+----------fund: {'id': 5, 'isin': 'FR0000292278', 'fin_id': 17, 'source_id': 1, 'code': 'F0GBR04QCJ'}
+calling get_info(1, http://www.morningstar.fr/fr/funds/snapshot/snapshot.aspx?id=, F0GBR04QCJ)
+>>>>> 
+
+>>>>>item: name
+>>>>>calling lookup: (div, h1), (snapshotTitleBox, ), (, ), (, ), 1
+>>>>>result: Magellan C
+>>>>>result: Magellan C
+
+>>>>>item: rating
+>>>>>calling lookup: (span), (rating_sprite), (1), (class), 0
+>>>>>result: stars3
+>>>>>moreover: x[len(x)-1:len(x)]
+>>>>>result: 3
+
+>>>>>item: lvdate
+>>>>>calling lookup: (table, td), (overviewPerformanceTable, titleBarNote), (, ), (, ), 1
+>>>>>result: 30/04/2019
+>>>>>result: 30/04/2019
+
+>>>>>item: perf_a
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col7), (, ), (, ), 1
+>>>>>result: 14,1
+>>>>>result: 14,1
+
+>>>>>item: perf_am1
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col6), (, ), (, ), 1
+>>>>>result: -16,4
+>>>>>result: -16,4
+
+>>>>>item: perf_am2
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col5), (, ), (, ), 1
+>>>>>result: 20,8
+>>>>>result: 20,8
+
+>>>>>item: perf_am3
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col4), (, ), (, ), 1
+>>>>>result: 8,3
+>>>>>result: 8,3
+
+>>>>>item: benchmark
+>>>>>calling lookup: (table, td, span), (overviewCalenderYearReturnsTable, footer, value), (, 1, ), (, , ), 1
+>>>>>result: MSCI EM NR USD
+>>>>>result: MSCI EM NR USD
+
+>>>>>item: lvalue
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, ), (, ), 1
+>>>>>result: EUR 22,91
+>>>>>moreover: x[x.find(u'\xa0')+1:]
+>>>>>result: 22,91
+
+>>>>>item: currency
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, ), (, ), 1
+>>>>>result: EUR 22,91
+>>>>>moreover: x[:x.find(u'\xa0')]
+>>>>>result: EUR
+
+>>>>>item: isin
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, 2), (, ), 1
+>>>>>result: FR0000292278
+>>>>>result: FR0000292278
+
+>>>>>item: date_ytd
+>>>>>calling lookup: (table, td), (overviewPerformanceTable, titleBarNote), (, ), (, ), 1
+>>>>>result: 30/04/2019
+>>>>>result: 30/04/2019
+
+----------output:{'code': 'F0GBR04QCJ', 'name': 'Magellan C', 'rating': '3', 'lvdate': '30/04/2019', 'perf_a': '14,1', 'perf_am1': '-16,4', 'perf_am2': '20,8', 'perf_am3': '8,3', 'benchmark': 'MSCI EM NR USD', 'lvalue': '22,91', 'currency': 'EUR', 'isin': 'FR0000292278', 'date_ytd': '30/04/2019'}
+currency list:
+{'id': 1, 'code': 'EUR', 'value': 1.0}, {'id': 2, 'code': 'USD', 'value': 1.1203}, {'id': 129, 'code': 'BGN', 'value': 1.9558}, {'id': 130, 'code': 'NZD', 'value': 1.7063}, {'id': 131, 'code': 'ILS', 'value': 3.997}, {'id': 132, 'code': 'RUB', 'value': 72.2886}, {'id': 133, 'code': 'CAD', 'value': 1.5039}, {'id': 134, 'code': 'PHP', 'value': 58.797}, {'id': 135, 'code': 'CHF', 'value': 1.1306}, {'id': 136, 'code': 'ZAR', 'value': 15.8555}, {'id': 137, 'code': 'AUD', 'value': 1.6213}, {'id': 138, 'code': 'JPY', 'value': 122.81}, {'id': 139, 'code': 'TRY', 'value': 6.7483}, {'id': 140, 'code': 'HKD', 'value': 8.7934}, {'id': 141, 'code': 'MYR', 'value': 4.6655}, {'id': 142, 'code': 'THB', 'value': 35.396}, {'id': 143, 'code': 'HRK', 'value': 7.4245}, {'id': 144, 'code': 'NOK', 'value': 9.7513}, {'id': 145, 'code': 'IDR', 'value': 16188.34}, {'id': 146, 'code': 'DKK', 'value': 7.4678}, {'id': 147, 'code': 'CZK', 'value': 25.696}, {'id': 148, 'code': 'HUF', 'value': 324.28}, {'id': 149, 'code': 'GBP', 'value': 0.87463}, {'id': 150, 'code': 'MXN', 'value': 21.3161}, {'id': 151, 'code': 'KRW', 'value': 1332.17}, {'id': 152, 'code': 'ISK', 'value': 137.0}, {'id': 153, 'code': 'SGD', 'value': 1.534}, {'id': 154, 'code': 'BRL', 'value': 4.4784}, {'id': 155, 'code': 'PLN', 'value': 4.2962}, {'id': 156, 'code': 'INR', 'value': 78.469}, {'id': 157, 'code': 'RON', 'value': 4.762}, {'id': 158, 'code': 'CNY', 'value': 7.7067}, {'id': 159, 'code': 'SEK', 'value': 10.759}
+selected currency: 1 (EUR) - Taux: 1.00
+updating F0GBR04QCJ UPDATE fin_info AS ffo SET name = %s, rating = %s, benchmark = %s, lvdate = DATE(%s), lvalue = %s, currency_id = %s,     date_ytd = DATE(%s), perf_a = %s, perf_am1 = %s, perf_am2 = %s, perf_am3 = %s WHERE ffo.fund_id = %s AND ffo.source_id = %s (Magellan C, 3, MSCI EM NR USD, 2019-04-30, 22.91, 1, 2019-04-30, 14.10, -16.40, 20.80, 8.30, 5, 1)
+ UPDATE fund AS fnd SET last_lvalue = %s WHERE fnd.id = %s (22.91, 5)
+Last date retrieved: 2019-04-30
+starts:2019-05-01 - ends:2019-04-30
+----------
+----------fund: {'id': 5, 'isin': 'FR0000292278', 'fin_id': 18, 'source_id': 2, 'code': '15112'}
+calling get_info(2, http://www.quantalys.com/Fonds/, 15112)
+>>>>> 
+
+>>>>>item: name
+>>>>>calling lookup: (div, h1, strong), (panel-heading, , ), (, , ), (, , ), 1
+>>>>>result: MAGELLAN C
+>>>>>result: MAGELLAN C
+
+>>>>>item: isin
+>>>>>calling lookup: (div, h1, small), (panel-heading, , ), (, , ), (, , ), 1
+>>>>>result: FR0000292278
+>>>>>result: FR0000292278
+
+>>>>>item: rating
+>>>>>calling lookup: (div, div), (panel-heading, spritefonds), (, 1), (, class), 0
+>>>>>result: sprite-2g
+>>>>>moreover: x[len(x)-2:len(x)-1]
+>>>>>result: 2
+
+>>>>>item: lvalue
+>>>>>calling lookup: (span), (vl-box-value), (), (), 1
+>>>>>result: 22,91  EUR
+>>>>>moreover: x[:x.rfind(' ')]
+>>>>>result: 22,91 
+
+>>>>>item: lvdate
+>>>>>calling lookup: (span), (vl-box-date), (), (), 1
+>>>>>result: 15/05/2019
+>>>>>result: 15/05/2019
+
+>>>>>item: currency
+>>>>>calling lookup: (span), (vl-box-value), (), (), 1
+>>>>>result: 22,91  EUR
+>>>>>moreover: x[x.rfind(' ')+1:]
+>>>>>result: EUR
+
+>>>>>item: benchmark
+>>>>>calling lookup: (dl, dd), (dl-fichier-identite, ), (, 4), (, ), 1
+>>>>>result: None
+>>>>>result: None
+
+>>>>>item: date_ytd
+>>>>>calling lookup: (table, td, strong), (, , ), (0, 0, ), (, , ), 1
+>>>>>result: Perf. 15/05/2019
+>>>>>moreover: x[x.find(' ')+1:]
+>>>>>result: 15/05/2019
+
+>>>>>item: perf_a
+>>>>>calling lookup: (table, td), (, ), (0, 10), (, ), 1
+>>>>>result: 8,22 %
+>>>>>moreover: x[:-2]
+>>>>>result: 8,22
+
+>>>>>item: perf_am1
+>>>>>calling lookup: (table, td), (, ), (0, 29), (, ), 1
+>>>>>result: -16,36 %
+>>>>>moreover: x[:-2]
+>>>>>result: -16,36
+
+>>>>>item: perf_am2
+>>>>>calling lookup: (table, td), (, ), (0, 32), (, ), 1
+>>>>>result: 20,81 %
+>>>>>moreover: x[:-2]
+>>>>>result: 20,81
+
+>>>>>item: perf_am3
+>>>>>calling lookup: (table, td), (, ), (0, 35), (, ), 1
+>>>>>result: 8,27 %
+>>>>>moreover: x[:-2]
+>>>>>result: 8,27
+
+----------output:{'code': '15112', 'name': 'MAGELLAN C', 'isin': 'FR0000292278', 'rating': '2', 'lvalue': '22,91 ', 'lvdate': '15/05/2019', 'currency': 'EUR', 'benchmark': 'None', 'date_ytd': '15/05/2019', 'perf_a': '8,22', 'perf_am1': '-16,36', 'perf_am2': '20,81', 'perf_am3': '8,27'}
+currency list:
+{'id': 1, 'code': 'EUR', 'value': 1.0}, {'id': 2, 'code': 'USD', 'value': 1.1203}, {'id': 129, 'code': 'BGN', 'value': 1.9558}, {'id': 130, 'code': 'NZD', 'value': 1.7063}, {'id': 131, 'code': 'ILS', 'value': 3.997}, {'id': 132, 'code': 'RUB', 'value': 72.2886}, {'id': 133, 'code': 'CAD', 'value': 1.5039}, {'id': 134, 'code': 'PHP', 'value': 58.797}, {'id': 135, 'code': 'CHF', 'value': 1.1306}, {'id': 136, 'code': 'ZAR', 'value': 15.8555}, {'id': 137, 'code': 'AUD', 'value': 1.6213}, {'id': 138, 'code': 'JPY', 'value': 122.81}, {'id': 139, 'code': 'TRY', 'value': 6.7483}, {'id': 140, 'code': 'HKD', 'value': 8.7934}, {'id': 141, 'code': 'MYR', 'value': 4.6655}, {'id': 142, 'code': 'THB', 'value': 35.396}, {'id': 143, 'code': 'HRK', 'value': 7.4245}, {'id': 144, 'code': 'NOK', 'value': 9.7513}, {'id': 145, 'code': 'IDR', 'value': 16188.34}, {'id': 146, 'code': 'DKK', 'value': 7.4678}, {'id': 147, 'code': 'CZK', 'value': 25.696}, {'id': 148, 'code': 'HUF', 'value': 324.28}, {'id': 149, 'code': 'GBP', 'value': 0.87463}, {'id': 150, 'code': 'MXN', 'value': 21.3161}, {'id': 151, 'code': 'KRW', 'value': 1332.17}, {'id': 152, 'code': 'ISK', 'value': 137.0}, {'id': 153, 'code': 'SGD', 'value': 1.534}, {'id': 154, 'code': 'BRL', 'value': 4.4784}, {'id': 155, 'code': 'PLN', 'value': 4.2962}, {'id': 156, 'code': 'INR', 'value': 78.469}, {'id': 157, 'code': 'RON', 'value': 4.762}, {'id': 158, 'code': 'CNY', 'value': 7.7067}, {'id': 159, 'code': 'SEK', 'value': 10.759}
+selected currency: 1 (EUR) - Taux: 1.00
+updating 15112 UPDATE fin_info AS ffo SET name = %s, rating = %s, benchmark = %s, lvdate = DATE(%s), lvalue = %s, currency_id = %s,     date_ytd = DATE(%s), perf_a = %s, perf_am1 = %s, perf_am2 = %s, perf_am3 = %s WHERE ffo.fund_id = %s AND ffo.source_id = %s (MAGELLAN C, 2, None, 2019-05-15, 22.91, 1, 2019-05-15, 8.22, -16.36, 20.81, 8.27, 5, 2)
+ UPDATE fund AS fnd SET last_lvalue = %s WHERE fnd.id = %s (22.91, 5)
+----------
+----------fund: {'id': 7, 'isin': 'FR0010902726', 'fin_id': 19, 'source_id': 1, 'code': 'F00000LHJS'}
+calling get_info(1, http://www.morningstar.fr/fr/funds/snapshot/snapshot.aspx?id=, F00000LHJS)
+>>>>> 
+
+>>>>>item: name
+>>>>>calling lookup: (div, h1), (snapshotTitleBox, ), (, ), (, ), 1
+>>>>>result: 29 Haussmann Euro Rendement C
+>>>>>result: 29 Haussmann Euro Rendement C
+
+>>>>>item: rating
+>>>>>calling lookup: (span), (rating_sprite), (1), (class), 0
+>>>>>result: stars4
+>>>>>moreover: x[len(x)-1:len(x)]
+>>>>>result: 4
+
+>>>>>item: lvdate
+>>>>>calling lookup: (table, td), (overviewPerformanceTable, titleBarNote), (, ), (, ), 1
+>>>>>result: 30/04/2019
+>>>>>result: 30/04/2019
+
+>>>>>item: perf_a
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col7), (, ), (, ), 1
+>>>>>result: 7,0
+>>>>>result: 7,0
+
+>>>>>item: perf_am1
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col6), (, ), (, ), 1
+>>>>>result: -5,4
+>>>>>result: -5,4
+
+>>>>>item: perf_am2
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col5), (, ), (, ), 1
+>>>>>result: 3,9
+>>>>>result: 3,9
+
+>>>>>item: perf_am3
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col4), (, ), (, ), 1
+>>>>>result: 5,3
+>>>>>result: 5,3
+
+>>>>>item: benchmark
+>>>>>calling lookup: (table, td, span), (overviewCalenderYearReturnsTable, footer, value), (, 1, ), (, , ), 1
+>>>>>result: Cat 75%Barclays Eu Agg&25%F...
+>>>>>result: Cat 75%Barclays Eu Agg&25%F...
+
+>>>>>item: lvalue
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, ), (, ), 1
+>>>>>result: EUR 1369,86
+>>>>>moreover: x[x.find(u'\xa0')+1:]
+>>>>>result: 1369,86
+
+>>>>>item: currency
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, ), (, ), 1
+>>>>>result: EUR 1369,86
+>>>>>moreover: x[:x.find(u'\xa0')]
+>>>>>result: EUR
+
+>>>>>item: isin
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, 2), (, ), 1
+>>>>>result: FR0010902726
+>>>>>result: FR0010902726
+
+>>>>>item: date_ytd
+>>>>>calling lookup: (table, td), (overviewPerformanceTable, titleBarNote), (, ), (, ), 1
+>>>>>result: 30/04/2019
+>>>>>result: 30/04/2019
+
+----------output:{'code': 'F00000LHJS', 'name': '29 Haussmann Euro Rendement C', 'rating': '4', 'lvdate': '30/04/2019', 'perf_a': '7,0', 'perf_am1': '-5,4', 'perf_am2': '3,9', 'perf_am3': '5,3', 'benchmark': 'Cat 75%Barclays Eu Agg&25%F...', 'lvalue': '1369,86', 'currency': 'EUR', 'isin': 'FR0010902726', 'date_ytd': '30/04/2019'}
+currency list:
+{'id': 1, 'code': 'EUR', 'value': 1.0}, {'id': 2, 'code': 'USD', 'value': 1.1203}, {'id': 129, 'code': 'BGN', 'value': 1.9558}, {'id': 130, 'code': 'NZD', 'value': 1.7063}, {'id': 131, 'code': 'ILS', 'value': 3.997}, {'id': 132, 'code': 'RUB', 'value': 72.2886}, {'id': 133, 'code': 'CAD', 'value': 1.5039}, {'id': 134, 'code': 'PHP', 'value': 58.797}, {'id': 135, 'code': 'CHF', 'value': 1.1306}, {'id': 136, 'code': 'ZAR', 'value': 15.8555}, {'id': 137, 'code': 'AUD', 'value': 1.6213}, {'id': 138, 'code': 'JPY', 'value': 122.81}, {'id': 139, 'code': 'TRY', 'value': 6.7483}, {'id': 140, 'code': 'HKD', 'value': 8.7934}, {'id': 141, 'code': 'MYR', 'value': 4.6655}, {'id': 142, 'code': 'THB', 'value': 35.396}, {'id': 143, 'code': 'HRK', 'value': 7.4245}, {'id': 144, 'code': 'NOK', 'value': 9.7513}, {'id': 145, 'code': 'IDR', 'value': 16188.34}, {'id': 146, 'code': 'DKK', 'value': 7.4678}, {'id': 147, 'code': 'CZK', 'value': 25.696}, {'id': 148, 'code': 'HUF', 'value': 324.28}, {'id': 149, 'code': 'GBP', 'value': 0.87463}, {'id': 150, 'code': 'MXN', 'value': 21.3161}, {'id': 151, 'code': 'KRW', 'value': 1332.17}, {'id': 152, 'code': 'ISK', 'value': 137.0}, {'id': 153, 'code': 'SGD', 'value': 1.534}, {'id': 154, 'code': 'BRL', 'value': 4.4784}, {'id': 155, 'code': 'PLN', 'value': 4.2962}, {'id': 156, 'code': 'INR', 'value': 78.469}, {'id': 157, 'code': 'RON', 'value': 4.762}, {'id': 158, 'code': 'CNY', 'value': 7.7067}, {'id': 159, 'code': 'SEK', 'value': 10.759}
+selected currency: 1 (EUR) - Taux: 1.00
+updating F00000LHJS UPDATE fin_info AS ffo SET name = %s, rating = %s, benchmark = %s, lvdate = DATE(%s), lvalue = %s, currency_id = %s,     date_ytd = DATE(%s), perf_a = %s, perf_am1 = %s, perf_am2 = %s, perf_am3 = %s WHERE ffo.fund_id = %s AND ffo.source_id = %s (29 Haussmann Euro Rendement C, 4, Cat 75%Barclays Eu Agg&25%F..., 2019-04-30, 1369.86, 1, 2019-04-30, 7.00, -5.40, 3.90, 5.30, 7, 1)
+ UPDATE fund AS fnd SET last_lvalue = %s WHERE fnd.id = %s (1369.86, 7)
+Last date retrieved: 2019-04-30
+starts:2019-05-01 - ends:2019-04-30
+----------
+----------fund: {'id': 7, 'isin': 'FR0010902726', 'fin_id': 20, 'source_id': 2, 'code': '131744'}
+calling get_info(2, http://www.quantalys.com/Fonds/, 131744)
+>>>>> 
+
+>>>>>item: name
+>>>>>calling lookup: (div, h1, strong), (panel-heading, , ), (, , ), (, , ), 1
+>>>>>result: SG 29 HN - 29 HAUSM EUR RT - C - EUR - C
+>>>>>result: SG 29 HN - 29 HAUSM EUR RT - C - EUR - C
+
+>>>>>item: isin
+>>>>>calling lookup: (div, h1, small), (panel-heading, , ), (, , ), (, , ), 1
+>>>>>result: FR0010902726
+>>>>>result: FR0010902726
+
+>>>>>item: rating
+>>>>>calling lookup: (div, div), (panel-heading, spritefonds), (, 1), (, class), 0
+>>>>>result: sprite-5g
+>>>>>moreover: x[len(x)-2:len(x)-1]
+>>>>>result: 5
+
+>>>>>item: lvalue
+>>>>>calling lookup: (span), (vl-box-value), (), (), 1
+>>>>>result: 1 369,86  EUR
+>>>>>moreover: x[:x.rfind(' ')]
+>>>>>result: 1 369,86 
+
+>>>>>item: lvdate
+>>>>>calling lookup: (span), (vl-box-date), (), (), 1
+>>>>>result: 15/05/2019
+>>>>>result: 15/05/2019
+
+>>>>>item: currency
+>>>>>calling lookup: (span), (vl-box-value), (), (), 1
+>>>>>result: 1 369,86  EUR
+>>>>>moreover: x[x.rfind(' ')+1:]
+>>>>>result: EUR
+
+>>>>>item: benchmark
+>>>>>calling lookup: (dl, dd), (dl-fichier-identite, ), (, 4), (, ), 1
+>>>>>result: None
+>>>>>result: None
+
+>>>>>item: date_ytd
+>>>>>calling lookup: (table, td, strong), (, , ), (0, 0, ), (, , ), 1
+>>>>>result: Perf. 15/05/2019
+>>>>>moreover: x[x.find(' ')+1:]
+>>>>>result: 15/05/2019
+
+>>>>>item: perf_a
+>>>>>calling lookup: (table, td), (, ), (0, 10), (, ), 1
+>>>>>result: 6,33 %
+>>>>>moreover: x[:-2]
+>>>>>result: 6,33
+
+>>>>>item: perf_am1
+>>>>>calling lookup: (table, td), (, ), (0, 29), (, ), 1
+>>>>>result: -5,35 %
+>>>>>moreover: x[:-2]
+>>>>>result: -5,35
+
+>>>>>item: perf_am2
+>>>>>calling lookup: (table, td), (, ), (0, 32), (, ), 1
+>>>>>result: 3,95 %
+>>>>>moreover: x[:-2]
+>>>>>result: 3,95
+
+>>>>>item: perf_am3
+>>>>>calling lookup: (table, td), (, ), (0, 35), (, ), 1
+>>>>>result: 5,32 %
+>>>>>moreover: x[:-2]
+>>>>>result: 5,32
+
+----------output:{'code': '131744', 'name': 'SG 29 HN - 29 HAUSM EUR RT - C - EUR - C', 'isin': 'FR0010902726', 'rating': '5', 'lvalue': '1 369,86 ', 'lvdate': '15/05/2019', 'currency': 'EUR', 'benchmark': 'None', 'date_ytd': '15/05/2019', 'perf_a': '6,33', 'perf_am1': '-5,35', 'perf_am2': '3,95', 'perf_am3': '5,32'}
+currency list:
+{'id': 1, 'code': 'EUR', 'value': 1.0}, {'id': 2, 'code': 'USD', 'value': 1.1203}, {'id': 129, 'code': 'BGN', 'value': 1.9558}, {'id': 130, 'code': 'NZD', 'value': 1.7063}, {'id': 131, 'code': 'ILS', 'value': 3.997}, {'id': 132, 'code': 'RUB', 'value': 72.2886}, {'id': 133, 'code': 'CAD', 'value': 1.5039}, {'id': 134, 'code': 'PHP', 'value': 58.797}, {'id': 135, 'code': 'CHF', 'value': 1.1306}, {'id': 136, 'code': 'ZAR', 'value': 15.8555}, {'id': 137, 'code': 'AUD', 'value': 1.6213}, {'id': 138, 'code': 'JPY', 'value': 122.81}, {'id': 139, 'code': 'TRY', 'value': 6.7483}, {'id': 140, 'code': 'HKD', 'value': 8.7934}, {'id': 141, 'code': 'MYR', 'value': 4.6655}, {'id': 142, 'code': 'THB', 'value': 35.396}, {'id': 143, 'code': 'HRK', 'value': 7.4245}, {'id': 144, 'code': 'NOK', 'value': 9.7513}, {'id': 145, 'code': 'IDR', 'value': 16188.34}, {'id': 146, 'code': 'DKK', 'value': 7.4678}, {'id': 147, 'code': 'CZK', 'value': 25.696}, {'id': 148, 'code': 'HUF', 'value': 324.28}, {'id': 149, 'code': 'GBP', 'value': 0.87463}, {'id': 150, 'code': 'MXN', 'value': 21.3161}, {'id': 151, 'code': 'KRW', 'value': 1332.17}, {'id': 152, 'code': 'ISK', 'value': 137.0}, {'id': 153, 'code': 'SGD', 'value': 1.534}, {'id': 154, 'code': 'BRL', 'value': 4.4784}, {'id': 155, 'code': 'PLN', 'value': 4.2962}, {'id': 156, 'code': 'INR', 'value': 78.469}, {'id': 157, 'code': 'RON', 'value': 4.762}, {'id': 158, 'code': 'CNY', 'value': 7.7067}, {'id': 159, 'code': 'SEK', 'value': 10.759}
+selected currency: 1 (EUR) - Taux: 1.00
+updating 131744 UPDATE fin_info AS ffo SET name = %s, rating = %s, benchmark = %s, lvdate = DATE(%s), lvalue = %s, currency_id = %s,     date_ytd = DATE(%s), perf_a = %s, perf_am1 = %s, perf_am2 = %s, perf_am3 = %s WHERE ffo.fund_id = %s AND ffo.source_id = %s (SG 29 HN - 29 HAUSM EUR RT - C - EUR - C, 5, None, 2019-05-15, 1369.86, 1, 2019-05-15, 6.33, -5.35, 3.95, 5.32, 7, 2)
+ UPDATE fund AS fnd SET last_lvalue = %s WHERE fnd.id = %s (1369.86, 7)
+----------
+----------fund: {'id': 8, 'isin': 'FR0010588343', 'fin_id': 21, 'source_id': 1, 'code': 'F0GBR04R60'}
+calling get_info(1, http://www.morningstar.fr/fr/funds/snapshot/snapshot.aspx?id=, F0GBR04R60)
+>>>>> 
+
+>>>>>item: name
+>>>>>calling lookup: (div, h1), (snapshotTitleBox, ), (, ), (, ), 1
+>>>>>result: EdR SICAV - Tricolore Rendement A EUR
+>>>>>result: EdR SICAV - Tricolore Rendement A EUR
+
+>>>>>item: rating
+>>>>>calling lookup: (span), (rating_sprite), (1), (class), 0
+>>>>>result: stars1
+>>>>>moreover: x[len(x)-1:len(x)]
+>>>>>result: 1
+
+>>>>>item: lvdate
+>>>>>calling lookup: (table, td), (overviewPerformanceTable, titleBarNote), (, ), (, ), 1
+>>>>>result: 30/04/2019
+>>>>>result: 30/04/2019
+
+>>>>>item: perf_a
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col7), (, ), (, ), 1
+>>>>>result: 12,8
+>>>>>result: 12,8
+
+>>>>>item: perf_am1
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col6), (, ), (, ), 1
+>>>>>result: -18,4
+>>>>>result: -18,4
+
+>>>>>item: perf_am2
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col5), (, ), (, ), 1
+>>>>>result: 8,7
+>>>>>result: 8,7
+
+>>>>>item: perf_am3
+>>>>>calling lookup: (table, td), (overviewCalenderYearReturnsTable, col4), (, ), (, ), 1
+>>>>>result: 4,7
+>>>>>result: 4,7
+
+>>>>>item: benchmark
+>>>>>calling lookup: (table, td, span), (overviewCalenderYearReturnsTable, footer, value), (, 1, ), (, , ), 1
+>>>>>result: Euronext Paris CAC 40 NR EUR
+>>>>>result: Euronext Paris CAC 40 NR EUR
+
+>>>>>item: lvalue
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, ), (, ), 1
+>>>>>result: EUR 339,58
+>>>>>moreover: x[x.find(u'\xa0')+1:]
+>>>>>result: 339,58
+
+>>>>>item: currency
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, ), (, ), 1
+>>>>>result: EUR 339,58
+>>>>>moreover: x[:x.find(u'\xa0')]
+>>>>>result: EUR
+
+>>>>>item: isin
+>>>>>calling lookup: (table, td), (overviewKeyStatsTable, line text), (, 2), (, ), 1
+>>>>>result: FR0010588343
+>>>>>result: FR0010588343
+
+>>>>>item: date_ytd
+>>>>>calling lookup: (table, td), (overviewPerformanceTable, titleBarNote), (, ), (, ), 1
+>>>>>result: 30/04/2019
+>>>>>result: 30/04/2019
+
+----------output:{'code': 'F0GBR04R60', 'name': 'EdR SICAV - Tricolore Rendement A EUR', 'rating': '1', 'lvdate': '30/04/2019', 'perf_a': '12,8', 'perf_am1': '-18,4', 'perf_am2': '8,7', 'perf_am3': '4,7', 'benchmark': 'Euronext Paris CAC 40 NR EUR', 'lvalue': '339,58', 'currency': 'EUR', 'isin': 'FR0010588343', 'date_ytd': '30/04/2019'}
+currency list:
+{'id': 1, 'code': 'EUR', 'value': 1.0}, {'id': 2, 'code': 'USD', 'value': 1.1203}, {'id': 129, 'code': 'BGN', 'value': 1.9558}, {'id': 130, 'code': 'NZD', 'value': 1.7063}, {'id': 131, 'code': 'ILS', 'value': 3.997}, {'id': 132, 'code': 'RUB', 'value': 72.2886}, {'id': 133, 'code': 'CAD', 'value': 1.5039}, {'id': 134, 'code': 'PHP', 'value': 58.797}, {'id': 135, 'code': 'CHF', 'value': 1.1306}, {'id': 136, 'code': 'ZAR', 'value': 15.8555}, {'id': 137, 'code': 'AUD', 'value': 1.6213}, {'id': 138, 'code': 'JPY', 'value': 122.81}, {'id': 139, 'code': 'TRY', 'value': 6.7483}, {'id': 140, 'code': 'HKD', 'value': 8.7934}, {'id': 141, 'code': 'MYR', 'value': 4.6655}, {'id': 142, 'code': 'THB', 'value': 35.396}, {'id': 143, 'code': 'HRK', 'value': 7.4245}, {'id': 144, 'code': 'NOK', 'value': 9.7513}, {'id': 145, 'code': 'IDR', 'value': 16188.34}, {'id': 146, 'code': 'DKK', 'value': 7.4678}, {'id': 147, 'code': 'CZK', 'value': 25.696}, {'id': 148, 'code': 'HUF', 'value': 324.28}, {'id': 149, 'code': 'GBP', 'value': 0.87463}, {'id': 150, 'code': 'MXN', 'value': 21.3161}, {'id': 151, 'code': 'KRW', 'value': 1332.17}, {'id': 152, 'code': 'ISK', 'value': 137.0}, {'id': 153, 'code': 'SGD', 'value': 1.534}, {'id': 154, 'code': 'BRL', 'value': 4.4784}, {'id': 155, 'code': 'PLN', 'value': 4.2962}, {'id': 156, 'code': 'INR', 'value': 78.469}, {'id': 157, 'code': 'RON', 'value': 4.762}, {'id': 158, 'code': 'CNY', 'value': 7.7067}, {'id': 159, 'code': 'SEK', 'value': 10.759}
+selected currency: 1 (EUR) - Taux: 1.00
+updating F0GBR04R60 UPDATE fin_info AS ffo SET name = %s, rating = %s, benchmark = %s, lvdate = DATE(%s), lvalue = %s, currency_id = %s,     date_ytd = DATE(%s), perf_a = %s, perf_am1 = %s, perf_am2 = %s, perf_am3 = %s WHERE ffo.fund_id = %s AND ffo.source_id = %s (EdR SICAV - Tricolore Rendement A EUR, 1, Euronext Paris CAC 40 NR EUR, 2019-04-30, 339.58, 1, 2019-04-30, 12.80, -18.40, 8.70, 4.70, 8, 1)
+ UPDATE fund AS fnd SET last_lvalue = %s WHERE fnd.id = %s (339.58, 8)
+Last date retrieved: 2019-04-30
+starts:2019-05-01 - ends:2019-04-30
+----------
+----------fund: {'id': 8, 'isin': 'FR0010588343', 'fin_id': 22, 'source_id': 2, 'code': '13105'}
+calling get_info(2, http://www.quantalys.com/Fonds/, 13105)
+>>>>> 
+
+>>>>>item: name
+>>>>>calling lookup: (div, h1, strong), (panel-heading, , ), (, , ), (, , ), 1
+>>>>>result: EDR SICAV TRICOLORE RENDEMENT A-EUR
+>>>>>result: EDR SICAV TRICOLORE RENDEMENT A-EUR
+
+>>>>>item: isin
+>>>>>calling lookup: (div, h1, small), (panel-heading, , ), (, , ), (, , ), 1
+>>>>>result: FR0010588343
+>>>>>result: FR0010588343
+
+>>>>>item: rating
+>>>>>calling lookup: (div, div), (panel-heading, spritefonds), (, 1), (, class), 0
+>>>>>result: sprite-1g
+>>>>>moreover: x[len(x)-2:len(x)-1]
+>>>>>result: 1
+
+>>>>>item: lvalue
+>>>>>calling lookup: (span), (vl-box-value), (), (), 1
+>>>>>result: 339,58  EUR
+>>>>>moreover: x[:x.rfind(' ')]
+>>>>>result: 339,58 
+
+>>>>>item: lvdate
+>>>>>calling lookup: (span), (vl-box-date), (), (), 1
+>>>>>result: 15/05/2019
+>>>>>result: 15/05/2019
+
+>>>>>item: currency
+>>>>>calling lookup: (span), (vl-box-value), (), (), 1
+>>>>>result: 339,58  EUR
+>>>>>moreover: x[x.rfind(' ')+1:]
+>>>>>result: EUR
+
+>>>>>item: benchmark
+>>>>>calling lookup: (dl, dd), (dl-fichier-identite, ), (, 4), (, ), 1
+>>>>>result: None
+>>>>>result: None
+
+>>>>>item: date_ytd
+>>>>>calling lookup: (table, td, strong), (, , ), (0, 0, ), (, , ), 1
+>>>>>result: Perf. 15/05/2019
+>>>>>moreover: x[x.find(' ')+1:]
+>>>>>result: 15/05/2019
+
+>>>>>item: perf_a
+>>>>>calling lookup: (table, td), (, ), (0, 10), (, ), 1
+>>>>>result: 9,36 %
+>>>>>moreover: x[:-2]
+>>>>>result: 9,36
+
+>>>>>item: perf_am1
+>>>>>calling lookup: (table, td), (, ), (0, 29), (, ), 1
+>>>>>result: -18,37 %
+>>>>>moreover: x[:-2]
+>>>>>result: -18,37
+
+>>>>>item: perf_am2
+>>>>>calling lookup: (table, td), (, ), (0, 32), (, ), 1
+>>>>>result: 8,72 %
+>>>>>moreover: x[:-2]
+>>>>>result: 8,72
+
+>>>>>item: perf_am3
+>>>>>calling lookup: (table, td), (, ), (0, 35), (, ), 1
+>>>>>result: 4,66 %
+>>>>>moreover: x[:-2]
+>>>>>result: 4,66
+
+----------output:{'code': '13105', 'name': 'EDR SICAV TRICOLORE RENDEMENT A-EUR', 'isin': 'FR0010588343', 'rating': '1', 'lvalue': '339,58 ', 'lvdate': '15/05/2019', 'currency': 'EUR', 'benchmark': 'None', 'date_ytd': '15/05/2019', 'perf_a': '9,36', 'perf_am1': '-18,37', 'perf_am2': '8,72', 'perf_am3': '4,66'}
+currency list:
+{'id': 1, 'code': 'EUR', 'value': 1.0}, {'id': 2, 'code': 'USD', 'value': 1.1203}, {'id': 129, 'code': 'BGN', 'value': 1.9558}, {'id': 130, 'code': 'NZD', 'value': 1.7063}, {'id': 131, 'code': 'ILS', 'value': 3.997}, {'id': 132, 'code': 'RUB', 'value': 72.2886}, {'id': 133, 'code': 'CAD', 'value': 1.5039}, {'id': 134, 'code': 'PHP', 'value': 58.797}, {'id': 135, 'code': 'CHF', 'value': 1.1306}, {'id': 136, 'code': 'ZAR', 'value': 15.8555}, {'id': 137, 'code': 'AUD', 'value': 1.6213}, {'id': 138, 'code': 'JPY', 'value': 122.81}, {'id': 139, 'code': 'TRY', 'value': 6.7483}, {'id': 140, 'code': 'HKD', 'value': 8.7934}, {'id': 141, 'code': 'MYR', 'value': 4.6655}, {'id': 142, 'code': 'THB', 'value': 35.396}, {'id': 143, 'code': 'HRK', 'value': 7.4245}, {'id': 144, 'code': 'NOK', 'value': 9.7513}, {'id': 145, 'code': 'IDR', 'value': 16188.34}, {'id': 146, 'code': 'DKK', 'value': 7.4678}, {'id': 147, 'code': 'CZK', 'value': 25.696}, {'id': 148, 'code': 'HUF', 'value': 324.28}, {'id': 149, 'code': 'GBP', 'value': 0.87463}, {'id': 150, 'code': 'MXN', 'value': 21.3161}, {'id': 151, 'code': 'KRW', 'value': 1332.17}, {'id': 152, 'code': 'ISK', 'value': 137.0}, {'id': 153, 'code': 'SGD', 'value': 1.534}, {'id': 154, 'code': 'BRL', 'value': 4.4784}, {'id': 155, 'code': 'PLN', 'value': 4.2962}, {'id': 156, 'code': 'INR', 'value': 78.469}, {'id': 157, 'code': 'RON', 'value': 4.762}, {'id': 158, 'code': 'CNY', 'value': 7.7067}, {'id': 159, 'code': 'SEK', 'value': 10.759}
+selected currency: 1 (EUR) - Taux: 1.00
+updating 13105 UPDATE fin_info AS ffo SET name = %s, rating = %s, benchmark = %s, lvdate = DATE(%s), lvalue = %s, currency_id = %s,     date_ytd = DATE(%s), perf_a = %s, perf_am1 = %s, perf_am2 = %s, perf_am3 = %s WHERE ffo.fund_id = %s AND ffo.source_id = %s (EDR SICAV TRICOLORE RENDEMENT A-EUR, 1, None, 2019-05-15, 339.58, 1, 2019-05-15, 9.36, -18.37, 8.72, 4.66, 8, 2)
+ UPDATE fund AS fnd SET last_lvalue = %s WHERE fnd.id = %s (339.58, 8)
+----------
+----------fund: {'id': 9, 'isin': 'FR0011435197', 'fin_id': 23, 'source_id': 1, 'code': 'UNSET'}
+----------
+----------fund: {'id': 9, 'isin': 'FR0011435197', 'fin_id': 24, 'source_id': 2, 'code': 'UNSET'}
