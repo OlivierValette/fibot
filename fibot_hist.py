@@ -5,7 +5,7 @@ from config import db_config
 
 
 # Main function
-# fibot: update historical tables (on a monthly basis)
+# fibot: update historical tables with last recorded values
 def main():
     cnx = mysql.connector.connect(**db_config)
     cur_fdh = cnx.cursor(buffered=True, dictionary=True)
