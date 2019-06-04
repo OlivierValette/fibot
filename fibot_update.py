@@ -160,9 +160,9 @@ def main():
                     # find last date already stored in database
                     ms_code = info['code']
                     cur_fdh.execute(query_hist_values, (fund['id'],))
+                    ldate = datetime(1991, 1, 1)
                     for row in cur_fdh:
                         ldate = row['ldate']
-                    if not ldate: ldate = datetime(1991, 1, 1)
                     cur_fdh.close()
                     log.write('\nLast date retrieved: ' + ldate.strftime("%Y-%m-%d"))
                     if ldate.month == 12:
